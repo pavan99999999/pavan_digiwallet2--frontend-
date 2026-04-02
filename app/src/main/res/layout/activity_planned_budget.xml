@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F1520">
+	
+
+    
+	<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+		
+
+        
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+			
+
+            
+			<!-- Header -->
+			
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp">
+				
+
+                
+				<ImageView android:id="@+id/btn_back" android:layout_width="40dp" android:layout_height="40dp" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:src="@drawable/ic_back" app:tint="@android:color/white"/>
+				
+
+                
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@id/btn_back" android:text="Planned Budget" android:textColor="@android:color/white" android:textSize="22sp" android:textStyle="bold"/>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<!-- Stats Cards -->
+			
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:orientation="horizontal">
+				
+
+                
+				<!-- Total -->
+				
+                
+				<androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_weight="1" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+					
+
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+						
+
+                        
+						<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+							
+
+                            
+							<ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_trending_up" app:tint="#3498DB"/>
+							
+
+                            
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Total" android:textColor="#8E9196" android:textSize="12sp"/>
+							
+                        
+						</LinearLayout>
+						
+
+                        
+						<TextView android:id="@+id/tv_total_planned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹0" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</androidx.cardview.widget.CardView>
+				
+
+                
+				<!-- Paid -->
+				
+                
+				<androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginHorizontal="4dp" android:layout_weight="1" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+					
+
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+						
+
+                        
+						<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+							
+
+                            
+							<ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_check_circle" app:tint="#2ECC71"/>
+							
+
+                            
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Paid" android:textColor="#8E9196" android:textSize="12sp"/>
+							
+                        
+						</LinearLayout>
+						
+
+                        
+						<TextView android:id="@+id/tv_paid_planned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹0" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</androidx.cardview.widget.CardView>
+				
+
+                
+				<!-- Pending -->
+				
+                
+				<androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_weight="1" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+					
+
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+						
+
+                        
+						<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+							
+
+                            
+							<ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_clock" app:tint="#E67E22"/>
+							
+
+                            
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Pending" android:textColor="#8E9196" android:textSize="12sp"/>
+							
+                        
+						</LinearLayout>
+						
+
+                        
+						<TextView android:id="@+id/tv_pending_planned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹0" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</androidx.cardview.widget.CardView>
+				
+            
+			</LinearLayout>
+			
+
+            
+			<!-- Toggle View Controls -->
+			
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+				
+
+                
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#1A222E" android:orientation="horizontal" android:padding="4dp">
+					
+
+                    
+					<TextView android:id="@+id/tab_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#3498DB" android:paddingHorizontal="24dp" android:paddingVertical="10dp" android:text="Calendar" android:textColor="@android:color/white" android:textStyle="bold"/>
+					
+
+                    
+					<TextView android:id="@+id/tab_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="24dp" android:paddingVertical="10dp" android:text="List" android:textColor="#6F767E" android:textStyle="bold"/>
+					
+                
+				</LinearLayout>
+				
+
+                
+				<androidx.cardview.widget.CardView android:layout_width="52dp" android:layout_height="52dp" android:layout_alignParentEnd="true" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="12dp" app:cardElevation="0dp">
+					
+
+                    
+					<ImageView android:layout_width="20dp" android:layout_height="16dp" android:layout_gravity="center" android:src="@drawable/ic_filter_sort" app:tint="#8E9196"/>
+					
+                
+				</androidx.cardview.widget.CardView>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<!-- Calendar Card -->
+			
+            
+			<androidx.cardview.widget.CardView android:id="@+id/card_calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="#131B28" app:cardCornerRadius="24dp" app:cardElevation="0dp">
+				
+
+                
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+					
+
+                    
+					<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+						<ImageView android:id="@+id/btn_prev_month" android:layout_width="32dp" android:layout_height="32dp" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_back" app:tint="@android:color/white" android:padding="4dp" android:background="?attr/selectableItemBackgroundBorderless"/>
+						
+						<TextView android:id="@+id/tv_calendar_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="February 2026" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+						
+						<ImageView android:id="@+id/btn_next_month" android:layout_width="32dp" android:layout_height="32dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:rotation="180" android:src="@drawable/ic_back" app:tint="@android:color/white" android:padding="4dp" android:background="?attr/selectableItemBackgroundBorderless"/>
+					</RelativeLayout>
+					
+
+                    
+					<!-- Day Headers -->
+					
+                    
+					<GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:columnCount="7" android:rowCount="1">
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="S" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="M" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="T" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="W" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="T" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="F" android:textColor="#6F767E"/>
+						
+
+                        
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:text="S" android:textColor="#6F767E"/>
+						
+                    
+					</GridLayout>
+					
+
+                    
+					<!-- Day Numbers Grid (Feb 2026 starts on Sunday) -->
+					
+                    
+					<GridLayout android:id="@+id/calendar_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:columnCount="7">
+						<!-- Dynamically populated from Activity -->
+					</GridLayout>
+					
+
+                    
+					<!-- Legend -->
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:gravity="center" android:orientation="horizontal">
+						
+
+                        
+						<View android:layout_width="8dp" android:layout_height="8dp" android:background="@drawable/dot_healthy" android:backgroundTint="#2ECC71"/>
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:text="Paid" android:textColor="#6F767E" android:textSize="12sp"/>
+						
+
+                        
+						<View android:layout_width="8dp" android:layout_height="8dp" android:layout_marginStart="16dp" android:background="@drawable/dot_healthy" android:backgroundTint="#E67E22"/>
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:text="Pending" android:textColor="#6F767E" android:textSize="12sp"/>
+						
+
+                        
+						<View android:layout_width="8dp" android:layout_height="8dp" android:layout_marginStart="16dp" android:background="@drawable/dot_healthy" android:backgroundTint="#FF4081"/>
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:text="Overdue" android:textColor="#6F767E" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</LinearLayout>
+				
+            
+			</androidx.cardview.widget.CardView>
+			
+
+            
+			<!-- Reminders List -->
+			
+            
+			<LinearLayout android:id="@+id/layout_reminders_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+    			<TextView android:id="@+id/tv_upcoming_bills_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Upcoming Bills" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+    			<LinearLayout android:id="@+id/layout_reminders_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical"/>
+            </LinearLayout>
+			
+
+        
+		</LinearLayout>
+		
+    
+	</androidx.core.widget.NestedScrollView>
+	
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

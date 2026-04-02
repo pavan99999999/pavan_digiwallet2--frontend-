@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171880435888",
+    "project_id": "fir-console-6eee3",
+    "storage_bucket": "fir-console-6eee3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171880435888:android:298c665a7399f4bc93ab75",
+        "android_client_info": {
+          "package_name": "com.simats.pavan_digi_wallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDURjc9un2n66B70sIs8TDPVYMYxoZgtZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

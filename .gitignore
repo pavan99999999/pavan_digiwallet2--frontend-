@@ -1,0 +1,23 @@
+# Android
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+captures/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Python test/debug scripts
+test_groq_ai.py
+send_test_push.py
+check_db_goals.py
+schemas.py
+test_app_endpoints.py
+*.py
+
+# Build errors log
+build_err.txt

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F1520">
+	
+
+    
+	<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+		
+
+        
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+			
+
+            
+			<!-- Header -->
+			
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp">
+				
+
+                
+				<ImageView android:id="@+id/btn_back" android:layout_width="40dp" android:layout_height="40dp" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:src="@drawable/ic_back" app:tint="@android:color/white"/>
+				
+
+                
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@id/btn_back" android:text="Add Planned Bill" android:textColor="@android:color/white" android:textSize="22sp" android:textStyle="bold"/>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<!-- Date Banner Card -->
+			
+            
+			<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" app:cardBackgroundColor="#0E2131" app:cardCornerRadius="24dp" app:cardElevation="0dp">
+				
+
+                
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="20dp">
+					
+
+                    
+					<ImageView android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_tab_pill" android:backgroundTint="#1A3348" android:padding="12dp" android:src="@drawable/ic_clock" app:tint="#3498DB"/>
+					
+
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bill Date Selected" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold"/>
+						
+
+                        
+						<TextView android:id="@+id/tv_date_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Due date set to 4th of February. You can change it below if needed." android:textColor="#8E9196" android:textSize="13sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</LinearLayout>
+				
+            
+			</androidx.cardview.widget.CardView>
+			
+
+            
+			<!-- Bill Name Input -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bill Name" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<EditText android:id="@+id/et_bill_name" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:layout_marginBottom="32dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:hint="e.g., Electricity Bill" android:paddingHorizontal="20dp" android:textColor="@android:color/white" android:textColorHint="#44484D"/>
+			
+
+            
+			<!-- Category Grid -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Category" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<GridLayout android:id="@+id/category_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:columnCount="3">
+				
+
+                
+				<!-- Electricity Selected -->
+				
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp" app:strokeColor="#3498DB" app:strokeWidth="2dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_electricity" app:tint="#3498DB"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Electricity" android:textColor="@android:color/white" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_water" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Water" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_gas" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Gas" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_activity" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Internet" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_mobile" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Mobile" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_bank" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Emi" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_home" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Rent" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_subscriptions" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Subscription" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_shield" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Insurance" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+
+                
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_transport" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Transport" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_cart" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Shopping" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+
+				<com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="6dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="13dp">
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_document" app:tint="#8E9196"/>
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Other" android:textColor="#8E9196" android:textSize="12sp"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</com.google.android.material.card.MaterialCardView>
+				
+            
+			</GridLayout>
+			
+
+            
+			<!-- Amount and Date -->
+			
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="32dp">
+				
+
+                
+				<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp" android:orientation="vertical">
+					
+                    
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount (₹)" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+					
+                    
+					<EditText android:id="@+id/et_amount" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:inputType="number" android:paddingHorizontal="20dp" android:text="0" android:textColor="@android:color/white"/>
+					
+                
+				</LinearLayout>
+				
+
+                
+				<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:orientation="vertical">
+					
+                    
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Due Date (Day)" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+					
+                    
+					<EditText android:id="@+id/et_due_date" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:inputType="number" android:paddingHorizontal="20dp" android:text="4" android:textColor="@android:color/white"/>
+					
+                
+				</LinearLayout>
+				
+            
+			</LinearLayout>
+			
+
+            
+			<!-- Frequency -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frequency" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:orientation="horizontal">
+				
+
+                
+				<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:gravity="center" android:paddingVertical="16dp" android:text="Monthly" android:textColor="#3498DB" android:textStyle="bold" app:strokeColor="#3498DB" app:strokeWidth="1dp"/>
+				
+
+                
+				<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:gravity="center" android:paddingVertical="16dp" android:text="Quarterly" android:textColor="#8E9196" android:textStyle="bold"/>
+				
+
+                
+				<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:gravity="center" android:paddingVertical="16dp" android:text="Yearly" android:textColor="#8E9196" android:textStyle="bold"/>
+				
+            
+			</LinearLayout>
+			
+
+            
+			<!-- Remind Me -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remind me (days before)" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<EditText android:id="@+id/et_remind_me" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:layout_marginBottom="32dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:inputType="number" android:paddingHorizontal="20dp" android:text="3" android:textColor="@android:color/white"/>
+			
+
+            
+			<!-- Auto-Deduct Switch -->
+			
+            
+			<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+				
+
+                
+				<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp">
+					
+
+                    
+					<ImageView android:id="@+id/icon_lightning" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:src="@drawable/ic_electricity" app:tint="#3498DB"/>
+					
+
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_toEndOf="@id/icon_lightning" android:layout_toStartOf="@id/switch_autodeduct" android:orientation="vertical">
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto-Deduct from Budget" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold"/>
+						
+
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Deduct when marked as paid" android:textColor="#6F767E" android:textSize="13sp"/>
+						
+                    
+					</LinearLayout>
+					
+
+                    
+					<androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_autodeduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:checked="true" app:thumbTint="@color/surface_light" app:trackTint="@color/primary_blue"/>
+					
+                
+				</RelativeLayout>
+				
+            
+			</androidx.cardview.widget.CardView>
+			
+
+            
+			<!-- Link to Budget Category -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Link to Budget Category" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:layout_marginBottom="32dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:paddingHorizontal="20dp">
+				
+
+                
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Utilities" android:textColor="@android:color/white" android:textSize="16sp"/>
+				
+
+                
+				<ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_arrow_down" app:tint="#6F767E"/>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<!-- Notes -->
+			
+            
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notes (Optional)" android:textColor="#8E9196" android:textSize="14sp" android:textStyle="bold"/>
+			
+
+            
+			<EditText android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="12dp" android:layout_marginBottom="40dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#1A222E" android:gravity="top|start" android:hint="Add any notes..." android:padding="20dp" android:textColor="@android:color/white" android:textColorHint="#44484D"/>
+			
+
+            
+			<!-- Save Button -->
+			
+            
+			<androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_save_bill" android:layout_width="match_parent" android:layout_height="64dp" android:background="@drawable/bg_tab_pill" android:backgroundTint="#9E7BFF" android:text="Save Planned Bill" android:textAllCaps="false" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+			
+
+        
+		</LinearLayout>
+		
+    
+	</androidx.core.widget.NestedScrollView>
+	
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

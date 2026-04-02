@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1520">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Toolbar/Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back"
+                        app:tint="@android:color/white" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- Library Header Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="24dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_blue_purple"
+                    android:padding="24dp">
+                    
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_book_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardBackgroundColor="#2A2E44"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_book"
+                            app:tint="#4CC9F0" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/card_book_icon"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Financial Tips Library"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Master your money with expert advice"
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Category Tabs Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    
+                    <TextView
+                        android:id="@+id/tag_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_tab_pill"
+                        android:backgroundTint="#00C2FF"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="All Tips"
+                        android:drawableStart="@drawable/ic_book"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tag_budgeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_tab_pill"
+                        android:backgroundTint="#1A222E"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Zero-Based Budgeting"
+                        android:drawableStart="@drawable/ic_target"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#9E7BFF"
+                        android:textColor="#8E9196"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tag_emergency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_tab_pill"
+                        android:backgroundTint="#1A222E"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Emergency Fund"
+                        android:drawableStart="@drawable/ic_shield"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#FF4D4D"
+                        android:textColor="#8E9196"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Stats Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal">
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="12dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Tips" android:textColor="#8E9196" android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="11" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="12dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Categories" android:textColor="#8E9196" android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="7" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read Time" android:textColor="#8E9196" android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="39m" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Tip Items List -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Recommended for You"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Build 3-6 Months Emergency Savings -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_2"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_shield"
+                                app:tint="#FF4D4D" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/ico_2"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Build 3-6 Months Emergency Savings" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Emergency Fund" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="3 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Start with ₹1,000, then aim for one month of expenses. Gradually build up to 3-6 months. This protects you from job loss, medical emergencies, or unexpected repairs."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pay Yourself First -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_3"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_money_bag"
+                                app:tint="#F1C40F" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/ico_3"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pay Yourself First" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saving &amp; Investment" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="2 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Save at least 20% of your income before spending on anything else. Automate transfers to savings on payday to make it effortless."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Start Investing Early -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_4"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_trending_up"
+                                app:tint="#00D09E" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/ico_4"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start Investing Early" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saving &amp; Investment" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D2344" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="intermediate" android:textColor="#FFA500" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="3 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The power of compound interest means money invested today grows exponentially over time. Even ₹500/month starting at age 25 can build significant wealth by retirement."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pay Off High-Interest Debt -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_5"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_alert"
+                                app:tint="#D35400" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/ico_5"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pay Off High-Interest Debt First" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Debt Management" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D2344" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="intermediate" android:textColor="#FFA500" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="3 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Focus on clearing credit card debt and personal loans with high interest rates. These grow quickly and cost you the most money over time."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- The 50/30/20 Rule -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_9"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_pie_chart"
+                                app:tint="#9E7BFF" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_9" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Master the 50/30/20 Budget Rule" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budgeting" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="4 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Allocate 50% for Needs, 30% for Wants, and 20% for Savings/Debt. This simple ratio ensures you cover essentials while still enjoying life and building wealth."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Coming soon:" android:textColor="#6F767E" android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Zero-Based Budgeting -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_10"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_target"
+                                app:tint="#4CC9F0" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_10" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zero-Based Budgeting" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budgeting" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D2344" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="intermediate" android:textColor="#FFA500" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="5 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_10"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Give every single dollar a job before the month begins. Your income minus expenses should equal zero. This eliminates mindless spending and ensures every cent works for you."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Coming soon:" android:textColor="#6F767E" android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- This Week's Focus Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_focus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="#211A31"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+                    
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_focus"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            app:cardBackgroundColor="#2D2344"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_trophy"
+                                app:tint="#B39DFF" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/ico_focus"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗓️ This Week's Focus" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="February 9-15, 2026" android:textColor="#8E9196" android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Master Your Emergency Fund"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="This week, focus on building or reviewing your emergency fund. Aim for ₹1,000 first, then work toward 1 month of expenses. Your future self will thank you!"
+                        android:textColor="#B0B3B8"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day 1-2" android:textColor="#8E9196" android:textSize="12sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="Calculate\nexpenses" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day 3-5" android:textColor="#8E9196" android:textSize="12sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="Open savings\naccount" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day 6-7" android:textColor="#8E9196" android:textSize="12sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="Auto-transfer\nsetup" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Mindset & Spending Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Mindset &amp; Habits"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Money is a Tool -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_6"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_lightbulb"
+                                app:tint="#F1C40F" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_6" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Money is a Tool, Not the Goal" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Money Mindset" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D2344" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="intermediate" android:textColor="#FFA500" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="3 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shift your perspective: money is meant to serve your life goals, not just to be accumulated. Focus on what you want to achieve with it."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Wait 24 Hours -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_7"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_wallet"
+                                app:tint="#4CC9F0" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_7" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wait 24 Hours Before Big Purchases" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Spending" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="2 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Curb impulse buying by waiting one full day. This gives your brain time to switch from emotional 'want' to logical 'need'."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coming soon:"
+                            android:textColor="#6F767E"
+                            android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Visualize Your Goals -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_8"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_target"
+                                app:tint="#FF4D4D" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_8" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Visualize Your Goals" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Goal Setting" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="2 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Create a clear vision for your financial future. Whether it's a home, travel, or retirement, visualization keeps you motivated during tough saving periods."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Coming soon:" android:textColor="#6F767E" android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Avoid Lifestyle Creep -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_11"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_trending_up"
+                                app:tint="#00D09E" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_11" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Avoid Lifestyle Creep" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Spending" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D2344" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="intermediate" android:textColor="#FFA500" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="3 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="As your income grows, maintain your current lifestyle and invest the extra. Avoiding the trap of increasing spending with every raise is the fastest way to wealth."
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Coming soon:" android:textColor="#6F767E" android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_11" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_11" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_11" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- The Envelope System -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tip_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="#1A222E"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ico_12"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardBackgroundColor="#2D3A4D"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_wallet"
+                                app:tint="#F1C40F" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_toEndOf="@id/ico_12" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Envelope System" android:textColor="@android:color/white" android:textSize="16sp" android:textStyle="bold" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budgeting" android:textColor="#8E9196" android:textSize="12sp" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_tab_pill" android:backgroundTint="#0E2131" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:text="beginner" android:textColor="#00D09E" android:textSize="10sp" android:textStyle="bold" />
+                                <View android:layout_width="4dp" android:layout_height="4dp" android:layout_marginHorizontal="8dp" android:background="@drawable/dot_empty" />
+                                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_clock" app:tint="#8E9196" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="4 min" android:textColor="#8E9196" android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/arrow_tip_12"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_down"
+                            app:tint="#8E9196" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_tip_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_detail_box"
+                        android:padding="20dp"
+                        android:visibility="gone">
+                        
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Use physical or digital envelopes to set strict limits for spending categories like groceries, dining, and fun. Once the money's gone, no more spending until next month!"
+                            android:textColor="#B0B3B8"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="4dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="#2D3A4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Coming soon:" android:textColor="#6F767E" android:textSize="12sp" />
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                            <LinearLayout android:id="@+id/btn_video_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_play_logo" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video\nTutorial" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_read_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical" android:layout_marginEnd="8dp">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_document" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Read\nMore" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/btn_remind_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_tab_pill" android:backgroundTint="#2D3A4D" android:padding="12dp" android:gravity="center" android:orientation="vertical">
+                                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_notification" app:tint="#B0B3B8" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get\nReminder" android:textColor="#B0B3B8" android:textSize="10sp" android:gravity="center" android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Additional Tips Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="🚀 Coming Soon"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="false">
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📹 Video Tutorials" android:textColor="@android:color/white" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Visual learning content" android:textColor="#6F767E" android:textSize="11sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📄 Blog Articles" android:textColor="@android:color/white" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="In-depth guides" android:textColor="#6F767E" android:textSize="11sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔔 Push Notifications" android:textColor="@android:color/white" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Daily tip reminders" android:textColor="#6F767E" android:textSize="11sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="#1A222E"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎓 Courses" android:textColor="@android:color/white" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Structured learning paths" android:textColor="#6F767E" android:textSize="11sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

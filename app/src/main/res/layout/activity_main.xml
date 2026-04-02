@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F1520">
+	
+
+    
+	<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="100dp">
+		
+
+        
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+			
+
+            
+			<!-- HEADER -->
+			
+            
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="12dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Welcome back,"
+						android:textColor="#6F767E"
+						android:textSize="14sp"
+						android:letterSpacing="0.05" />
+
+					<TextView
+						android:id="@+id/tv_username"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="2dp"
+						android:text="Pavan"
+						android:textColor="#FFFFFF"
+						android:textSize="32sp"
+						android:textStyle="bold"
+						android:fontFamily="sans-serif-condensed-medium" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/btn_profile"
+						android:layout_width="56dp"
+						android:layout_height="56dp"
+						android:layout_marginEnd="12dp"
+						app:cardCornerRadius="28dp"
+						app:cardElevation="0dp"
+						app:cardBackgroundColor="#F1F4FF">
+
+						<ImageView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:background="@drawable/gradient_blue_purple"
+							android:scaleType="center"
+							android:alpha="0.1" />
+
+						<TextView
+							android:id="@+id/tv_profile_initials"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:gravity="center"
+							android:text="PK"
+							android:textColor="#3498DB"
+							android:textSize="20sp"
+							android:textStyle="bold" />
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/btn_menu"
+						android:layout_width="52dp"
+						android:layout_height="52dp"
+						app:cardBackgroundColor="#1A1C1E"
+						app:cardCornerRadius="16dp"
+						app:cardElevation="4dp">
+
+						<ImageView
+							android:layout_width="26dp"
+							android:layout_height="26dp"
+							android:layout_gravity="center"
+							android:src="@drawable/ic_menu"
+							app:tint="@android:color/white" />
+					</androidx.cardview.widget.CardView>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+			
+            <!-- LARGE ASK AI BUTTON -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_home_ask_ai"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#3498DB"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_ai"
+                        app:tint="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="ASK AI FINANCIAL ADVISOR"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+			
+			<!-- MONTHLY BALANCE SUMMARY -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:orientation="horizontal">
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginEnd="8dp"
+					app:cardBackgroundColor="#1A222E"
+					app:cardCornerRadius="24dp"
+					app:cardElevation="4dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:padding="20dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+							
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Total Remaining"
+								android:textColor="#6F767E"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:letterSpacing="0.05"
+								android:layout_centerVertical="true"/>
+
+							<ImageView
+								android:layout_width="24dp"
+								android:layout_height="24dp"
+								android:layout_alignParentEnd="true"
+								android:src="@drawable/ic_wallet"
+								android:padding="4dp"
+								android:background="@drawable/bg_tab_pill"
+								android:backgroundTint="#F1F4FF"
+								android:alpha="0.8"
+								app:tint="#3498DB"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_total_remaining"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="12dp"
+							android:text="₹0"
+							android:textColor="#FFFFFF"
+							android:textSize="20sp"
+							android:textStyle="bold" />
+					</LinearLayout>
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginStart="8dp"
+					app:cardBackgroundColor="#1A222E"
+					app:cardCornerRadius="24dp"
+					app:cardElevation="4dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:padding="20dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Total Income"
+								android:textColor="#6F767E"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:letterSpacing="0.05"
+								android:layout_centerVertical="true"/>
+
+							<ImageView
+								android:layout_width="24dp"
+								android:layout_height="24dp"
+								android:layout_alignParentEnd="true"
+								android:src="@drawable/ic_money_bag"
+								android:padding="3dp"
+								android:background="@drawable/bg_tab_pill"
+								android:backgroundTint="#EBFAEF"
+								android:alpha="0.8"
+								app:tint="#2ECC71"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_home_total_income"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="12dp"
+							android:text="₹0"
+							android:textColor="#2ECC71"
+							android:textSize="20sp"
+							android:textStyle="bold" />
+					</LinearLayout>
+				</androidx.cardview.widget.CardView>
+			</LinearLayout>
+
+			<!-- AI BALANCE FORECAST (New Model) -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/card_predicted_balance"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:visibility="gone"
+				app:cardBackgroundColor="#1A2533"
+				app:cardCornerRadius="24dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="20dp">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:id="@+id/tv_predicted_balance_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="AI Balance Forecast"
+							android:textColor="#3498DB"
+							android:textSize="12sp"
+							android:textStyle="bold" />
+
+						<ImageView
+							android:layout_width="16dp"
+							android:layout_height="16dp"
+							android:layout_alignParentEnd="true"
+							android:src="@drawable/ic_ai"
+							app:tint="#3498DB"
+							android:alpha="0.5"/>
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/tv_home_predicted_balance"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="₹0"
+						android:textColor="#FFFFFF"
+						android:textSize="26sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/tv_home_avg_spending"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:text="Calculating..."
+						android:textColor="#6F767E"
+						android:textSize="12sp" />
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<!-- DETAILED AI INSIGHTS (New Model) -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/card_detailed_insights"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:visibility="gone"
+				app:cardBackgroundColor="#1A1C1E"
+				app:cardCornerRadius="24dp"
+				app:cardElevation="2dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="20dp">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:id="@+id/tv_detailed_insight_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="💡 This Month's Insights"
+							android:textColor="#FFFFFF"
+							android:textSize="16sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/tv_spending_ratio"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:text="0%"
+							android:textColor="#3498DB"
+							android:textSize="12sp"
+							android:textStyle="bold" />
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/tv_detailed_insight_points"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:lineSpacingExtra="4dp"
+						android:text="• Analyzing your category trends..."
+						android:textColor="#9A9FA5"
+						android:textSize="13sp" />
+
+					<View 
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:layout_marginTop="16dp"
+						android:background="#2D3A4D"/>
+
+					<TextView
+						android:id="@+id/tv_detailed_advice"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:text="Waiting for AI advice..."
+						android:textColor="#FFFFFF"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+		<!-- AI BUDGET RECOMMENDATION CARD -->
+		<androidx.cardview.widget.CardView
+			android:id="@+id/card_home_ai_budget"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:visibility="gone"
+			app:cardBackgroundColor="#1E2B3C"
+			app:cardCornerRadius="24dp"
+			app:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20dp">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="✨ AI Budget Recommendation"
+							android:textColor="#3498DB"
+							android:textSize="12sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/tv_home_ai_budget_savings"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="4dp"
+							android:text="Tap to get smart savings tips"
+							android:textColor="#FFFFFF"
+							android:textSize="16sp"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/btn_home_get_ai_budget"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						app:cardBackgroundColor="#3498DB"
+						app:cardCornerRadius="12dp"
+						app:cardElevation="0dp">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingHorizontal="14dp"
+							android:paddingVertical="8dp"
+							android:text="GENERATE"
+							android:textColor="@android:color/white"
+							android:textSize="11sp"
+							android:textStyle="bold" />
+					</androidx.cardview.widget.CardView>
+				</RelativeLayout>
+
+				<LinearLayout
+					android:id="@+id/layout_home_ai_tips"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="14dp"
+					android:orientation="vertical"
+					android:visibility="gone" />
+
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+		<!-- AGENTIC AI ANALYSIS CARD -->
+		<androidx.cardview.widget.CardView
+			android:id="@+id/card_agentic_ai"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			app:cardBackgroundColor="#1A222E"
+			app:cardCornerRadius="24dp"
+			app:cardElevation="4dp"
+			android:clickable="true"
+			android:focusable="true"
+			android:foreground="?attr/selectableItemBackground">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="20dp"
+				android:gravity="center_vertical">
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					app:cardCornerRadius="12dp"
+					app:cardElevation="0dp"
+					app:cardBackgroundColor="#2E353F">
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="12dp"
+						android:src="@drawable/ic_robot"
+						app:tint="#4CC9F0"/>
+				</androidx.cardview.widget.CardView>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginStart="16dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Agentic AI Analysis"
+						android:textColor="#FFFFFF"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="2dp"
+						android:text="Advanced Gemini Deep Intelligence"
+						android:textColor="#9A9FA5"
+						android:textSize="12sp" />
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:src="@drawable/ic_back"
+					android:rotation="180"
+					app:tint="#4CC9F0" />
+
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+
+			<!-- MONTHLY EXPENSE PIE CHART -->
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				app:cardBackgroundColor="#1A222E"
+				app:cardCornerRadius="24dp"
+				app:cardElevation="4dp"
+				android:theme="@style/Theme.MaterialComponents.Light">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="24dp">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Spending Breakdown"
+							android:textColor="#FFFFFF"
+							android:textSize="20sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:layout_centerVertical="true"
+							android:text="This Month"
+							android:textColor="#3498DB"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:background="@drawable/bg_tab_pill"
+							android:backgroundTint="#F1F4FF"
+							android:paddingHorizontal="10dp"
+							android:paddingVertical="4dp"/>
+					</RelativeLayout>
+
+					<com.github.mikephil.charting.charts.PieChart
+						android:id="@+id/pie_chart_expense"
+						android:layout_width="match_parent"
+						android:layout_height="260dp"
+						android:layout_marginTop="20dp" />
+
+					<View 
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:layout_marginTop="20dp"
+						android:background="#F1F3F5"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="TOTAL MONTHLY SPEND"
+							android:textColor="#6F767E"
+							android:textSize="11sp"
+							android:letterSpacing="0.1"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/tv_total_expense"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="4dp"
+							android:text="₹0.00"
+							android:textColor="#FFFFFF"
+							android:textSize="24sp"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+
+			
+
+            
+			<!-- ZERO-BASED BUDGETING CARD (Premium Redesign) -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/card_zero_budget"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="28dp"
+				android:clickable="true"
+				android:focusable="true"
+				android:foreground="?attr/selectableItemBackground"
+				app:cardBackgroundColor="#1A222E"
+				app:cardCornerRadius="28dp"
+				app:cardElevation="8dp">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="24dp">
+
+					<!-- NEW Badge -->
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:background="@drawable/bg_tab_pill"
+						android:backgroundTint="#9E7BFF"
+						android:paddingHorizontal="12dp"
+						android:paddingVertical="4dp"
+						android:text="NEW"
+						android:textColor="@android:color/white"
+						android:textSize="10sp"
+						android:textStyle="bold"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+
+							<androidx.cardview.widget.CardView
+								android:layout_width="64dp"
+								android:layout_height="64dp"
+								app:cardCornerRadius="18dp"
+								app:cardElevation="0dp"
+								app:cardBackgroundColor="#2D3A4D">
+
+								<ImageView
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:padding="16dp"
+									android:src="@drawable/ic_budget_rule"
+									app:tint="#3498DB"/>
+
+							</androidx.cardview.widget.CardView>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginStart="16dp"
+								android:orientation="vertical">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="Zero-Based Budgeting"
+									android:textColor="@android:color/white"
+									android:textSize="20sp"
+									android:textStyle="bold"/>
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="4dp"
+									android:text="Give every rupee a job."
+									android:textColor="#9A9FA5"
+									android:textSize="13sp"/>
+
+							</LinearLayout>
+						</LinearLayout>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="20dp"
+							android:text="Master your cash flow by allocating all income to specific categories, savings, or debt payments."
+							android:textColor="#FFFFFF"
+							android:alpha="0.8"
+							android:textSize="13sp"
+							android:lineSpacingExtra="4dp" />
+
+					</LinearLayout>
+
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+
+        
+		</LinearLayout>
+		
+    
+	</androidx.core.widget.NestedScrollView>
+	
+
+    
+	<!-- BOTTOM NAVIGATION (Balanced & Premium) -->
+	<androidx.cardview.widget.CardView
+		android:id="@+id/nav_bottom_container"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_gravity="bottom"
+		android:layout_margin="16dp"
+		app:cardBackgroundColor="#1A222E"
+		app:cardCornerRadius="40dp"
+		app:cardElevation="12dp"
+		app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:paddingHorizontal="8dp">
+
+			<LinearLayout
+				android:id="@+id/nav_home"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+				<ImageView
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:src="@drawable/ic_home"
+					app:tint="#3498DB"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/nav_activity"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+				<ImageView
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:src="@drawable/ic_activity"
+					app:tint="#6F767E"/>
+			</LinearLayout>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/nav_ai_chat"
+				android:layout_width="54dp"
+				android:layout_height="54dp"
+				android:layout_marginHorizontal="8dp"
+				app:cardBackgroundColor="#F1F4FF"
+				app:cardCornerRadius="27dp"
+				app:cardElevation="0dp"
+				android:clickable="true"
+				android:focusable="true">
+				<ImageView
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:layout_gravity="center"
+					android:src="@drawable/ic_ai"
+					app:tint="#3498DB"/>
+			</androidx.cardview.widget.CardView>
+
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/fab_add_main"
+				android:layout_width="54dp"
+				android:layout_height="54dp"
+				android:layout_marginHorizontal="8dp"
+				app:cardBackgroundColor="#3498DB"
+				app:cardCornerRadius="27dp"
+				app:cardElevation="8dp">
+				<ImageView
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:layout_gravity="center"
+					android:src="@drawable/ic_add"
+					app:tint="@android:color/white"/>
+			</androidx.cardview.widget.CardView>
+
+		</LinearLayout>
+
+	</androidx.cardview.widget.CardView>
+	
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

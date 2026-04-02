@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F1520">
+	
+
+    
+	<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="40dp">
+		
+
+        
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+			
+
+            
+			<!-- Toolbar/Header -->
+			
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+				
+
+                
+				<androidx.cardview.widget.CardView android:id="@+id/btn_back" android:layout_width="48dp" android:layout_height="48dp" app:cardBackgroundColor="#1A222E" app:cardCornerRadius="12dp" app:cardElevation="0dp">
+					
+                    
+					<ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:src="@drawable/ic_back" app:tint="@android:color/white"/>
+					
+                
+				</androidx.cardview.widget.CardView>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<!-- Income Summary Card -->
+			
+            
+			<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" app:cardBackgroundColor="#1A2533" app:cardCornerRadius="24dp" app:cardElevation="0dp">
+				
+
+                
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+					
+
+                    
+					<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+						
+                        
+						<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+							
+                            
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monthly Income" android:textColor="#8E9196" android:textSize="14sp"/>
+							
+                            
+							<TextView android:id="@+id/tv_total_income" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="₹45,000" android:textColor="@android:color/white" android:textSize="32sp" android:textStyle="bold"/>
+							
+                        
+						</LinearLayout>
+						
+                        
+						<ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_edit" app:tint="#8E9196"/>
+						
+                    
+					</RelativeLayout>
+					
+
+                    
+					<!-- Remaining Card -->
+					
+                    
+					<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="#2A241F" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+						
+                        
+						<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp">
+							
+                            
+							<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+								
+                                
+								<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remaining to Assign" android:textColor="#E67E22" android:textSize="14sp" android:textStyle="bold"/>
+								
+                                
+								<TextView android:id="@+id/tv_remaining_budget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="₹45,000" android:textColor="#E67E22" android:textSize="28sp" android:textStyle="bold"/>
+								
+                            
+							</LinearLayout>
+							
+                            
+							<androidx.cardview.widget.CardView android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" app:cardBackgroundColor="#3D3228" app:cardCornerRadius="12dp" app:cardElevation="0dp">
+								
+                                
+								<ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:src="@drawable/ic_briefcase" app:tint="#6D4C41"/>
+								
+                            
+							</androidx.cardview.widget.CardView>
+							
+                        
+						</RelativeLayout>
+						
+                    
+					</androidx.cardview.widget.CardView>
+					
+
+                    
+					<!-- Auto Distribute Button -->
+					
+                    
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/rounded_square_bg" android:backgroundTint="#252E3E" android:gravity="center" android:paddingVertical="16dp">
+						
+                        
+						<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📋 Auto-distribute to empty categories" android:textColor="#E67E22" android:textSize="14sp" android:textStyle="bold"/>
+						
+                    
+					</LinearLayout>
+					
+                
+				</LinearLayout>
+				
+            
+			</androidx.cardview.widget.CardView>
+			
+
+            
+			<!-- AI Recommendation Card -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/card_ai_recommendation"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="32dp"
+				app:cardBackgroundColor="#1E2B3C"
+				app:cardCornerRadius="24dp"
+				app:cardElevation="0dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="20dp">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="✨ AI Budget Recommendation"
+								android:textColor="#3498DB"
+								android:textSize="14sp"
+								android:textStyle="bold" />
+
+							<TextView
+								android:id="@+id/tv_ai_potential_savings"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="4dp"
+								android:text="Analyze your spending habits"
+								android:textColor="@android:color/white"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+						</LinearLayout>
+
+						<androidx.cardview.widget.CardView
+							android:id="@+id/btn_get_ai_recommendation"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:layout_centerVertical="true"
+							app:cardBackgroundColor="#3498DB"
+							app:cardCornerRadius="12dp"
+							app:cardElevation="0dp">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingHorizontal="16dp"
+								android:paddingVertical="8dp"
+								android:text="GENERATE"
+								android:textColor="@android:color/white"
+								android:textSize="12sp"
+								android:textStyle="bold" />
+						</androidx.cardview.widget.CardView>
+					</RelativeLayout>
+
+					<LinearLayout
+						android:id="@+id/layout_ai_tips"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:orientation="vertical"
+						android:visibility="gone">
+						<!-- Recommendation tips will be added here dynamically -->
+					</LinearLayout>
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<!-- Budget Overview Section -->
+			
+            
+			<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+				
+                
+				<LinearLayout android:id="@+id/overview_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical">
+					
+                    
+					<ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_analytics" app:tint="@android:color/white"/>
+					
+                    
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Budget Overview" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+					
+                
+				</LinearLayout>
+				
+                
+				<TextView android:id="@+id/tv_assigned_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="0% assigned" android:textColor="#8E9196" android:textSize="14sp"/>
+				
+            
+			</RelativeLayout>
+			
+
+            
+			<com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progress_budget" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:progress="0" app:indicatorColor="#3498DB" app:trackColor="#252E3E" app:trackCornerRadius="4dp" app:trackThickness="8dp"/>
+			
+
+            
+			<!-- Essential Expenses Header -->
+			
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:gravity="center_vertical">
+				
+                
+				<View android:layout_width="8dp" android:layout_height="8dp" android:background="@drawable/bg_indicator_active" android:backgroundTint="#FF4D4D"/>
+				
+                
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Essential Expenses" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+				
+            
+			</LinearLayout>
+			
+
+            
+			<!-- Categories Container -->
+			
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+				
+
+                
+				<!-- Rent/EMI -->
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_rent"/>
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_groceries"/>
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_utilities"/>
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_transport"/>
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_emergency"/>
+				
+                
+				<include layout="@layout/item_budget_category" android:id="@+id/item_savings"/>
+				
+
+            
+			</LinearLayout>
+			
+
+            
+			<!-- Lifestyle and Others Header -->
+			
+            
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="20dp" android:gravity="center_vertical">
+				
+                
+				<View android:layout_width="8dp" android:layout_height="8dp" android:background="@drawable/bg_indicator_active" android:backgroundTint="#FF4D4D"/>
+				
+                
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Lifestyle &amp; Others" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+				
+            
+			</LinearLayout>
+			
+
+            
+			<include layout="@layout/item_budget_category" android:id="@+id/item_healthcare"/>
+			
+
+        
+		</LinearLayout>
+		
+    
+	</androidx.core.widget.NestedScrollView>
+	
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

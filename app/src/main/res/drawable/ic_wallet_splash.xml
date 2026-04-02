@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Gray rounded box background -->
+    <path
+        android:fillColor="#444A5B"
+        android:pathData="M 24 0 H 96 A 24 24 0 0 1 120 24 V 96 A 24 24 0 0 1 96 120 H 24 A 24 24 0 0 1 0 96 V 24 A 24 24 0 0 1 24 0 Z"/>
+
+    <!-- Yellow card background -->
+    <path
+        android:fillColor="#F0B517"
+        android:pathData="M 32 40 H 88 A 4 4 0 0 1 92 44 V 76 A 4 4 0 0 1 88 80 H 32 A 4 4 0 0 1 28 76 V 44 A 4 4 0 0 1 32 40 Z"/>
+
+    <!-- White horizontal line in card -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 32 50 H 88 A 2 2 0 0 1 90 52 A 2 2 0 0 1 88 54 H 32 A 2 2 0 0 1 30 52 A 2 2 0 0 1 32 50 Z"/>
+    
+    <!-- Thin white horizontal line in card -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 32 62 H 56 A 1 1 0 0 1 57 63 A 1 1 0 0 1 56 64 H 32 A 1 1 0 0 1 31 63 A 1 1 0 0 1 32 62 Z"/>
+</vector>

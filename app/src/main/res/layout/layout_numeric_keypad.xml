@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#0F1520">
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/item_key" android:id="@+id/key_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/item_key" android:id="@+id/key_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/item_key" android:id="@+id/key_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <include layout="@layout/item_key" android:id="@+id/key_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Row 4: Wide 0 and Backspace -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/item_key" android:id="@+id/key_0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" />
+        <include layout="@layout/item_key" android:id="@+id/key_backspace" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
