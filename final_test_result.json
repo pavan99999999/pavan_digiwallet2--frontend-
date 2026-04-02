@@ -1,0 +1,36 @@
+{
+  "analysis": {
+    "summary": {
+      "income": 740000.0,
+      "expense": 107436.0,
+      "savings": 632564.0
+    },
+    "subscriptions": [
+      "Amazon",
+      "Netflix",
+      "Petrol",
+      "Spotify",
+      "Swiggy"
+    ],
+    "planned_payments": [
+      1,
+      3,
+      10,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20
+    ],
+    "month_comparison": "Income change: Rs-40,000 | Expense change: Rs46,496 | Savings change: Rs-86,496",
+    "smart_changes": "Education decreased by Rs5,000, Entertainment increased by 80.7%",
+    "predicted_balance": "Predicted balance after 30 days: Rs576,018",
+    "goal_prediction": "You will achieve your goal ",
+    "smart_tips": "To improve savings: Reduce Education by Rs7000, Reduce Transport by Rs2800, Reduce Travel by Rs4000",
+    "financial_health": "Expense Ratio: 14.5% | Savings Ratio: 85.5%. Great expense management!"
+  },
+  "ai_advice": " Financial Summary: Income Rs740,000 | Expense Rs107,436 | Savings Rs632,564.  Recurring subscriptions detected: Amazon, Netflix, Petrol, Spotify, Swiggy. Cancel unused ones.  Tips: (1) Set a monthly budget. (2) Track daily expenses. (3) Save first, spend later."
+}

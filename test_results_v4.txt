@@ -1,0 +1,149 @@
+
+=================================================================
+   PAVAN DIGI WALLET  -  AI FEATURES TEST SUITE
+=================================================================
+  Tests all 3 Rule-Based AI features with sample data
+  Server: http://localhost:8000
+=================================================================
+[OK] Server is ONLINE - {'status': 'ok', 'timestamp': '2026-03-20T12:13:25.464456'}
+
+=================================================================
+  TEST 1 - Predictive Balance Forecasting  (/predict-balance)
+=================================================================
+
+[A] HEALTHY FINANCES (income=60000, moderate spending)
+   HTTP Status       : 200
+   Current Balance   : Rs.38,000.00
+   Predicted Balance : Rs.17,433.00
+   Forecast Days     : 15
+   AI Advice         : ✅ Finances looking healthy
+   >> PASS - Correctly identified as healthy finances
+
+[B] OVERSPENDING (income=30000, high bills, low balance)
+   HTTP Status       : 200
+   Current Balance   : Rs.5,000.00
+   Predicted Balance : Rs.-25,367.00
+   AI Advice         : ❌ Warning: Projected to go negative!
+   >> PASS - Correctly flagged risky/negative balance
+
+[C] PURCHASE CHECK (can I afford Rs.5,000 phone?)
+   HTTP Status       : 200
+   Predicted Balance : Rs.17,433.00
+   Purchase Advice   : ✅ Safe to purchase
+   >> PASS - Purchase affordability advice returned correctly
+
+=================================================================
+  TEST 2 - Smart Budget Recommendations  (/get-budget-recommendations)
+=================================================================
+
+[A] OVERSPENDING USER (spending=40000 of income=50000 = 80%)
+   HTTP Status       : 200
+   Status            : overspending
+   Message           : Reducing all budgets by 10% — you are overspending
+   Spending Ratio    : 80.0%
+   Potential Savings : ₹5,350
+   50/30/20 Rule     : Needs=₹25,000  Wants=₹15,000  Savings=₹10,000
+   AI Tips:
+     - 💡 Reduce Dining by ₹1,800 next month
+     - 💡 Reduce Shopping by ₹1,500 next month
+     - 💡 Reduce Transport by ₹600 next month
+     - 💡 Reduce Groceries by ₹700 next month
+     - 💡 Reduce Entertainment by ₹750 next month
+   Dining     : Current=₹12,000  -> Recommended=₹10,200
+   Shopping   : Current=₹10,000  -> Recommended=₹8,500
+   Transport  : Current=₹6,000  -> Recommended=₹5,400
+   Groceries  : Current=₹7,000  -> Recommended=₹6,300
+   Entertain  : Current=₹5,000  -> Recommended=₹4,250
+   >> PASS - Correctly classified as 'overspending'
+
+[B] MODERATE USER (spending=30000 of income=50000 = 60%)
+   HTTP Status       : 200
+   Status            : moderate
+   Spending Ratio    : 60.0%
+   Potential Savings : ₹7,200
+   AI Tips:
+     - 💡 Reduce Dining by ₹350 next month
+     - 💡 Reduce Shopping by ₹250 next month
+     - 💡 Reduce Transport by ₹200 next month
+     - 💡 Reduce Groceries by ₹250 next month
+     - 💡 Reduce Entertainment by ₹150 next month
+   >> PASS - Correctly classified as 'moderate'
+
+[C] HEALTHY SAVER (spending=28000 of income=80000 = 35%)
+   HTTP Status       : 200
+   Status            : healthy
+   Spending Ratio    : 35.0%
+   Potential Savings : ₹12,500
+   AI Tips:
+     - ✅ Dining budget is healthy
+     - ✅ Shopping budget is healthy
+     - ✅ Transport budget is healthy
+     - ✅ Groceries budget is healthy
+     - ✅ Entertainment budget is healthy
+   >> PASS - Correctly classified as 'healthy'
+
+[D] EDGE CASE (zero income and spending)
+   HTTP Status : 200
+   Message     : Add expenses to see AI budget suggestions
+   >> PASS - Correctly handled zero-data edge case
+
+=================================================================
+  TEST 3 - AI Financial Insights  (/get-insights)
+=================================================================
+
+[A] HIGH SPENDER (dining +80%, shopping +88% vs last month)
+   HTTP Status    : 200
+   Category       : high_spender
+   Spending Ratio : 60.8%
+   Advice         : 📊 Spending spike detected in dining or shopping. Review and set category limits.
+   Insights generated:
+     - 🍔 Dining increased by 80% — consider cooking at home
+     - 🛍️ Shopping spiked by 88% this month
+     - 📉 Savings dropped by ₹3,000 this month
+     - 📊 You spent 61% of income this month
+   >> PASS - Correctly identified as 'high_spender'
+
+[B] GOOD SAVER (only 36% of income spent, savings up Rs.8000)
+   HTTP Status    : 200
+   Category       : good_saver
+   Spending Ratio : 36.4%
+   Advice         : 🌟 Excellent financial discipline! You are saving well and spending wisely.
+   Insights generated:
+     - 💰 You saved ₹8,000 more than last month!
+     - ✅ Excellent! Only 36% of income spent
+   >> PASS - Correctly identified as 'good_saver'
+
+[C] OVERSPENDING (spending=34000 of income=40000 = 85%)
+   HTTP Status    : 200
+   Category       : overspending
+   Spending Ratio : 85.0%
+   Advice         : ⚠️ Critical! You are spending more than 70% of income. Reduce dining and shopping immediately.
+   Insights generated:
+     - 📉 Savings dropped by ₹6,000 this month
+     - ⚠️ You spent 85% of income — reduce expenses immediately
+   >> PASS - Correctly identified as 'overspending'
+
+[D] STABLE FINANCES (spending=23000 of income=55000 = 42%, flat month)
+   HTTP Status    : 200
+   Category       : good_saver
+   Spending Ratio : 41.8%
+   Advice         : 🌟 Excellent financial discipline! You are saving well and spending wisely.
+   Insights generated:
+     - 💰 You saved ₹1,000 more than last month!
+     - 📊 You spent 42% of income this month
+   >> PASS - Classified as 'good_saver' (stable or good_saver both valid here)
+
+=================================================================
+  ALL TESTS COMPLETE
+=================================================================
+
+  LEGEND:
+    >> PASS   = AI returned expected result
+    >> FAIL   = Wrong classification or error
+    >> CHECK  = Manual verification needed
+
+  ENDPOINTS TESTED:
+    1. POST /predict-balance              (Balance Forecasting AI)
+    2. POST /get-budget-recommendations   (Budget Recommendations AI)
+    3. POST /get-insights                 (Financial Insights AI)
+

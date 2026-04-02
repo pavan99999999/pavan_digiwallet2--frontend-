@@ -1,0 +1,201 @@
+﻿Initialized native services in: C:\Users\Pavan Kandula\.gradle\native
+Initialized jansi services in: C:\Users\Pavan Kandula\.gradle\native
+The client will now receive all logging from the daemon (pid: 20204). The daemon log file: C:\Users\Pavan Kandula\.gradle\daemon\9.2.1\daemon-20204.out.log
+Starting 5th build in daemon [uptime: 7 mins 42.835 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=false, configureOnDemand=false, configurationCache=false, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=false, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Now considering [C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\build.gradle.kts'.
+Included projects: [root project 'pavan_digi_wallet', project ':app']
+
+> Configure project :
+Evaluating root project 'pavan_digi_wallet' using build file 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.0.1', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.0.1']
+Build 1ecc9178-92f4-4dab-a4f8-1076d4a27f65 is started
+Using default execution profile
+All projects evaluated.
+Task path ':app:compileDebugKotlin' matched project ':app'
+Task name matched 'compileDebugKotlin'
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Selected primary task 'compileDebugKotlin' from project :app
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:generateDebugResources', task ':app:packageDebugResources', task ':app:processDebugNavigationResources', task ':app:parseDebugLocalResources', task ':app:generateDebugRFile', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[#543,Execution worker,5,main]) started.
+:app:preBuild (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:preDebugBuild (Thread[#553,Execution worker Thread 11,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:generateDebugResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:generateDebugResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:packageDebugResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:processDebugNavigationResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:processDebugNavigationResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:parseDebugLocalResources (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:generateDebugRFile (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:generateDebugRFile (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':app:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[#547,Execution worker Thread 5,5,main]) started.
+:app:compileDebugKotlin (Thread[#547,Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileDebugKotlin
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+Custom actions are attached to task ':app:compileDebugKotlin'.
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+file or directory 'C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\debug\java', not found
+Kotlin source files: C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\AddPlannedBillActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\AddTransactionActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\AiAssistantActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\AmountInputActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\ApiService.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\BudgetPlanningActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\CategoryAdapter.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\ChooseAccountTypeActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\CreateGoalActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\GetPremiumActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\GoalAdapter.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\GooglePlayPaymentActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\HistoryActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\InvestmentPremiumActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\LoginActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\MainActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\MenuActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\OnboardingActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\OnboardingAdapter.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\PlannedBudgetActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\Reminder.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\RetrofitClient.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\SignupActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\SmartPurchasePlannerActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\SplashActivity.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\TransactionData.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\TransactionResponse.kt, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\src\main\java\com\simats\pavan_digi_wallet\ZeroBasedBudgetActivity.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: C:\Users\Pavan Kandula\Desktop\Finance App Screen Design ΓÇô Figma Make_files\android studio\jbr
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@1df29519, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build\kotlin\compileDebugKotlin\cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build\kotlin\compileDebugKotlin\local-state\build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build\intermediates\built_in_kotlinc\debug\compileDebugKotlin\classes, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build\kotlin\compileDebugKotlin\cacheable, C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2\app\build\kotlin\compileDebugKotlin\local-state])
+./gradlew : e: file:///C:/Use
+rs/Pavan%20Kandula/Desktop/pa
+van_digi_wallet2/app/src/main
+/java/com/simats/pavan_digi_w
+allet/HistoryActivity.kt:135:
+29 Argument type mismatch: 
+actual type is 
+'<anonymous>', but 
+'Callback<CapturedType(out 
+Map<String, Any>)!>!' was 
+expected.
+At line:1 char:1
++ ./gradlew 
+:app:compileDebugKotlin 
+--info > build_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo           
+   : NotSpecified: (e: file  
+  :///C:/U...' was expecte   
+ d.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+Finished executing kotlin compiler using DAEMON strategy
+
+> Task :app:compileDebugKotlin FAILED
+Build 1ecc9178-92f4-4dab-a4f8-1076d4a27f65 is closed
+
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:compileDebugKotlin'.
+> A failure occurred while 
+executing org.jetbrains.kotli
+n.compilerRunner.GradleCompil
+erRunnerWithWorkers$GradleKot
+linCompilerWorkAction
+   > Compilation error. See 
+log for more details
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --debug option to 
+get more log output.
+> Run with --scan to 
+generate a Build Scan 
+(powered by Develocity).
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 8s
+6 actionable tasks: 1 executed, 5 up-to-date
+Watched directory hierarchies: [C:\Users\Pavan Kandula\Desktop\pavan_digi_wallet2]

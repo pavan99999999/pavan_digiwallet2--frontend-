@@ -1,0 +1,34 @@
+﻿============================================================
+  PKL MODEL VALIDATION TEST SUITE
+============================================================
+
+--- FILE EXISTENCE CHECK ---
+  [OK] Balance Forecast Model: balance_forecast_model (1).pkl (12482737 bytes)
+  [OK] Insights Label Encoder: insights_label_encoder.pkl (525 bytes)
+  [MISSING] Insights Model: insights_model.pkl (0 bytes)
+  [MISSING] Budget Recommendation Models: budget_recommendation_models.pkl (0 bytes)
+  [MISSING] Budget Feature Columns: budget_feature_columns.pkl (0 bytes)
+
+--- MODEL LOADING CHECK ---
+  [FAIL] balance_forecast_model (1).pkl: No module named 'sklearn.utils.validation'
+  [FAIL] insights_label_encoder.pkl: No module named 'sklearn.utils.validation'
+  [SKIP] insights_model.pkl (file missing)
+  [SKIP] budget_recommendation_models.pkl (file missing)
+  [SKIP] budget_feature_columns.pkl (file missing)
+
+--- PREDICTION TESTS ---
+  [SKIP] Balance Forecast (model not loaded)
+  [SKIP] Insights (model/encoder not loaded)
+  [SKIP] Budget Recommendations (models not loaded)
+
+============================================================
+  FINAL SUMMARY
+============================================================
+  [WARNING] 3 model file(s) MISSING:
+    - insights_model.pkl
+    - budget_recommendation_models.pkl
+    - budget_feature_columns.pkl
+
+  The server (main.py) will FAIL on startup without these files!
+  You need to train/save these models before starting the server.
+============================================================

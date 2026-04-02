@@ -1,0 +1,1001 @@
+user_id,monthly_income,current_balance,curr_dining,last_dining,dining_change_pct,curr_shopping,last_shopping,shopping_delta_amt,total_spend,expense_ratio,savings_ratio,goal_target,months_to_goal,goal_shortfall,predicted_balance_15d,agent_ground_truth_advice
+1,170796,488285,7228,8164,-11.5,9813,11349,-1536,49825,0.29,0.71,1000000,7.5,511715,463372,Goal reach in 7.5 months. Excellent budget discipline!
+2,198120,80672,13902,11503,20.9,18054,19400,-1346,51166,0.26,0.74,500000,3.3,419328,55089,Goal reach in 3.3 months. Excellent budget discipline!
+3,156003,422772,6294,6942,-9.3,3143,3884,-741,22324,0.14,0.86,100000,0.1,0,411610,Goal reach in 0.1 months. Excellent budget discipline!
+4,172193,393483,12790,12541,2.0,24825,23765,1060,63289,0.37,0.63,50000,0.1,0,361838,Goal reach in 0.1 months. Excellent budget discipline!
+5,172315,430762,6401,7168,-10.7,3935,3405,530,46012,0.27,0.73,100000,0.1,0,407756,Goal reach in 0.1 months. Excellent budget discipline!
+6,167282,281417,7034,5650,24.5,15278,16781,-1503,58387,0.35,0.65,1000000,8.7,718583,252224,Goal reach in 8.7 months. Excellent budget discipline!
+7,41714,138609,8995,9672,-7.0,22738,24908,-2170,46824,1.12,0.0,500000,-1.0,500000,115197,Great! Shopping reduced by ₹2170. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+8,132100,203643,6080,5864,3.7,12535,13665,-1130,33208,0.25,0.75,100000,0.6,0,187039,Goal reach in 0.6 months. Excellent budget discipline!
+9,135610,479672,6584,6823,-3.5,9083,8318,765,25188,0.19,0.81,50000,0.1,0,467078,Goal reach in 0.1 months. Excellent budget discipline!
+10,165648,153319,5258,6031,-12.8,11578,15372,-3794,33507,0.2,0.8,50000,0.1,0,136566,Great! Shopping reduced by ₹3794. Goal reach in 0.1 months. Excellent budget discipline!
+11,158749,241073,10935,11646,-6.1,14900,11729,3171,43439,0.27,0.73,100000,0.4,0,219354,Goal reach in 0.4 months. Excellent budget discipline!
+12,102416,135516,11918,10078,18.3,6368,8164,-1796,36273,0.35,0.65,100000,1.1,0,117380,Goal reach in 1.1 months. Excellent budget discipline!
+13,120228,350474,2887,2617,10.3,20069,18490,1579,59836,0.5,0.5,500000,7.1,149526,320556,Goal reach in 7.1 months. Excellent budget discipline!
+14,110855,71066,7364,6402,15.0,5125,6722,-1597,49027,0.44,0.56,100000,1.4,28934,46552,Goal reach in 1.4 months. Excellent budget discipline!
+15,52712,64613,14588,15151,-3.7,16538,13237,3301,50468,0.96,0.04,100000,38.8,35387,39379,Goal reach in 38.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+16,192104,483805,11703,13770,-15.0,13480,15283,-1803,52770,0.27,0.73,50000,0.1,0,457420,Goal reach in 0.1 months. Excellent budget discipline!
+17,118204,383451,2419,3059,-20.9,7350,10127,-2777,42952,0.36,0.64,500000,5.6,116549,361975,Great! Shopping reduced by ₹2777. Goal reach in 5.6 months. Excellent budget discipline!
+18,139771,309872,2049,2098,-2.4,22051,22506,-455,51857,0.37,0.63,1000000,10.7,690128,283944,Goal reach in 10.7 months. Excellent budget discipline!
+19,120235,212985,13745,10231,34.3,9278,10601,-1323,46048,0.38,0.62,100000,0.8,0,189961,Dining increased by 34%. Goal reach in 0.8 months. Excellent budget discipline!
+20,54329,66999,8873,12167,-27.1,11752,12034,-282,29044,0.53,0.47,500000,19.2,433001,52477,Goal reach in 19.2 months. Excellent budget discipline!
+21,114957,413415,7559,6268,20.6,5820,5793,27,50780,0.44,0.56,100000,0.3,0,388025,Goal reach in 0.3 months. Excellent budget discipline!
+22,47174,399169,4237,2816,50.5,16823,21558,-4735,64336,1.36,0.0,500000,-1.0,500000,367001,Dining increased by 50%. Great! Shopping reduced by ₹4735. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+23,183980,133426,2523,2307,9.4,13082,12692,390,52577,0.29,0.71,50000,0.2,0,107138,Goal reach in 0.2 months. Excellent budget discipline!
+24,158065,317271,11699,9685,20.8,24954,21028,3926,73558,0.47,0.53,500000,5.2,182729,280492,Goal reach in 5.2 months. Excellent budget discipline!
+25,31895,284275,14429,9969,44.7,16433,13574,2859,65113,2.04,0.0,100000,-1.0,100000,251718,Dining increased by 45%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+26,43967,126138,5773,3573,61.6,16453,12312,4141,37400,0.85,0.15,1000000,148.4,873862,107438,Dining increased by 62%. Goal reach in 148.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+27,150302,269425,5080,5781,-12.1,16319,18931,-2612,38731,0.26,0.74,1000000,8.5,730575,250060,Great! Shopping reduced by ₹2612. Goal reach in 8.5 months. Excellent budget discipline!
+28,195663,77270,4664,6333,-26.4,16638,22031,-5393,64906,0.33,0.67,1000000,7.5,922730,44817,Great! Shopping reduced by ₹5393. Goal reach in 7.5 months. Excellent budget discipline!
+29,35803,404662,10787,8092,33.3,17148,10710,6438,41929,1.17,0.0,1000000,-1.0,1000000,383698,Dining increased by 33%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+30,71869,6059,3289,2390,37.6,6502,7352,-850,36526,0.51,0.49,50000,1.4,43941,-12204,Dining increased by 38%. Goal reach in 1.4 months. Excellent budget discipline!
+31,108484,144234,13997,15961,-12.3,17393,14702,2691,72974,0.67,0.33,1000000,27.3,855766,107747,Goal reach in 27.3 months. Excellent budget discipline!
+32,109254,301999,3976,4768,-16.6,24171,26767,-2596,45761,0.42,0.58,500000,6.9,198001,279118,Great! Shopping reduced by ₹2596. Goal reach in 6.9 months. Excellent budget discipline!
+33,173306,77070,2517,3039,-17.2,16666,21958,-5292,59856,0.35,0.65,50000,0.3,0,47142,Great! Shopping reduced by ₹5292. Goal reach in 0.3 months. Excellent budget discipline!
+34,61745,399316,4102,5349,-23.3,6595,7662,-1067,42369,0.69,0.31,50000,0.1,0,378132,Goal reach in 0.1 months. Excellent budget discipline!
+35,87319,102373,8428,7896,6.7,11056,13847,-2791,33286,0.38,0.62,100000,1.5,0,85730,Great! Shopping reduced by ₹2791. Goal reach in 1.5 months. Excellent budget discipline!
+36,154066,452414,9539,7902,20.7,3681,3223,458,36468,0.24,0.76,50000,0.1,0,434180,Goal reach in 0.1 months. Excellent budget discipline!
+37,59532,418958,5619,5555,1.2,20707,15303,5404,40401,0.68,0.32,1000000,47.9,581042,398758,Goal reach in 47.9 months. Excellent budget discipline!
+38,179443,269204,4090,5514,-25.8,16647,13326,3321,62683,0.35,0.65,100000,0.4,0,237862,Goal reach in 0.4 months. Excellent budget discipline!
+39,76775,410568,5949,5493,8.3,2385,1573,812,42210,0.55,0.45,50000,0.1,0,389463,Goal reach in 0.1 months. Excellent budget discipline!
+40,179541,198228,9434,6296,49.8,7385,4918,2467,60843,0.34,0.66,500000,3.9,301772,167806,Dining increased by 50%. Goal reach in 3.9 months. Excellent budget discipline!
+41,55869,97997,9651,9241,4.4,13666,14147,-481,56776,1.02,0.0,500000,-1.0,500000,69609,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+42,170754,400831,14540,17348,-16.2,19424,23904,-4480,73348,0.43,0.57,500000,4.3,99169,364157,Great! Shopping reduced by ₹4480. Goal reach in 4.3 months. Excellent budget discipline!
+43,103463,168432,10306,8027,28.4,1173,1496,-323,49632,0.48,0.52,1000000,18.0,831568,143616,Goal reach in 18.0 months. Excellent budget discipline!
+44,129306,18475,4094,4088,0.1,14183,11855,2328,30583,0.24,0.76,1000000,10.1,981525,3184,Goal reach in 10.1 months. Excellent budget discipline!
+45,173536,95290,13450,18152,-25.9,7699,7855,-156,37869,0.22,0.78,50000,0.2,0,76356,Goal reach in 0.2 months. Excellent budget discipline!
+46,109930,255150,5662,6900,-17.9,22463,23916,-1453,40622,0.37,0.63,500000,6.5,244850,234839,Goal reach in 6.5 months. Excellent budget discipline!
+47,55782,205016,13662,17666,-22.7,6074,6010,64,41497,0.74,0.26,100000,4.1,0,184268,Goal reach in 4.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+48,52349,182519,9593,8935,7.4,8768,9323,-555,33426,0.64,0.36,50000,0.7,0,165806,Goal reach in 0.7 months. Excellent budget discipline!
+49,115032,141831,2947,4086,-27.9,17626,12605,5021,44341,0.39,0.61,50000,0.3,0,119660,Goal reach in 0.3 months. Excellent budget discipline!
+50,150658,433758,12306,7710,59.6,22877,19955,2922,61603,0.41,0.59,50000,0.1,0,402956,Dining increased by 60%. Goal reach in 0.1 months. Excellent budget discipline!
+51,158636,121544,7708,6187,24.6,5894,7184,-1290,50627,0.32,0.68,50000,0.2,0,96230,Goal reach in 0.2 months. Excellent budget discipline!
+52,88457,176515,2765,3348,-17.4,24141,31751,-7610,51664,0.58,0.42,1000000,26.2,823485,150683,Great! Shopping reduced by ₹7610. Goal reach in 26.2 months. Excellent budget discipline!
+53,147810,258520,2299,2843,-19.1,12848,13310,-462,51997,0.35,0.65,50000,0.1,0,232522,Goal reach in 0.1 months. Excellent budget discipline!
+54,79240,89307,5849,4087,43.1,9659,11370,-1711,39314,0.5,0.5,1000000,24.6,910693,69650,Dining increased by 43%. Goal reach in 24.6 months. Excellent budget discipline!
+55,39647,98609,5293,5535,-4.4,12234,8304,3930,51625,1.3,0.0,50000,-1.0,50000,72796,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+56,77091,384601,13540,8506,59.2,9910,7347,2563,37141,0.48,0.52,500000,10.6,115399,366030,Dining increased by 59%. Goal reach in 10.6 months. Excellent budget discipline!
+57,44736,217138,6863,6427,6.8,4210,5400,-1190,51129,1.14,0.0,500000,-1.0,500000,191574,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+58,49832,83180,7791,6940,12.3,24860,30645,-5785,78175,1.57,0.0,1000000,-1.0,1000000,44092,Great! Shopping reduced by ₹5785. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+59,122048,391224,5918,5719,3.5,11856,15926,-4070,24950,0.2,0.8,50000,0.1,0,378749,Great! Shopping reduced by ₹4070. Goal reach in 0.1 months. Excellent budget discipline!
+60,37828,182107,13560,17488,-22.5,13059,15899,-2840,62533,1.65,0.0,500000,-1.0,500000,150840,Great! Shopping reduced by ₹2840. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+61,45014,410045,13202,8167,61.7,15852,18318,-2466,41257,0.92,0.08,500000,111.3,89955,389416,Dining increased by 62%. Great! Shopping reduced by ₹2466. Goal reach in 111.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+62,82532,19479,11756,15978,-26.4,3975,3268,707,37985,0.46,0.54,500000,11.1,480521,486,Goal reach in 11.1 months. Excellent budget discipline!
+63,35928,25406,3596,4087,-12.0,3911,4059,-148,51600,1.44,0.0,1000000,-1.0,1000000,-394,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+64,190361,138996,14315,9637,48.5,5202,3857,1345,46739,0.25,0.75,50000,0.2,0,115626,Dining increased by 49%. Goal reach in 0.2 months. Excellent budget discipline!
+65,36368,449521,13953,17945,-22.2,17719,16955,764,74516,2.05,0.0,100000,-1.0,100000,412263,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+66,125786,142036,6669,4847,37.6,5189,3897,1292,23128,0.18,0.82,500000,4.6,357964,130472,Dining increased by 38%. Goal reach in 4.6 months. Excellent budget discipline!
+67,139294,368195,7393,8613,-14.2,7297,5848,1449,50567,0.36,0.64,500000,4.8,131805,342912,Goal reach in 4.8 months. Excellent budget discipline!
+68,171070,153599,3263,4228,-22.8,7382,8612,-1230,54436,0.32,0.68,50000,0.2,0,126381,Goal reach in 0.2 months. Excellent budget discipline!
+69,159947,39146,7546,6189,21.9,1651,1062,589,33217,0.21,0.79,1000000,7.8,960854,22538,Goal reach in 7.8 months. Excellent budget discipline!
+70,184914,427425,6158,6856,-10.2,23706,17281,6425,69261,0.37,0.63,100000,0.1,0,392794,Goal reach in 0.1 months. Excellent budget discipline!
+71,156109,311378,10129,8589,17.9,4932,6894,-1962,54026,0.35,0.65,100000,0.4,0,284365,Goal reach in 0.4 months. Excellent budget discipline!
+72,40934,129493,7720,10371,-25.6,16551,16636,-85,53126,1.3,0.0,1000000,-1.0,1000000,102930,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+73,123456,141947,7031,6411,9.7,9430,9678,-248,33838,0.27,0.73,50000,0.2,0,125028,Goal reach in 0.2 months. Excellent budget discipline!
+74,98645,247809,5866,4507,30.2,18043,12785,5258,60727,0.62,0.38,500000,11.9,252191,217446,Dining increased by 30%. Goal reach in 11.9 months. Excellent budget discipline!
+75,45997,153740,10142,12552,-19.2,11824,14858,-3034,35096,0.76,0.24,50000,1.8,0,136192,Great! Shopping reduced by ₹3034. Goal reach in 1.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+76,107933,232336,12963,8728,48.5,7567,7712,-145,35505,0.33,0.67,500000,6.3,267664,214584,Dining increased by 49%. Goal reach in 6.3 months. Excellent budget discipline!
+77,149928,119737,2268,2683,-15.5,19402,19184,218,63262,0.42,0.58,100000,0.9,0,88106,Goal reach in 0.9 months. Excellent budget discipline!
+78,199601,83235,10084,8255,22.2,15796,14900,896,55287,0.28,0.72,50000,0.2,0,55592,Goal reach in 0.2 months. Excellent budget discipline!
+79,38948,295621,2747,2965,-7.3,19329,13620,5709,30489,0.78,0.22,50000,0.1,0,280376,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+80,90020,385022,12436,15328,-18.9,13097,15165,-2068,55512,0.62,0.38,50000,0.1,0,357266,Great! Shopping reduced by ₹2068. Goal reach in 0.1 months. Excellent budget discipline!
+81,198556,291788,5684,6956,-18.3,7120,8785,-1665,25868,0.13,0.87,50000,0.1,0,278854,Goal reach in 0.1 months. Excellent budget discipline!
+82,30757,7488,3221,2799,15.1,8409,5098,3311,37686,1.23,0.0,100000,-1.0,100000,-11355,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+83,55372,74208,14472,10715,35.1,13502,13569,-67,36605,0.66,0.34,1000000,52.5,925792,55906,Dining increased by 35%. Goal reach in 52.5 months. Excellent budget discipline!
+84,105591,444027,10127,8467,19.6,20995,12636,8359,43366,0.41,0.59,500000,6.6,55973,422344,Goal reach in 6.6 months. Excellent budget discipline!
+85,185357,204634,8592,5666,51.6,22627,17562,5065,73645,0.4,0.6,500000,4.1,295366,167812,Dining increased by 52%. Goal reach in 4.1 months. Excellent budget discipline!
+86,136384,187088,5961,6649,-10.3,7935,4775,3160,43352,0.32,0.68,50000,0.1,0,165412,Goal reach in 0.1 months. Excellent budget discipline!
+87,161673,318386,3823,5160,-25.9,5908,7526,-1618,41474,0.26,0.74,500000,3.6,181614,297649,Goal reach in 3.6 months. Excellent budget discipline!
+88,174738,127466,5854,7804,-25.0,22433,30470,-8037,41940,0.24,0.76,100000,0.6,0,106496,Great! Shopping reduced by ₹8037. Goal reach in 0.6 months. Excellent budget discipline!
+89,34474,415914,7411,4484,65.3,13975,9826,4149,36695,1.06,0.0,100000,-1.0,100000,397566,Dining increased by 65%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+90,34454,31217,6950,4390,58.3,1107,679,428,41957,1.22,0.0,500000,-1.0,500000,10238,Dining increased by 58%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+91,60586,108959,11306,14970,-24.5,4810,5877,-1067,33649,0.56,0.44,1000000,36.3,891041,92134,Goal reach in 36.3 months. Excellent budget discipline!
+92,130515,367188,8847,7552,17.1,6414,7533,-1119,37315,0.29,0.71,500000,4.6,132812,348530,Goal reach in 4.6 months. Excellent budget discipline!
+93,114889,120015,8266,7309,13.1,19613,20764,-1151,50565,0.44,0.56,500000,7.4,379985,94732,Goal reach in 7.4 months. Excellent budget discipline!
+94,34365,102637,4339,5750,-24.5,24017,28430,-4413,63995,1.86,0.0,1000000,-1.0,1000000,70640,Great! Shopping reduced by ₹4413. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+95,177502,426113,8693,8112,7.2,12771,14307,-1536,58494,0.33,0.67,100000,0.1,0,396866,Goal reach in 0.1 months. Excellent budget discipline!
+96,140753,490202,7839,5982,31.1,21485,19796,1689,50560,0.36,0.64,50000,0.1,0,464922,Dining increased by 31%. Goal reach in 0.1 months. Excellent budget discipline!
+97,194173,322770,13921,18884,-26.3,13278,11947,1331,55463,0.29,0.71,1000000,6.7,677230,295038,Goal reach in 6.7 months. Excellent budget discipline!
+98,146276,214134,6220,4471,39.1,1525,1716,-191,48147,0.33,0.67,1000000,9.8,785866,190060,Dining increased by 39%. Goal reach in 9.8 months. Excellent budget discipline!
+99,45067,255709,12249,14496,-15.5,16087,17067,-980,54041,1.2,0.0,100000,-1.0,100000,228688,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+100,103628,382492,4061,2554,59.0,11195,12708,-1513,44026,0.42,0.58,50000,0.1,0,360479,Dining increased by 59%. Goal reach in 0.1 months. Excellent budget discipline!
+101,41905,161040,5459,5904,-7.5,6384,7191,-807,33552,0.8,0.2,500000,56.0,338960,144264,Goal reach in 56.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+102,131736,77989,4459,5529,-19.4,23513,22212,1301,68771,0.52,0.48,500000,7.7,422011,43604,Goal reach in 7.7 months. Excellent budget discipline!
+103,148974,220441,8013,9062,-11.6,16666,19924,-3258,42813,0.29,0.71,50000,0.1,0,199034,Great! Shopping reduced by ₹3258. Goal reach in 0.1 months. Excellent budget discipline!
+104,198922,112456,3143,3212,-2.2,19457,15662,3795,44128,0.22,0.78,100000,0.5,0,90392,Goal reach in 0.5 months. Excellent budget discipline!
+105,85452,157368,4032,3501,15.2,23919,15268,8651,61123,0.72,0.28,500000,19.3,342632,126806,Goal reach in 19.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+106,137811,444285,4658,4892,-4.8,3758,2583,1175,27505,0.2,0.8,50000,0.1,0,430532,Goal reach in 0.1 months. Excellent budget discipline!
+107,82465,268276,10818,11265,-4.0,3128,2102,1026,49914,0.61,0.39,100000,1.4,0,243319,Goal reach in 1.4 months. Excellent budget discipline!
+108,89243,424082,9296,7554,23.1,11928,11884,44,51882,0.58,0.42,50000,0.1,0,398141,Goal reach in 0.1 months. Excellent budget discipline!
+109,158793,281384,13396,17629,-24.0,8538,11849,-3311,32355,0.2,0.8,1000000,7.5,718616,265206,Great! Shopping reduced by ₹3311. Goal reach in 7.5 months. Excellent budget discipline!
+110,107247,95466,10620,11738,-9.5,8115,8140,-25,27717,0.26,0.74,1000000,12.3,904534,81608,Goal reach in 12.3 months. Excellent budget discipline!
+111,186555,232795,13396,9667,38.6,6986,8700,-1714,57269,0.31,0.69,100000,0.4,0,204160,Dining increased by 39%. Goal reach in 0.4 months. Excellent budget discipline!
+112,149372,236281,6699,8745,-23.4,11824,11918,-94,31769,0.21,0.79,100000,0.4,0,220396,Goal reach in 0.4 months. Excellent budget discipline!
+113,82110,352756,4556,4280,6.4,19156,24292,-5136,38852,0.47,0.53,1000000,21.5,647244,333330,Great! Shopping reduced by ₹5136. Goal reach in 21.5 months. Excellent budget discipline!
+114,93759,22458,9620,6860,40.2,21509,23337,-1828,67682,0.72,0.28,100000,3.7,77542,-11383,Dining increased by 40%. Goal reach in 3.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+115,180605,185354,7456,8727,-14.6,11197,7847,3350,44986,0.25,0.75,1000000,7.1,814646,162861,Goal reach in 7.1 months. Excellent budget discipline!
+116,160735,249253,3147,2702,16.5,22458,23390,-932,70508,0.44,0.56,100000,0.6,0,213999,Goal reach in 0.6 months. Excellent budget discipline!
+117,92078,471444,10499,11681,-10.1,2852,3410,-558,45282,0.49,0.51,100000,0.1,0,448803,Goal reach in 0.1 months. Excellent budget discipline!
+118,68187,188040,13679,13660,0.1,9292,10859,-1567,45651,0.67,0.33,100000,2.8,0,165214,Goal reach in 2.8 months. Excellent budget discipline!
+119,79548,179449,4824,5065,-4.8,2322,1662,660,22139,0.28,0.72,100000,1.1,0,168380,Goal reach in 1.1 months. Excellent budget discipline!
+120,152965,271057,11056,12738,-13.2,7726,7932,-206,37246,0.24,0.76,100000,0.4,0,252434,Goal reach in 0.4 months. Excellent budget discipline!
+121,180759,432393,6536,8444,-22.6,22109,27953,-5844,51112,0.28,0.72,50000,0.1,0,406837,Great! Shopping reduced by ₹5844. Goal reach in 0.1 months. Excellent budget discipline!
+122,135482,494355,10319,12470,-17.3,8308,8686,-378,60112,0.44,0.56,1000000,12.0,505645,464299,Goal reach in 12.0 months. Excellent budget discipline!
+123,76526,308987,13830,11212,23.3,14857,20679,-5822,64214,0.84,0.16,100000,3.1,0,276880,Great! Shopping reduced by ₹5822. Goal reach in 3.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+124,31295,65751,2198,1864,17.9,13003,14402,-1399,55311,1.77,0.0,500000,-1.0,500000,38096,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+125,197101,191059,4164,3161,31.7,19495,24852,-5357,63994,0.32,0.68,500000,3.5,308941,159062,Dining increased by 32%. Great! Shopping reduced by ₹5357. Goal reach in 3.5 months. Excellent budget discipline!
+126,120736,380077,2814,2512,12.0,24111,18571,5540,44991,0.37,0.63,500000,5.6,119923,357582,Goal reach in 5.6 months. Excellent budget discipline!
+127,111568,179089,11298,8856,27.6,17674,15068,2606,55233,0.5,0.5,500000,8.2,320911,151472,Goal reach in 8.2 months. Excellent budget discipline!
+128,170704,386202,8529,10019,-14.9,20217,17752,2465,43629,0.26,0.74,100000,0.2,0,364388,Goal reach in 0.2 months. Excellent budget discipline!
+129,59152,283462,12048,16185,-25.6,1636,2012,-376,29171,0.49,0.51,500000,14.8,216538,268876,Goal reach in 14.8 months. Excellent budget discipline!
+130,102541,182458,11526,9995,15.3,6465,6587,-122,56219,0.55,0.45,1000000,20.8,817542,154348,Goal reach in 20.8 months. Excellent budget discipline!
+131,138592,475206,4163,5067,-17.8,13452,17217,-3765,37556,0.27,0.73,500000,4.0,24794,456428,Great! Shopping reduced by ₹3765. Goal reach in 4.0 months. Excellent budget discipline!
+132,142507,387726,2470,3409,-27.5,20910,19769,1141,54464,0.38,0.62,500000,4.8,112274,360494,Goal reach in 4.8 months. Excellent budget discipline!
+133,190638,219478,11309,9763,15.8,7469,9808,-2339,60935,0.32,0.68,1000000,7.4,780522,189010,Great! Shopping reduced by ₹2339. Goal reach in 7.4 months. Excellent budget discipline!
+134,112251,446341,9000,6609,36.2,15087,18240,-3153,46828,0.42,0.58,50000,0.1,0,422927,Dining increased by 36%. Great! Shopping reduced by ₹3153. Goal reach in 0.1 months. Excellent budget discipline!
+135,120490,451066,7605,8069,-5.8,23900,25870,-1970,52915,0.44,0.56,50000,0.1,0,424608,Goal reach in 0.1 months. Excellent budget discipline!
+136,62201,150638,6768,8477,-20.2,18112,12868,5244,70655,1.14,0.0,500000,-1.0,500000,115310,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+137,68914,17237,5068,3215,57.6,2323,2239,84,49541,0.72,0.28,50000,2.4,32763,-7534,Dining increased by 58%. Goal reach in 2.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+138,108434,266821,2733,3602,-24.1,8597,9016,-419,43753,0.4,0.6,1000000,14.6,733179,244944,Goal reach in 14.6 months. Excellent budget discipline!
+139,89172,165590,9088,6242,45.6,18238,17125,1113,62839,0.7,0.3,50000,0.6,0,134170,Dining increased by 46%. Goal reach in 0.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+140,159292,214177,12131,8572,41.5,24113,21459,2654,59114,0.37,0.63,100000,0.6,0,184620,Dining increased by 42%. Goal reach in 0.6 months. Excellent budget discipline!
+141,186957,188516,7754,8574,-9.6,12114,8884,3230,27934,0.15,0.85,100000,0.4,0,174549,Goal reach in 0.4 months. Excellent budget discipline!
+142,35491,307233,2328,1852,25.7,5956,7915,-1959,42605,1.2,0.0,1000000,-1.0,1000000,285930,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+143,136208,42024,3201,2760,16.0,3564,4918,-1354,16633,0.12,0.88,1000000,8.3,957976,33708,Goal reach in 8.3 months. Excellent budget discipline!
+144,162225,480312,8246,10317,-20.1,3026,2005,1021,28700,0.18,0.82,500000,3.0,19688,465962,Goal reach in 3.0 months. Excellent budget discipline!
+145,122552,223112,2280,3094,-26.3,16333,17909,-1576,31812,0.26,0.74,50000,0.1,0,207206,Goal reach in 0.1 months. Excellent budget discipline!
+146,62412,321453,9749,9885,-1.4,11995,16481,-4486,50714,0.81,0.19,500000,37.2,178547,296096,Great! Shopping reduced by ₹4486. Goal reach in 37.2 months. High risk: Expense ratio at 70%+. Reduce wants.
+147,120049,331128,2539,3307,-23.2,10268,9881,387,34058,0.28,0.72,50000,0.1,0,314099,Goal reach in 0.1 months. Excellent budget discipline!
+148,44731,163885,5727,7033,-18.6,5104,3991,1113,27770,0.62,0.38,100000,4.0,0,150000,Goal reach in 4.0 months. Excellent budget discipline!
+149,145079,446218,8377,5711,46.7,17762,18221,-459,38809,0.27,0.73,50000,0.1,0,426814,Dining increased by 47%. Goal reach in 0.1 months. Excellent budget discipline!
+150,101004,449804,14514,12810,13.3,15482,9878,5604,61489,0.61,0.39,50000,0.1,0,419060,Goal reach in 0.1 months. Excellent budget discipline!
+151,107020,426663,13117,9240,42.0,22731,29174,-6443,69788,0.65,0.35,500000,11.1,73337,391769,Dining increased by 42%. Great! Shopping reduced by ₹6443. Goal reach in 11.1 months. Excellent budget discipline!
+152,65296,14104,13729,17977,-23.6,17967,16878,1089,53757,0.82,0.18,50000,4.1,35896,-12774,Goal reach in 4.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+153,128485,63775,8881,6706,32.4,21222,27381,-6159,53908,0.42,0.58,1000000,13.2,936225,36821,Dining increased by 32%. Great! Shopping reduced by ₹6159. Goal reach in 13.2 months. Excellent budget discipline!
+154,86890,218518,14100,19440,-27.5,6757,6263,494,66949,0.77,0.23,1000000,48.0,781482,185044,Goal reach in 48.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+155,99319,103535,7415,5104,45.3,19537,19411,126,69616,0.7,0.3,100000,2.7,0,68727,Dining increased by 45%. Goal reach in 2.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+156,193071,129371,3004,3277,-8.3,7315,8432,-1117,47794,0.25,0.75,1000000,6.7,870629,105474,Goal reach in 6.7 months. Excellent budget discipline!
+157,141091,62721,10540,13490,-21.9,14173,9807,4366,40068,0.28,0.72,50000,0.4,0,42687,Goal reach in 0.4 months. Excellent budget discipline!
+158,183665,286868,4704,6116,-23.1,14274,13153,1121,33062,0.18,0.82,50000,0.1,0,270337,Goal reach in 0.1 months. Excellent budget discipline!
+159,144083,104249,12038,11068,8.8,21682,18474,3208,48551,0.34,0.66,50000,0.3,0,79974,Goal reach in 0.3 months. Excellent budget discipline!
+160,89181,127840,11455,13142,-12.8,11728,13508,-1780,32969,0.37,0.63,500000,8.4,372160,111356,Goal reach in 8.4 months. Excellent budget discipline!
+161,80705,443364,3685,3150,17.0,11189,11545,-356,54089,0.67,0.33,500000,15.5,56636,416320,Goal reach in 15.5 months. Excellent budget discipline!
+162,57731,297787,8050,7142,12.7,15848,10286,5562,44689,0.77,0.23,500000,33.8,202213,275442,Goal reach in 33.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+163,105619,84515,11472,11458,0.1,7131,7780,-649,43428,0.41,0.59,500000,7.8,415485,62801,Goal reach in 7.8 months. Excellent budget discipline!
+164,39549,390254,12506,17456,-28.4,20799,18459,2340,54005,1.37,0.0,1000000,-1.0,1000000,363252,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+165,95593,497127,11900,7245,64.3,16202,15054,1148,43037,0.45,0.55,100000,0.1,0,475608,Dining increased by 64%. Goal reach in 0.1 months. Excellent budget discipline!
+166,78251,260186,7160,9746,-26.5,13018,17160,-4142,62227,0.8,0.2,1000000,59.2,739814,229072,Great! Shopping reduced by ₹4142. Goal reach in 59.2 months. High risk: Expense ratio at 70%+. Reduce wants.
+167,187774,410789,10072,9864,2.1,20884,16886,3998,55519,0.3,0.7,500000,3.2,89211,383030,Goal reach in 3.2 months. Excellent budget discipline!
+168,74536,133068,3216,2906,10.7,1835,1743,92,48875,0.66,0.34,1000000,37.9,866932,108630,Goal reach in 37.9 months. Excellent budget discipline!
+169,69103,416545,10499,11058,-5.1,7494,7069,425,59118,0.86,0.14,500000,41.7,83455,386986,Goal reach in 41.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+170,188883,52196,10643,9232,15.3,24637,20332,4305,59039,0.31,0.69,1000000,7.6,947804,22676,Goal reach in 7.6 months. Excellent budget discipline!
+171,99685,335748,6590,6437,2.4,20595,24285,-3690,36394,0.37,0.63,500000,6.8,164252,317551,Great! Shopping reduced by ₹3690. Goal reach in 6.8 months. Excellent budget discipline!
+172,97392,156093,9118,9643,-5.4,1949,2446,-497,30550,0.31,0.69,100000,1.0,0,140818,Goal reach in 1.0 months. Excellent budget discipline!
+173,153250,316889,14031,17140,-18.1,11272,15324,-4052,40032,0.26,0.74,100000,0.3,0,296873,Great! Shopping reduced by ₹4052. Goal reach in 0.3 months. Excellent budget discipline!
+174,118536,432954,12751,13482,-5.4,14082,13248,834,59902,0.51,0.49,1000000,15.6,567046,403003,Goal reach in 15.6 months. Excellent budget discipline!
+175,146938,430844,13429,12742,5.4,13142,13120,22,65202,0.44,0.56,50000,0.1,0,398243,Goal reach in 0.1 months. Excellent budget discipline!
+176,191265,197099,7973,8106,-1.6,15198,12848,2350,61537,0.32,0.68,500000,3.6,302901,166330,Goal reach in 3.6 months. Excellent budget discipline!
+177,118261,37872,4166,5732,-27.3,5733,6805,-1072,30131,0.25,0.75,500000,5.6,462128,22806,Goal reach in 5.6 months. Excellent budget discipline!
+178,137879,17409,12864,16258,-20.9,6173,8305,-2132,37511,0.27,0.73,500000,4.9,482591,-1346,Great! Shopping reduced by ₹2132. Goal reach in 4.9 months. Excellent budget discipline!
+179,36652,164810,3499,2508,39.5,2924,2442,482,25229,0.69,0.31,50000,1.5,0,152196,Dining increased by 39%. Goal reach in 1.5 months. Excellent budget discipline!
+180,154767,423243,3855,4366,-11.7,4130,5040,-910,43518,0.28,0.72,500000,3.7,76757,401484,Goal reach in 3.7 months. Excellent budget discipline!
+181,122938,340284,12220,16833,-27.4,9916,11143,-1227,42334,0.34,0.66,1000000,11.6,659716,319117,Goal reach in 11.6 months. Excellent budget discipline!
+182,76971,369292,9448,11400,-17.1,2156,1584,572,32313,0.42,0.58,100000,0.6,0,353136,Goal reach in 0.6 months. Excellent budget discipline!
+183,188089,122359,11131,9566,16.4,22590,20115,2475,56146,0.3,0.7,50000,0.2,0,94286,Goal reach in 0.2 months. Excellent budget discipline!
+184,63266,6923,14852,9856,50.7,1154,717,437,34321,0.54,0.46,50000,1.7,43077,-10238,Dining increased by 51%. Goal reach in 1.7 months. Excellent budget discipline!
+185,51779,357799,13584,9960,36.4,12314,7694,4620,40860,0.79,0.21,50000,0.1,0,337369,Dining increased by 36%. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+186,130519,135526,8489,5428,56.4,18257,15503,2754,40033,0.31,0.69,500000,5.2,364474,115510,Dining increased by 56%. Goal reach in 5.2 months. Excellent budget discipline!
+187,135179,47700,7129,6762,5.4,23958,32134,-8176,63286,0.47,0.53,500000,6.8,452300,16057,Great! Shopping reduced by ₹8176. Goal reach in 6.8 months. Excellent budget discipline!
+188,162319,414288,10339,9236,11.9,5730,4231,1499,32233,0.2,0.8,100000,0.1,0,398172,Goal reach in 0.1 months. Excellent budget discipline!
+189,144868,97239,2189,2283,-4.1,15206,14022,1184,49557,0.34,0.66,1000000,10.3,902761,72460,Goal reach in 10.3 months. Excellent budget discipline!
+190,62550,412586,2347,2581,-9.1,5798,3808,1990,18607,0.3,0.7,1000000,20.9,587414,403282,Goal reach in 20.9 months. Excellent budget discipline!
+191,117989,62326,12112,13562,-10.7,19633,19737,-104,45655,0.39,0.61,500000,6.7,437674,39498,Goal reach in 6.7 months. Excellent budget discipline!
+192,107249,208891,8617,6477,33.0,10586,13121,-2535,46238,0.43,0.57,50000,0.1,0,185772,Dining increased by 33%. Great! Shopping reduced by ₹2535. Goal reach in 0.1 months. Excellent budget discipline!
+193,95988,190037,3302,3978,-17.0,7515,9736,-2221,44115,0.46,0.54,50000,0.2,0,167980,Great! Shopping reduced by ₹2221. Goal reach in 0.2 months. Excellent budget discipline!
+194,136020,475993,6071,5740,5.8,22645,18105,4540,67664,0.5,0.5,1000000,13.2,524007,442161,Goal reach in 13.2 months. Excellent budget discipline!
+195,147653,492389,8812,7265,21.3,19755,25981,-6226,61721,0.42,0.58,100000,0.1,0,461528,Great! Shopping reduced by ₹6226. Goal reach in 0.1 months. Excellent budget discipline!
+196,137445,322962,10303,11330,-9.1,10656,7522,3134,54834,0.4,0.6,1000000,11.3,677038,295545,Goal reach in 11.3 months. Excellent budget discipline!
+197,148842,472306,5492,6390,-14.1,12882,9382,3500,39836,0.27,0.73,100000,0.1,0,452388,Goal reach in 0.1 months. Excellent budget discipline!
+198,80303,93077,8146,6180,31.8,24382,27762,-3380,77360,0.96,0.04,500000,163.6,406923,54397,Dining increased by 32%. Great! Shopping reduced by ₹3380. Goal reach in 163.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+199,88462,479397,6051,5570,8.6,14738,10299,4439,53183,0.6,0.4,100000,0.1,0,452806,Goal reach in 0.1 months. Excellent budget discipline!
+200,179330,378241,6024,7987,-24.6,13496,9879,3617,30263,0.17,0.83,100000,0.2,0,363110,Goal reach in 0.2 months. Excellent budget discipline!
+201,172575,50935,10385,11736,-11.5,14633,10120,4513,41108,0.24,0.76,500000,3.7,449065,30381,Goal reach in 3.7 months. Excellent budget discipline!
+202,48000,490459,8014,5186,54.5,23868,28648,-4780,67556,1.41,0.0,1000000,-1.0,1000000,456681,Dining increased by 55%. Great! Shopping reduced by ₹4780. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+203,183928,208814,12323,12725,-3.2,10476,7950,2526,59830,0.33,0.67,500000,3.7,291186,178899,Goal reach in 3.7 months. Excellent budget discipline!
+204,73558,174188,14323,15624,-8.3,10510,11802,-1292,63847,0.87,0.13,1000000,99.4,825812,142264,Goal reach in 99.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+205,124320,457023,13142,16582,-20.7,4117,3400,717,60591,0.49,0.51,1000000,14.3,542977,426728,Goal reach in 14.3 months. Excellent budget discipline!
+206,74187,184418,7847,7887,-0.5,9174,6988,2186,32079,0.43,0.57,50000,0.3,0,168378,Goal reach in 0.3 months. Excellent budget discipline!
+207,56783,363096,12400,8815,40.7,12353,14972,-2619,42351,0.75,0.25,50000,0.1,0,341920,Dining increased by 41%. Great! Shopping reduced by ₹2619. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+208,172297,20331,2681,3136,-14.5,21972,15529,6443,67181,0.39,0.61,1000000,9.5,979669,-13260,Goal reach in 9.5 months. Excellent budget discipline!
+209,78772,326645,13313,16045,-17.0,14304,10207,4097,52520,0.67,0.33,500000,16.6,173355,300385,Goal reach in 16.6 months. Excellent budget discipline!
+210,131646,219468,13067,15750,-17.0,22196,21100,1096,51337,0.39,0.61,50000,0.1,0,193800,Goal reach in 0.1 months. Excellent budget discipline!
+211,63418,363259,6705,8241,-18.6,7194,9460,-2266,24180,0.38,0.62,500000,10.9,136741,351169,Great! Shopping reduced by ₹2266. Goal reach in 10.9 months. Excellent budget discipline!
+212,91415,67456,12017,13557,-11.4,11563,12775,-1212,56050,0.61,0.39,50000,1.0,0,39431,Goal reach in 1.0 months. Excellent budget discipline!
+213,92534,197092,2588,3562,-27.3,21670,27810,-6140,47254,0.51,0.49,1000000,21.2,802908,173465,Great! Shopping reduced by ₹6140. Goal reach in 21.2 months. Excellent budget discipline!
+214,99965,68342,7878,8019,-1.8,7877,10330,-2453,49270,0.49,0.51,100000,1.7,31658,43707,Great! Shopping reduced by ₹2453. Goal reach in 1.7 months. Excellent budget discipline!
+215,98101,294637,4900,4086,19.9,21737,21913,-176,48962,0.5,0.5,500000,9.0,205363,270156,Goal reach in 9.0 months. Excellent budget discipline!
+216,50769,258984,12947,8709,48.7,8846,9512,-666,44502,0.88,0.12,50000,0.1,0,236733,Dining increased by 49%. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+217,98881,345449,12973,14410,-10.0,16470,21653,-5183,45145,0.46,0.54,100000,0.6,0,322876,Great! Shopping reduced by ₹5183. Goal reach in 0.6 months. Excellent budget discipline!
+218,84639,447215,6757,8958,-24.6,20158,21741,-1583,51295,0.61,0.39,1000000,27.3,552785,421568,Goal reach in 27.3 months. Excellent budget discipline!
+219,64461,69713,4990,5686,-12.2,1772,1294,478,23343,0.36,0.64,100000,2.1,30287,58042,Goal reach in 2.1 months. Excellent budget discipline!
+220,174459,239970,9722,6241,55.8,19426,23462,-4036,45768,0.26,0.74,1000000,7.4,760030,217086,Dining increased by 56%. Great! Shopping reduced by ₹4036. Goal reach in 7.4 months. Excellent budget discipline!
+221,194303,93560,6639,8981,-26.1,6609,5569,1040,55227,0.28,0.72,100000,0.6,0,65946,Goal reach in 0.6 months. Excellent budget discipline!
+222,126322,18659,4752,5173,-8.1,5661,6880,-1219,52502,0.42,0.58,1000000,13.5,981341,-7592,Goal reach in 13.5 months. Excellent budget discipline!
+223,131798,491004,7155,9952,-28.1,13425,13601,-176,47751,0.36,0.64,1000000,10.7,508996,467128,Goal reach in 10.7 months. Excellent budget discipline!
+224,48364,38656,7305,7315,-0.1,6949,9118,-2169,37243,0.77,0.23,100000,8.3,61344,20034,Great! Shopping reduced by ₹2169. Goal reach in 8.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+225,189262,35565,9577,6684,43.3,16529,22085,-5556,50689,0.27,0.73,500000,3.6,464435,10220,Dining increased by 43%. Great! Shopping reduced by ₹5556. Goal reach in 3.6 months. Excellent budget discipline!
+226,154657,460331,10001,8205,21.9,5592,6808,-1216,31178,0.2,0.8,500000,3.3,39669,444742,Goal reach in 3.3 months. Excellent budget discipline!
+227,161225,212992,4349,5111,-14.9,16394,13378,3016,60176,0.37,0.63,50000,0.1,0,182904,Goal reach in 0.1 months. Excellent budget discipline!
+228,148411,251915,6568,8484,-22.6,2991,2426,565,27579,0.19,0.81,1000000,7.9,748085,238126,Goal reach in 7.9 months. Excellent budget discipline!
+229,74956,452551,7226,7394,-2.3,21079,24167,-3088,56768,0.76,0.24,50000,0.1,0,424167,Great! Shopping reduced by ₹3088. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+230,58034,100229,11064,13941,-20.6,11303,9317,1986,35756,0.62,0.38,500000,21.5,399771,82351,Goal reach in 21.5 months. Excellent budget discipline!
+231,39749,298654,4034,4014,0.5,5641,3856,1785,43562,1.1,0.0,100000,-1.0,100000,276873,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+232,100593,358447,8938,8791,1.7,3148,3001,147,47326,0.47,0.53,1000000,17.4,641553,334784,Goal reach in 17.4 months. Excellent budget discipline!
+233,195415,47936,11914,8932,33.4,8135,9392,-1257,58222,0.3,0.7,100000,0.7,0,18825,Dining increased by 33%. Goal reach in 0.7 months. Excellent budget discipline!
+234,74972,399176,6342,7548,-16.0,24128,16472,7656,49740,0.66,0.34,100000,0.8,0,374306,Goal reach in 0.8 months. Excellent budget discipline!
+235,66203,199736,2626,2545,3.2,2704,3277,-573,21624,0.33,0.67,100000,1.3,0,188924,Goal reach in 1.3 months. Excellent budget discipline!
+236,143619,447055,7048,6800,3.6,23328,29379,-6051,70521,0.49,0.51,50000,0.1,0,411794,Great! Shopping reduced by ₹6051. Goal reach in 0.1 months. Excellent budget discipline!
+237,87454,52734,9031,10887,-17.0,3544,4917,-1373,32013,0.37,0.63,50000,0.7,0,36728,Goal reach in 0.7 months. Excellent budget discipline!
+238,190886,226604,8977,11902,-24.6,16106,14439,1667,37515,0.2,0.8,50000,0.1,0,207846,Goal reach in 0.1 months. Excellent budget discipline!
+239,120918,336841,14859,20232,-26.6,22842,21897,945,78028,0.65,0.35,1000000,21.7,663159,297827,Goal reach in 21.7 months. Excellent budget discipline!
+240,74469,218303,9931,12235,-18.8,9944,10006,-62,41552,0.56,0.44,500000,13.9,281697,197527,Goal reach in 13.9 months. Excellent budget discipline!
+241,62866,202745,9985,8563,16.6,23092,29303,-6211,60468,0.96,0.04,500000,191.6,297255,172511,Great! Shopping reduced by ₹6211. Goal reach in 191.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+242,159650,314049,14075,18365,-23.4,16223,9991,6232,57403,0.36,0.64,100000,0.4,0,285348,Goal reach in 0.4 months. Excellent budget discipline!
+243,30389,6975,8476,7381,14.8,6060,7706,-1646,26332,0.87,0.13,500000,122.9,493025,-6191,Goal reach in 122.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+244,197259,323735,14463,13850,4.4,1419,1110,309,52953,0.27,0.73,100000,0.2,0,297258,Goal reach in 0.2 months. Excellent budget discipline!
+245,137113,418748,10938,6755,61.9,15170,11868,3302,37580,0.27,0.73,100000,0.2,0,399958,Dining increased by 62%. Goal reach in 0.2 months. Excellent budget discipline!
+246,56848,67451,5435,4813,12.9,22962,17557,5405,36755,0.65,0.35,100000,4.3,32549,49074,Goal reach in 4.3 months. Excellent budget discipline!
+247,168137,358204,4346,2995,45.1,3790,3312,478,39961,0.24,0.76,100000,0.2,0,338224,Dining increased by 45%. Goal reach in 0.2 months. Excellent budget discipline!
+248,125835,31331,10272,12715,-19.2,9086,9124,-38,45901,0.36,0.64,500000,6.2,468669,8380,Goal reach in 6.2 months. Excellent budget discipline!
+249,122471,295891,4088,4289,-4.7,24900,23050,1850,51454,0.42,0.58,100000,0.6,0,270164,Goal reach in 0.6 months. Excellent budget discipline!
+250,73482,87835,14923,13632,9.5,10841,6706,4135,42501,0.58,0.42,1000000,31.7,912165,66584,Goal reach in 31.7 months. Excellent budget discipline!
+251,111343,388430,12105,12548,-3.5,18382,18694,-312,57789,0.52,0.48,500000,7.9,111570,359536,Goal reach in 7.9 months. Excellent budget discipline!
+252,39588,52573,8411,7654,9.9,11815,7608,4207,62168,1.57,0.0,100000,-1.0,100000,21489,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+253,121915,407992,5398,7152,-24.5,9242,9358,-116,39412,0.32,0.68,500000,5.1,92008,388286,Goal reach in 5.1 months. Excellent budget discipline!
+254,91388,164975,7753,7879,-1.6,2713,2118,595,48447,0.53,0.47,100000,1.6,0,140752,Goal reach in 1.6 months. Excellent budget discipline!
+255,112829,149228,11428,11926,-4.2,23224,21771,1453,59137,0.52,0.48,100000,1.3,0,119660,Goal reach in 1.3 months. Excellent budget discipline!
+256,139722,481086,7112,5373,32.4,1329,1391,-62,38562,0.28,0.72,1000000,8.9,518914,461805,Dining increased by 32%. Goal reach in 8.9 months. Excellent budget discipline!
+257,174827,72043,7716,9528,-19.0,13439,16329,-2890,64308,0.37,0.63,1000000,8.9,927957,39889,Great! Shopping reduced by ₹2890. Goal reach in 8.9 months. Excellent budget discipline!
+258,148930,212878,3398,4512,-24.7,10059,11313,-1254,40516,0.27,0.73,50000,0.1,0,192620,Goal reach in 0.1 months. Excellent budget discipline!
+259,160457,468960,9563,10742,-11.0,8414,8415,-1,52503,0.33,0.67,50000,0.1,0,442708,Goal reach in 0.1 months. Excellent budget discipline!
+260,135934,319561,3253,2627,23.8,5593,4704,889,47044,0.35,0.65,100000,0.4,0,296039,Goal reach in 0.4 months. Excellent budget discipline!
+261,136953,253416,5540,3646,51.9,4000,4022,-22,41494,0.3,0.7,500000,4.7,246584,232669,Dining increased by 52%. Goal reach in 4.7 months. Excellent budget discipline!
+262,133261,93004,3655,4502,-18.8,8521,11540,-3019,37675,0.28,0.72,100000,0.9,0,74166,Great! Shopping reduced by ₹3019. Goal reach in 0.9 months. Excellent budget discipline!
+263,50423,175302,14699,12510,17.5,23540,19525,4015,75445,1.5,0.0,500000,-1.0,500000,137580,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+264,161337,65930,7010,7774,-9.8,8544,10760,-2216,36551,0.23,0.77,500000,3.9,434070,47654,Great! Shopping reduced by ₹2216. Goal reach in 3.9 months. Excellent budget discipline!
+265,85578,148913,2334,2083,12.1,1397,1261,136,49530,0.58,0.42,500000,13.0,351087,124148,Goal reach in 13.0 months. Excellent budget discipline!
+266,171714,303438,3954,3446,14.7,13837,14676,-839,61107,0.36,0.64,500000,4.0,196562,272884,Goal reach in 4.0 months. Excellent budget discipline!
+267,146592,262454,10725,10235,4.8,11072,11133,-61,48616,0.33,0.67,1000000,9.7,737546,238146,Goal reach in 9.7 months. Excellent budget discipline!
+268,136070,113534,3010,2874,4.7,11489,13388,-1899,32148,0.24,0.76,50000,0.3,0,97460,Goal reach in 0.3 months. Excellent budget discipline!
+269,189228,242171,8550,5618,52.2,14803,12298,2505,61116,0.32,0.68,500000,3.5,257829,211613,Dining increased by 52%. Goal reach in 3.5 months. Excellent budget discipline!
+270,70284,113887,14123,10576,33.5,20783,17066,3717,79296,1.13,0.0,500000,-1.0,500000,74239,Dining increased by 34%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+271,187510,301990,5270,5472,-3.7,16351,14381,1970,61677,0.33,0.67,500000,3.5,198010,271152,Goal reach in 3.5 months. Excellent budget discipline!
+272,44360,322162,8559,9647,-11.3,10421,8629,1792,26202,0.59,0.41,1000000,51.5,677838,309061,Goal reach in 51.5 months. Excellent budget discipline!
+273,183713,434037,10872,14337,-24.2,18527,22764,-4237,51011,0.28,0.72,50000,0.1,0,408532,Great! Shopping reduced by ₹4237. Goal reach in 0.1 months. Excellent budget discipline!
+274,155625,53624,12558,7983,57.3,11122,8944,2178,31086,0.2,0.8,500000,3.9,446376,38081,Dining increased by 57%. Goal reach in 3.9 months. Excellent budget discipline!
+275,105553,30284,11846,9378,26.3,24728,32593,-7865,55754,0.53,0.47,500000,9.9,469716,2407,Great! Shopping reduced by ₹7865. Goal reach in 9.9 months. Excellent budget discipline!
+276,89463,78256,3377,4280,-21.1,13093,13639,-546,45644,0.51,0.49,100000,1.9,21744,55434,Goal reach in 1.9 months. Excellent budget discipline!
+277,63148,93981,13239,9618,37.6,20738,25134,-4396,78663,1.25,0.0,50000,-1.0,50000,54650,Dining increased by 38%. Great! Shopping reduced by ₹4396. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+278,68268,244185,6308,7276,-13.3,4704,5927,-1223,43310,0.63,0.37,100000,2.0,0,222530,Goal reach in 2.0 months. Excellent budget discipline!
+279,117108,78302,14828,15349,-3.4,4786,5764,-978,63130,0.54,0.46,100000,1.6,21698,46737,Goal reach in 1.6 months. Excellent budget discipline!
+280,191928,282845,9097,12415,-26.7,6164,7595,-1431,52665,0.27,0.73,1000000,6.8,717155,256512,Goal reach in 6.8 months. Excellent budget discipline!
+281,63008,40513,6379,7493,-14.9,13712,18661,-4949,67122,1.07,0.0,1000000,-1.0,1000000,6952,Great! Shopping reduced by ₹4949. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+282,193694,169713,5937,7986,-25.7,11992,8530,3462,50234,0.26,0.74,100000,0.5,0,144596,Goal reach in 0.5 months. Excellent budget discipline!
+283,122078,377158,11710,9115,28.5,8418,9795,-1377,53917,0.44,0.56,1000000,13.6,622842,350200,Goal reach in 13.6 months. Excellent budget discipline!
+284,96539,158237,12478,10338,20.7,23761,21962,1799,54390,0.56,0.44,1000000,23.0,841763,131042,Goal reach in 23.0 months. Excellent budget discipline!
+285,69145,442698,12262,13243,-7.4,14550,19527,-4977,48513,0.7,0.3,50000,0.1,0,418442,Great! Shopping reduced by ₹4977. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+286,116375,498506,6438,5963,8.0,6731,7271,-540,29039,0.25,0.75,1000000,10.3,501494,483986,Goal reach in 10.3 months. Excellent budget discipline!
+287,121753,431544,11490,7155,60.6,22934,16460,6474,69608,0.57,0.43,50000,0.1,0,396740,Dining increased by 61%. Goal reach in 0.1 months. Excellent budget discipline!
+288,119004,419741,8381,6113,37.1,10279,10257,22,47141,0.4,0.6,100000,0.2,0,396170,Dining increased by 37%. Goal reach in 0.2 months. Excellent budget discipline!
+289,142722,463987,2256,2969,-24.0,13878,13968,-90,41149,0.29,0.71,100000,0.1,0,443412,Goal reach in 0.1 months. Excellent budget discipline!
+290,125979,368016,8170,10592,-22.9,12341,7539,4802,32087,0.25,0.75,1000000,9.9,631984,351972,Goal reach in 9.9 months. Excellent budget discipline!
+291,101769,219792,9585,9359,2.4,21763,28880,-7117,63536,0.62,0.38,50000,0.2,0,188024,Great! Shopping reduced by ₹7117. Goal reach in 0.2 months. Excellent budget discipline!
+292,106444,458157,2648,1877,41.1,4943,4868,75,24488,0.23,0.77,50000,0.1,0,445913,Dining increased by 41%. Goal reach in 0.1 months. Excellent budget discipline!
+293,197827,264342,12454,8926,39.5,13451,8930,4521,47644,0.24,0.76,50000,0.1,0,240520,Dining increased by 40%. Goal reach in 0.1 months. Excellent budget discipline!
+294,199335,355684,5718,5082,12.5,23049,18197,4852,58657,0.29,0.71,500000,3.0,144316,326356,Goal reach in 3.0 months. Excellent budget discipline!
+295,156074,187907,4325,5123,-15.6,21239,14866,6373,35134,0.23,0.77,100000,0.5,0,170340,Goal reach in 0.5 months. Excellent budget discipline!
+296,107024,204234,9017,12251,-26.4,9669,5845,3824,58088,0.54,0.46,50000,0.2,0,175190,Goal reach in 0.2 months. Excellent budget discipline!
+297,177171,303381,6471,5911,9.5,18679,24786,-6107,52890,0.3,0.7,1000000,7.6,696619,276936,Great! Shopping reduced by ₹6107. Goal reach in 7.6 months. Excellent budget discipline!
+298,107004,322889,10642,14281,-25.5,9207,6982,2225,42125,0.39,0.61,100000,0.5,0,301826,Goal reach in 0.5 months. Excellent budget discipline!
+299,185229,42296,12943,9184,40.9,11047,7057,3990,50211,0.27,0.73,100000,0.7,0,17190,Dining increased by 41%. Goal reach in 0.7 months. Excellent budget discipline!
+300,74047,397706,9592,9315,3.0,22094,20746,1348,44731,0.6,0.4,100000,0.7,0,375340,Goal reach in 0.7 months. Excellent budget discipline!
+301,170020,79049,3559,4784,-25.6,22908,25341,-2433,38718,0.23,0.77,100000,0.6,0,59690,Great! Shopping reduced by ₹2433. Goal reach in 0.6 months. Excellent budget discipline!
+302,91845,342447,8887,9068,-2.0,14672,18691,-4019,44459,0.48,0.52,100000,0.7,0,320218,Great! Shopping reduced by ₹4019. Goal reach in 0.7 months. Excellent budget discipline!
+303,42469,255628,8087,7190,12.5,9293,12797,-3504,38580,0.91,0.09,50000,0.1,0,236338,Great! Shopping reduced by ₹3504. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+304,194531,172453,8705,7686,13.3,9292,11850,-2558,42378,0.22,0.78,1000000,6.3,827547,151264,Great! Shopping reduced by ₹2558. Goal reach in 6.3 months. Excellent budget discipline!
+305,52982,95652,6610,7767,-14.9,19869,14901,4968,36719,0.69,0.31,500000,29.6,404348,77292,Goal reach in 29.6 months. Excellent budget discipline!
+306,103016,453900,6621,4589,44.3,24557,16611,7946,55999,0.54,0.46,500000,8.7,46100,425900,Dining increased by 44%. Goal reach in 8.7 months. Excellent budget discipline!
+307,171409,361466,12028,15680,-23.3,12132,13481,-1349,67464,0.39,0.61,50000,0.1,0,327734,Goal reach in 0.1 months. Excellent budget discipline!
+308,180822,288893,2873,3849,-25.4,11077,7995,3082,36579,0.2,0.8,100000,0.3,0,270604,Goal reach in 0.3 months. Excellent budget discipline!
+309,192167,77037,5808,6154,-5.6,4022,5172,-1150,39393,0.2,0.8,1000000,6.4,922963,57340,Goal reach in 6.4 months. Excellent budget discipline!
+310,49077,247513,14980,16887,-11.3,24133,31236,-7103,76358,1.56,0.0,1000000,-1.0,1000000,209334,Great! Shopping reduced by ₹7103. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+311,155210,224443,2775,3395,-18.3,24531,16398,8133,42309,0.27,0.73,100000,0.5,0,203288,Goal reach in 0.5 months. Excellent budget discipline!
+312,35501,360722,4958,4984,-0.5,6544,5520,1024,50897,1.43,0.0,1000000,-1.0,1000000,335274,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+313,178909,384031,12869,12449,3.4,24748,30907,-6159,75736,0.42,0.58,500000,4.1,115969,346163,Great! Shopping reduced by ₹6159. Goal reach in 4.1 months. Excellent budget discipline!
+314,104661,20413,5884,4205,39.9,17434,20697,-3263,57875,0.55,0.45,100000,2.1,79587,-8524,Dining increased by 40%. Great! Shopping reduced by ₹3263. Goal reach in 2.1 months. Excellent budget discipline!
+315,93699,287418,3595,2367,51.9,18862,16076,2786,47036,0.5,0.5,50000,0.1,0,263900,Dining increased by 52%. Goal reach in 0.1 months. Excellent budget discipline!
+316,50309,410062,11342,8364,35.6,5789,3914,1875,40356,0.8,0.2,100000,1.8,0,389884,Dining increased by 36%. Goal reach in 1.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+317,72309,489111,9565,7267,31.6,8752,6237,2515,32815,0.45,0.55,100000,0.1,0,472704,Dining increased by 32%. Goal reach in 0.1 months. Excellent budget discipline!
+318,108460,339341,2351,3207,-26.7,14917,14976,-59,55131,0.51,0.49,50000,0.1,0,311776,Goal reach in 0.1 months. Excellent budget discipline!
+319,191694,39900,8532,6196,37.7,2890,2660,230,29675,0.15,0.85,100000,0.6,0,25062,Dining increased by 38%. Goal reach in 0.6 months. Excellent budget discipline!
+320,162858,75937,8351,8020,4.1,14355,16325,-1970,54046,0.33,0.67,50000,0.3,0,48914,Goal reach in 0.3 months. Excellent budget discipline!
+321,127650,238794,6923,4396,57.5,5936,7495,-1559,26211,0.21,0.79,50000,0.1,0,225688,Dining increased by 57%. Goal reach in 0.1 months. Excellent budget discipline!
+322,196943,235678,10044,9782,2.7,8182,11426,-3244,57650,0.29,0.71,500000,3.3,264322,206853,Great! Shopping reduced by ₹3244. Goal reach in 3.3 months. Excellent budget discipline!
+323,84920,119998,11193,15158,-26.2,14912,18440,-3528,44120,0.52,0.48,1000000,23.9,880002,97938,Great! Shopping reduced by ₹3528. Goal reach in 23.9 months. Excellent budget discipline!
+324,70882,186721,13693,8573,59.7,4966,3235,1731,58392,0.82,0.18,50000,1.0,0,157525,Dining increased by 60%. Goal reach in 1.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+325,146767,54946,8960,9465,-5.3,24227,14931,9296,69643,0.47,0.53,50000,0.5,0,20124,Goal reach in 0.5 months. Excellent budget discipline!
+326,51029,275419,14174,11631,21.9,9817,7175,2642,65375,1.28,0.0,100000,-1.0,100000,242732,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+327,32231,295044,3752,3317,13.1,21025,27341,-6316,49606,1.54,0.0,50000,-1.0,50000,270241,Great! Shopping reduced by ₹6316. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+328,134599,360043,7325,8570,-14.5,17563,16457,1106,68649,0.51,0.49,100000,0.4,0,325718,Goal reach in 0.4 months. Excellent budget discipline!
+329,61064,467747,7895,6920,14.1,2880,3717,-837,45369,0.74,0.26,1000000,57.8,532253,445062,Goal reach in 57.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+330,164330,55812,4662,5566,-16.2,22085,21768,317,52446,0.32,0.68,50000,0.3,0,29589,Goal reach in 0.3 months. Excellent budget discipline!
+331,111150,441742,6946,8695,-20.1,1848,1499,349,46327,0.42,0.58,500000,6.4,58258,418578,Goal reach in 6.4 months. Excellent budget discipline!
+332,54707,91190,11559,13960,-17.2,9024,7454,1570,41363,0.76,0.24,500000,36.1,408810,70508,Goal reach in 36.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+333,174908,214716,12291,14799,-16.9,16957,11115,5842,55599,0.32,0.68,500000,3.8,285284,186916,Goal reach in 3.8 months. Excellent budget discipline!
+334,41918,347893,14708,9772,50.5,19125,25080,-5955,57147,1.36,0.0,1000000,-1.0,1000000,319320,Dining increased by 51%. Great! Shopping reduced by ₹5955. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+335,160641,292567,4442,4184,6.2,3511,4536,-1025,36327,0.23,0.77,100000,0.3,0,274404,Goal reach in 0.3 months. Excellent budget discipline!
+336,36259,446918,11752,15072,-22.0,5273,6350,-1077,30289,0.84,0.16,50000,0.1,0,431774,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+337,50664,114128,6740,6836,-1.4,13907,15251,-1344,61831,1.22,0.0,1000000,-1.0,1000000,83212,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+338,134774,141980,13655,11492,18.8,2360,3046,-686,40495,0.3,0.7,1000000,10.3,858020,121732,Goal reach in 10.3 months. Excellent budget discipline!
+339,137973,455154,10579,10074,5.0,14496,15916,-1420,38870,0.28,0.72,1000000,9.2,544846,435719,Goal reach in 9.2 months. Excellent budget discipline!
+340,180966,322924,14325,19314,-25.8,5976,5155,821,36023,0.2,0.8,50000,0.1,0,304912,Goal reach in 0.1 months. Excellent budget discipline!
+341,99412,182123,5217,4022,29.7,7948,5768,2180,53933,0.54,0.46,1000000,21.2,817877,155156,Goal reach in 21.2 months. Excellent budget discipline!
+342,101056,130571,10429,13709,-23.9,1552,1527,25,36597,0.36,0.64,500000,7.4,369429,112272,Goal reach in 7.4 months. Excellent budget discipline!
+343,158633,174035,7745,6795,14.0,7302,9624,-2322,29523,0.19,0.81,50000,0.1,0,159274,Great! Shopping reduced by ₹2322. Goal reach in 0.1 months. Excellent budget discipline!
+344,130475,281762,9237,11737,-21.3,1142,1227,-85,23148,0.18,0.82,1000000,8.8,718238,270188,Goal reach in 8.8 months. Excellent budget discipline!
+345,82590,223379,2897,3086,-6.1,10635,10988,-353,46873,0.57,0.43,1000000,26.7,776621,199942,Goal reach in 26.7 months. Excellent budget discipline!
+346,43790,354738,9773,13213,-26.0,18755,20163,-1408,69062,1.58,0.0,50000,-1.0,50000,320207,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+347,182418,451122,6087,5999,1.5,24490,25321,-831,62435,0.34,0.66,100000,0.1,0,419904,Goal reach in 0.1 months. Excellent budget discipline!
+348,163645,215161,7434,9285,-19.9,2517,3027,-510,26382,0.16,0.84,50000,0.1,0,201970,Goal reach in 0.1 months. Excellent budget discipline!
+349,144584,99459,4096,4495,-8.9,13091,11615,1476,41723,0.29,0.71,500000,4.7,400541,78598,Goal reach in 4.7 months. Excellent budget discipline!
+350,86493,11943,6484,4406,47.2,15445,15219,226,61681,0.71,0.29,500000,20.1,488057,-18898,Dining increased by 47%. Goal reach in 20.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+351,126902,74259,2204,2675,-17.6,4818,6266,-1448,42779,0.34,0.66,500000,5.8,425741,52870,Goal reach in 5.8 months. Excellent budget discipline!
+352,186912,141635,6085,7561,-19.5,12660,9142,3518,35912,0.19,0.81,50000,0.1,0,123679,Goal reach in 0.1 months. Excellent budget discipline!
+353,91346,267435,12352,16228,-23.9,4497,5550,-1053,30190,0.33,0.67,50000,0.1,0,252340,Goal reach in 0.1 months. Excellent budget discipline!
+354,114593,193329,12120,10230,18.5,8815,8438,377,33634,0.29,0.71,500000,5.7,306671,176512,Goal reach in 5.7 months. Excellent budget discipline!
+355,174026,326182,8173,5429,50.5,6328,7371,-1043,36327,0.21,0.79,1000000,6.8,673818,308018,Dining increased by 51%. Goal reach in 6.8 months. Excellent budget discipline!
+356,161632,121026,4938,4009,23.2,24239,19939,4300,61248,0.38,0.62,1000000,9.7,878974,90402,Goal reach in 9.7 months. Excellent budget discipline!
+357,39498,286320,10450,13102,-20.2,10357,7386,2971,63859,1.62,0.0,50000,-1.0,50000,254390,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+358,109368,103622,11350,10975,3.4,21076,24387,-3311,52795,0.48,0.52,100000,1.4,0,77224,Great! Shopping reduced by ₹3311. Goal reach in 1.4 months. Excellent budget discipline!
+359,105609,16667,8240,5682,45.0,17675,14592,3083,58382,0.55,0.45,50000,1.0,33333,-12524,Dining increased by 45%. Goal reach in 1.0 months. Excellent budget discipline!
+360,177565,91647,5959,6810,-12.5,19756,16295,3461,53324,0.3,0.7,100000,0.7,0,64985,Goal reach in 0.7 months. Excellent budget discipline!
+361,187748,51294,11879,15336,-22.5,6943,5111,1832,50776,0.27,0.73,50000,0.3,0,25906,Goal reach in 0.3 months. Excellent budget discipline!
+362,33214,406858,2964,3030,-2.2,11829,9100,2729,28516,0.86,0.14,1000000,195.5,593142,392600,Goal reach in 195.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+363,78460,41421,5791,7018,-17.5,11742,12497,-755,37005,0.47,0.53,100000,2.2,58579,22918,Goal reach in 2.2 months. Excellent budget discipline!
+364,180183,20610,7231,7922,-8.7,1845,1892,-47,42279,0.23,0.77,50000,0.3,0,-530,Goal reach in 0.3 months. Excellent budget discipline!
+365,123331,45879,11454,10832,5.7,20342,17725,2617,58104,0.47,0.53,500000,7.5,454121,16827,Goal reach in 7.5 months. Excellent budget discipline!
+366,122904,154974,10555,9120,15.7,23549,22622,927,64553,0.53,0.47,1000000,16.6,845026,122698,Goal reach in 16.6 months. Excellent budget discipline!
+367,183963,411873,14972,10779,38.9,24288,16627,7661,58944,0.32,0.68,1000000,7.3,588127,382401,Dining increased by 39%. Goal reach in 7.3 months. Excellent budget discipline!
+368,93451,386819,3443,4323,-20.4,22210,26761,-4551,36697,0.39,0.61,1000000,16.3,613181,368470,Great! Shopping reduced by ₹4551. Goal reach in 16.3 months. Excellent budget discipline!
+369,188065,203151,2731,2054,33.0,17069,16432,637,45408,0.24,0.76,50000,0.1,0,180447,Dining increased by 33%. Goal reach in 0.1 months. Excellent budget discipline!
+370,40773,362464,6308,6178,2.1,4162,4640,-478,47061,1.15,0.0,500000,-1.0,500000,338934,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+371,153749,98212,6534,6739,-3.0,10463,11868,-1405,58625,0.38,0.62,50000,0.3,0,68900,Goal reach in 0.3 months. Excellent budget discipline!
+372,102224,252283,7662,5564,37.7,23838,25944,-2106,48796,0.48,0.52,100000,0.9,0,227885,Dining increased by 38%. Great! Shopping reduced by ₹2106. Goal reach in 0.9 months. Excellent budget discipline!
+373,105340,16117,5990,4064,47.4,5055,6111,-1056,22463,0.21,0.79,500000,6.0,483883,4886,Dining increased by 47%. Goal reach in 6.0 months. Excellent budget discipline!
+374,122232,263245,8565,6897,24.2,16304,20714,-4410,56913,0.47,0.53,100000,0.7,0,234788,Great! Shopping reduced by ₹4410. Goal reach in 0.7 months. Excellent budget discipline!
+375,193232,375465,13314,8879,49.9,1508,1333,175,46687,0.24,0.76,500000,2.9,124535,352122,Dining increased by 50%. Goal reach in 2.9 months. Excellent budget discipline!
+376,38278,254958,6021,7877,-23.6,24278,33722,-9444,64677,1.69,0.0,1000000,-1.0,1000000,222620,Great! Shopping reduced by ₹9444. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+377,179869,472251,6499,5558,16.9,16267,10870,5397,51931,0.29,0.71,500000,3.2,27749,446286,Goal reach in 3.2 months. Excellent budget discipline!
+378,157119,122267,8701,10969,-20.7,8804,6303,2501,48384,0.31,0.69,50000,0.2,0,98075,Goal reach in 0.2 months. Excellent budget discipline!
+379,90096,439887,11261,10327,9.0,20718,27370,-6652,53422,0.59,0.41,1000000,24.9,560113,413176,Great! Shopping reduced by ₹6652. Goal reach in 24.9 months. Excellent budget discipline!
+380,60614,11358,4663,4896,-4.8,5154,3910,1244,54579,0.9,0.1,500000,82.5,488642,-15932,Goal reach in 82.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+381,172513,461496,5798,6783,-14.5,17713,12875,4838,51600,0.3,0.7,1000000,7.5,538504,435696,Goal reach in 7.5 months. Excellent budget discipline!
+382,65476,131484,5585,3396,64.5,10293,9296,997,30995,0.47,0.53,1000000,28.2,868516,115986,Dining increased by 64%. Goal reach in 28.2 months. Excellent budget discipline!
+383,40038,36644,4382,3531,24.1,17205,13717,3488,35111,0.88,0.12,50000,8.7,13356,19088,Goal reach in 8.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+384,120080,231582,10368,8283,25.2,11950,8212,3738,38256,0.32,0.68,100000,0.7,0,212454,Goal reach in 0.7 months. Excellent budget discipline!
+385,185505,228707,6887,9187,-25.0,6339,7675,-1336,24077,0.13,0.87,1000000,5.9,771293,216668,Goal reach in 5.9 months. Excellent budget discipline!
+386,189544,154054,8046,9920,-18.9,1854,1957,-103,19649,0.1,0.9,1000000,5.7,845946,144230,Goal reach in 5.7 months. Excellent budget discipline!
+387,155175,147177,13512,8145,65.9,9306,9155,151,39250,0.25,0.75,500000,4.1,352823,127552,Dining increased by 66%. Goal reach in 4.1 months. Excellent budget discipline!
+388,184700,34856,2051,1723,19.0,21633,25455,-3822,39837,0.22,0.78,1000000,6.9,965144,14938,Great! Shopping reduced by ₹3822. Goal reach in 6.9 months. Excellent budget discipline!
+389,68114,344636,6302,8233,-23.5,5655,7420,-1765,26910,0.4,0.6,50000,0.1,0,331181,Goal reach in 0.1 months. Excellent budget discipline!
+390,87633,292263,8080,11111,-27.3,12283,8313,3970,38619,0.44,0.56,1000000,19.2,707737,272954,Goal reach in 19.2 months. Excellent budget discipline!
+391,199090,421040,13629,16400,-16.9,23886,26777,-2891,83518,0.42,0.58,100000,0.1,0,379281,Great! Shopping reduced by ₹2891. Goal reach in 0.1 months. Excellent budget discipline!
+392,64898,82881,14837,10898,36.1,13068,8747,4321,49599,0.76,0.24,100000,5.5,17119,58082,Dining increased by 36%. Goal reach in 5.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+393,98836,443612,7665,10657,-28.1,10887,12478,-1591,38518,0.39,0.61,100000,0.2,0,424353,Goal reach in 0.2 months. Excellent budget discipline!
+394,81715,358035,13704,13883,-1.3,12276,16795,-4519,62284,0.76,0.24,100000,1.5,0,326893,Great! Shopping reduced by ₹4519. Goal reach in 1.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+395,44005,484390,6606,4310,53.3,11448,10225,1223,50141,1.14,0.0,100000,-1.0,100000,459320,Dining increased by 53%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+396,36143,256663,11509,7071,62.8,12246,10162,2084,41026,1.14,0.0,100000,-1.0,100000,236150,Dining increased by 63%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+397,167142,209737,5290,5806,-8.9,11890,14455,-2565,58607,0.35,0.65,100000,0.5,0,180434,Great! Shopping reduced by ₹2565. Goal reach in 0.5 months. Excellent budget discipline!
+398,86068,177858,5041,5971,-15.6,18581,22516,-3935,38325,0.45,0.55,100000,1.3,0,158696,Great! Shopping reduced by ₹3935. Goal reach in 1.3 months. Excellent budget discipline!
+399,91641,370892,9690,13233,-26.8,13729,9696,4033,45948,0.5,0.5,1000000,20.3,629108,347918,Goal reach in 20.3 months. Excellent budget discipline!
+400,37642,255855,14754,14092,4.7,16767,18026,-1259,57890,1.54,0.0,1000000,-1.0,1000000,226910,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+401,114149,91603,3046,3409,-10.7,23912,32056,-8144,43280,0.38,0.62,1000000,13.9,908397,69963,Great! Shopping reduced by ₹8144. Goal reach in 13.9 months. Excellent budget discipline!
+402,137441,332924,11510,7406,55.4,16385,14183,2202,56703,0.41,0.59,1000000,11.6,667076,304572,Dining increased by 55%. Goal reach in 11.6 months. Excellent budget discipline!
+403,141149,402309,5101,6788,-24.9,23230,17864,5366,63778,0.45,0.55,500000,5.4,97691,370420,Goal reach in 5.4 months. Excellent budget discipline!
+404,92183,427601,13189,18335,-28.1,1098,1343,-245,53332,0.58,0.42,1000000,23.5,572399,400935,Goal reach in 23.5 months. Excellent budget discipline!
+405,169515,333170,10089,10701,-5.7,2276,3046,-770,33565,0.2,0.8,50000,0.1,0,316388,Goal reach in 0.1 months. Excellent budget discipline!
+406,35007,396780,8430,7665,10.0,16606,20449,-3843,46671,1.33,0.0,50000,-1.0,50000,373444,Great! Shopping reduced by ₹3843. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+407,127429,164881,5761,6919,-16.7,13608,16218,-2610,52452,0.41,0.59,500000,6.2,335119,138655,Great! Shopping reduced by ₹2610. Goal reach in 6.2 months. Excellent budget discipline!
+408,172215,248858,9794,7693,27.3,7859,7204,655,55928,0.32,0.68,1000000,8.2,751142,220894,Goal reach in 8.2 months. Excellent budget discipline!
+409,37652,138213,13116,17948,-26.9,9669,13138,-3469,44847,1.19,0.0,500000,-1.0,500000,115790,Great! Shopping reduced by ₹3469. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+410,127378,334821,4711,3016,56.2,11988,8658,3330,40748,0.32,0.68,100000,0.4,0,314447,Dining increased by 56%. Goal reach in 0.4 months. Excellent budget discipline!
+411,44203,393726,8673,11528,-24.8,12276,14304,-2028,35025,0.79,0.21,50000,0.1,0,376214,Great! Shopping reduced by ₹2028. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+412,196538,105396,13460,11338,18.7,18282,21625,-3343,55455,0.28,0.72,50000,0.2,0,77668,Great! Shopping reduced by ₹3343. Goal reach in 0.2 months. Excellent budget discipline!
+413,35891,163266,13240,17575,-24.7,4193,4430,-237,42136,1.17,0.0,50000,-1.0,50000,142198,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+414,196786,148372,5547,3605,53.9,5470,3491,1979,32335,0.16,0.84,100000,0.4,0,132204,Dining increased by 54%. Goal reach in 0.4 months. Excellent budget discipline!
+415,158736,464895,13254,13594,-2.5,2777,2237,540,24072,0.15,0.85,100000,0.1,0,452859,Goal reach in 0.1 months. Excellent budget discipline!
+416,172744,195164,6591,6426,2.6,13749,15105,-1356,58204,0.34,0.66,500000,4.0,304836,166062,Goal reach in 4.0 months. Excellent budget discipline!
+417,127066,72989,5140,3227,59.3,7250,8785,-1535,27619,0.22,0.78,50000,0.4,0,59180,Dining increased by 59%. Goal reach in 0.4 months. Excellent budget discipline!
+418,123582,43121,3203,3334,-3.9,3735,4117,-382,35503,0.29,0.71,1000000,11.3,956879,25370,Goal reach in 11.3 months. Excellent budget discipline!
+419,127119,111873,12799,13842,-7.5,1316,1724,-408,29595,0.23,0.77,500000,4.9,388127,97076,Goal reach in 4.9 months. Excellent budget discipline!
+420,48938,294427,2702,2937,-8.0,8483,10940,-2457,50146,1.02,0.0,500000,-1.0,500000,269354,Great! Shopping reduced by ₹2457. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+421,110294,101495,9940,12340,-19.4,17671,22495,-4824,60014,0.54,0.46,500000,9.5,398505,71488,Great! Shopping reduced by ₹4824. Goal reach in 9.5 months. Excellent budget discipline!
+422,102842,203757,9368,5630,66.4,15144,15514,-370,41183,0.4,0.6,500000,7.4,296243,183166,Dining increased by 66%. Goal reach in 7.4 months. Excellent budget discipline!
+423,155709,471533,2576,2236,15.2,2896,2705,191,44976,0.29,0.71,500000,3.7,28467,449045,Goal reach in 3.7 months. Excellent budget discipline!
+424,52874,177232,6591,6967,-5.4,12841,16009,-3168,38222,0.72,0.28,1000000,65.8,822768,158121,Great! Shopping reduced by ₹3168. Goal reach in 65.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+425,63165,76735,13061,14985,-12.8,9351,12532,-3181,41177,0.65,0.35,1000000,44.8,923265,56146,Great! Shopping reduced by ₹3181. Goal reach in 44.8 months. Excellent budget discipline!
+426,114073,197480,6725,6495,3.5,19948,17907,2041,68048,0.6,0.4,500000,10.0,302520,163456,Goal reach in 10.0 months. Excellent budget discipline!
+427,88770,235819,3744,4572,-18.1,18017,13986,4031,51975,0.59,0.41,1000000,25.9,764181,209832,Goal reach in 25.9 months. Excellent budget discipline!
+428,189619,174009,11132,12714,-12.4,14715,19281,-4566,59056,0.31,0.69,500000,3.6,325991,144481,Great! Shopping reduced by ₹4566. Goal reach in 3.6 months. Excellent budget discipline!
+429,76922,274101,10274,8858,16.0,15112,14181,931,54350,0.71,0.29,1000000,41.9,725899,246926,Goal reach in 41.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+430,81742,340683,11358,14300,-20.6,4060,4689,-629,28684,0.35,0.65,500000,8.1,159317,326341,Goal reach in 8.1 months. Excellent budget discipline!
+431,137054,128427,5473,4445,23.1,5153,6249,-1096,33928,0.25,0.75,500000,4.6,371573,111463,Goal reach in 4.6 months. Excellent budget discipline!
+432,41462,149983,13796,14845,-7.1,8925,6643,2282,54536,1.32,0.0,500000,-1.0,500000,122715,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+433,97832,241109,11040,8716,26.7,24830,16801,8029,71239,0.73,0.27,500000,17.0,258891,205490,Goal reach in 17.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+434,87874,36654,9486,5942,59.6,4566,3687,879,26289,0.3,0.7,100000,1.5,63346,23510,Dining increased by 60%. Goal reach in 1.5 months. Excellent budget discipline!
+435,157699,424998,2772,2131,30.1,12026,15101,-3075,32503,0.21,0.79,1000000,7.3,575002,408746,Dining increased by 30%. Great! Shopping reduced by ₹3075. Goal reach in 7.3 months. Excellent budget discipline!
+436,30285,486966,3419,4191,-18.4,4232,4360,-128,24773,0.82,0.18,500000,73.0,13034,474580,Goal reach in 73.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+437,160231,109788,11572,8321,39.1,18039,17083,956,60818,0.38,0.62,50000,0.3,0,79379,Dining increased by 39%. Goal reach in 0.3 months. Excellent budget discipline!
+438,196054,158482,9298,11092,-16.2,19718,25190,-5472,38493,0.2,0.8,1000000,6.1,841518,139236,Great! Shopping reduced by ₹5472. Goal reach in 6.1 months. Excellent budget discipline!
+439,79843,276541,4969,3402,46.1,11529,15434,-3905,48673,0.61,0.39,1000000,30.3,723459,252204,Dining increased by 46%. Great! Shopping reduced by ₹3905. Goal reach in 30.3 months. Excellent budget discipline!
+440,195164,215799,8943,10595,-15.6,14898,14576,322,64654,0.33,0.67,1000000,7.3,784201,183472,Goal reach in 7.3 months. Excellent budget discipline!
+441,100834,430941,13776,14931,-7.7,17579,18143,-564,58868,0.58,0.42,100000,0.3,0,401507,Goal reach in 0.3 months. Excellent budget discipline!
+442,107545,227774,6840,5037,35.8,2281,1595,686,21862,0.2,0.8,50000,0.1,0,216843,Dining increased by 36%. Goal reach in 0.1 months. Excellent budget discipline!
+443,33147,165606,12030,10726,12.2,13218,15856,-2638,61603,1.86,0.0,50000,-1.0,50000,134804,Great! Shopping reduced by ₹2638. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+444,187050,381192,5282,4142,27.5,1197,1371,-174,34873,0.19,0.81,1000000,6.1,618808,363756,Goal reach in 6.1 months. Excellent budget discipline!
+445,57031,263258,7481,7561,-1.1,2816,2237,579,43199,0.76,0.24,50000,0.1,0,241658,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+446,174671,244647,7688,5743,33.9,3949,2451,1498,28573,0.16,0.84,100000,0.3,0,230360,Dining increased by 34%. Goal reach in 0.3 months. Excellent budget discipline!
+447,133236,40599,11824,13754,-14.0,4057,3120,937,47807,0.36,0.64,50000,0.5,0,16696,Goal reach in 0.5 months. Excellent budget discipline!
+448,90917,435778,2544,1686,50.9,23912,30683,-6771,63380,0.7,0.3,50000,0.1,0,404088,Dining increased by 51%. Great! Shopping reduced by ₹6771. Goal reach in 0.1 months. Excellent budget discipline!
+449,110376,400168,10528,11601,-9.3,9318,7982,1336,46889,0.42,0.58,1000000,14.5,599832,376724,Goal reach in 14.5 months. Excellent budget discipline!
+450,184417,12405,11139,10698,4.1,1010,1080,-70,53842,0.29,0.71,1000000,7.6,987595,-14516,Goal reach in 7.6 months. Excellent budget discipline!
+451,153292,277944,14170,12523,13.2,5061,5022,39,53165,0.35,0.65,1000000,9.4,722056,251362,Goal reach in 9.4 months. Excellent budget discipline!
+452,127074,62259,5288,3668,44.2,4682,5157,-475,30246,0.24,0.76,500000,5.0,437741,47136,Dining increased by 44%. Goal reach in 5.0 months. Excellent budget discipline!
+453,120864,423533,8047,6241,28.9,18407,16937,1470,51203,0.42,0.58,500000,6.0,76467,397932,Goal reach in 6.0 months. Excellent budget discipline!
+454,154822,51550,4047,3060,32.3,20161,14364,5797,60625,0.39,0.61,100000,1.0,48450,21238,Dining increased by 32%. Goal reach in 1.0 months. Excellent budget discipline!
+455,70561,376703,11021,10394,6.0,7847,7824,23,53403,0.76,0.24,1000000,53.9,623297,350002,Goal reach in 53.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+456,47851,100585,8354,5053,65.3,12505,11419,1086,34717,0.73,0.27,500000,36.5,399415,83226,Dining increased by 65%. Goal reach in 36.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+457,171068,444340,13996,11419,22.6,2149,1298,851,61247,0.36,0.64,100000,0.1,0,413716,Goal reach in 0.1 months. Excellent budget discipline!
+458,45868,140596,10781,8181,31.8,1572,1033,539,55053,1.2,0.0,500000,-1.0,500000,113070,Dining increased by 32%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+459,154529,219423,13160,14778,-11.0,3463,3131,332,34115,0.22,0.78,1000000,7.9,780577,202366,Goal reach in 7.9 months. Excellent budget discipline!
+460,78898,268627,10276,6236,64.8,7567,5512,2055,40156,0.51,0.49,50000,0.1,0,248549,Dining increased by 65%. Goal reach in 0.1 months. Excellent budget discipline!
+461,191448,264198,4961,5134,-3.4,19372,15300,4072,35336,0.18,0.82,1000000,6.1,735802,246530,Goal reach in 6.1 months. Excellent budget discipline!
+462,167850,347638,14214,10854,31.0,23614,29403,-5789,75067,0.45,0.55,100000,0.3,0,310104,Dining increased by 31%. Great! Shopping reduced by ₹5789. Goal reach in 0.3 months. Excellent budget discipline!
+463,86283,491371,9313,9837,-5.3,13063,14696,-1633,49736,0.58,0.42,1000000,24.7,508629,466503,Goal reach in 24.7 months. Excellent budget discipline!
+464,124805,443283,13110,8502,54.2,8254,5245,3009,51245,0.41,0.59,500000,5.6,56717,417660,Dining increased by 54%. Goal reach in 5.6 months. Excellent budget discipline!
+465,55454,56429,11308,10938,3.4,2430,1628,802,29480,0.53,0.47,100000,3.4,43571,41689,Goal reach in 3.4 months. Excellent budget discipline!
+466,111301,364145,6006,4485,33.9,10278,12367,-2089,42135,0.38,0.62,100000,0.4,0,343078,Dining increased by 34%. Great! Shopping reduced by ₹2089. Goal reach in 0.4 months. Excellent budget discipline!
+467,145352,383543,5720,4583,24.8,15751,16126,-375,62891,0.43,0.57,1000000,11.2,616457,352098,Goal reach in 11.2 months. Excellent budget discipline!
+468,168064,173558,2680,3752,-28.6,13215,12332,883,48500,0.29,0.71,500000,3.9,326442,149308,Goal reach in 3.9 months. Excellent budget discipline!
+469,97431,464297,9475,8195,15.6,20940,13085,7855,44126,0.45,0.55,50000,0.1,0,442234,Goal reach in 0.1 months. Excellent budget discipline!
+470,60207,138217,10946,14914,-26.6,6774,4311,2463,33589,0.56,0.44,100000,2.7,0,121422,Goal reach in 2.7 months. Excellent budget discipline!
+471,168798,113904,10374,7017,47.8,5964,5156,808,48008,0.28,0.72,100000,0.6,0,89900,Dining increased by 48%. Goal reach in 0.6 months. Excellent budget discipline!
+472,85946,272325,8011,7000,14.4,9899,8213,1686,43993,0.51,0.49,500000,10.6,227675,250328,Goal reach in 10.6 months. Excellent budget discipline!
+473,179079,210774,2442,2969,-17.7,5402,5640,-238,47521,0.27,0.73,50000,0.1,0,187014,Goal reach in 0.1 months. Excellent budget discipline!
+474,150750,317050,8054,9959,-19.1,9338,9320,18,61497,0.41,0.59,50000,0.1,0,286302,Goal reach in 0.1 months. Excellent budget discipline!
+475,173625,287359,2938,2842,3.4,5072,5896,-824,40459,0.23,0.77,100000,0.3,0,267130,Goal reach in 0.3 months. Excellent budget discipline!
+476,137496,37596,9312,12914,-27.9,5360,7226,-1866,46677,0.34,0.66,1000000,10.9,962404,14258,Goal reach in 10.9 months. Excellent budget discipline!
+477,96077,488989,5465,7280,-24.9,12952,13318,-366,32930,0.34,0.66,50000,0.1,0,472524,Goal reach in 0.1 months. Excellent budget discipline!
+478,46864,311563,14968,17406,-14.0,10170,9748,422,41974,0.9,0.1,50000,0.1,0,290576,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+479,130294,429507,2493,2546,-2.1,6960,7996,-1036,29354,0.23,0.77,1000000,9.1,570493,414830,Goal reach in 9.1 months. Excellent budget discipline!
+480,197157,41047,7470,8320,-10.2,2091,2269,-178,43592,0.22,0.78,1000000,6.5,958953,19251,Goal reach in 6.5 months. Excellent budget discipline!
+481,53434,402966,8351,10386,-19.6,14031,17769,-3738,39827,0.75,0.25,500000,30.8,97034,383052,Great! Shopping reduced by ₹3738. Goal reach in 30.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+482,141798,103487,11010,7466,47.5,11437,11018,419,46868,0.33,0.67,1000000,10.3,896513,80053,Dining increased by 47%. Goal reach in 10.3 months. Excellent budget discipline!
+483,78839,490993,6310,7562,-16.6,11775,7727,4048,41273,0.52,0.48,1000000,24.0,509007,470356,Goal reach in 24.0 months. Excellent budget discipline!
+484,180387,300069,8101,8550,-5.3,7222,4597,2625,54219,0.3,0.7,500000,3.5,199931,272960,Goal reach in 3.5 months. Excellent budget discipline!
+485,99193,444646,12313,12784,-3.7,12415,10261,2154,67160,0.68,0.32,1000000,28.4,555354,411066,Goal reach in 28.4 months. Excellent budget discipline!
+486,144846,275894,3250,2876,13.0,4533,4194,339,44456,0.31,0.69,100000,0.4,0,253666,Goal reach in 0.4 months. Excellent budget discipline!
+487,111742,485428,8174,10186,-19.8,8629,7976,653,62206,0.56,0.44,100000,0.1,0,454325,Goal reach in 0.1 months. Excellent budget discipline!
+488,120430,407963,9947,13813,-28.0,4157,5623,-1466,39703,0.33,0.67,50000,0.1,0,388112,Goal reach in 0.1 months. Excellent budget discipline!
+489,94279,169725,13222,10907,21.2,19489,19308,181,54381,0.58,0.42,50000,0.4,0,142534,Goal reach in 0.4 months. Excellent budget discipline!
+490,179056,467466,5001,6535,-23.5,3128,2180,948,20097,0.11,0.89,1000000,5.7,532534,457418,Goal reach in 5.7 months. Excellent budget discipline!
+491,107504,497026,11819,10051,17.6,16409,11425,4984,73172,0.68,0.32,50000,0.1,0,460440,Goal reach in 0.1 months. Excellent budget discipline!
+492,161065,408762,6943,8047,-13.7,2888,2126,762,40455,0.25,0.75,100000,0.2,0,388534,Goal reach in 0.2 months. Excellent budget discipline!
+493,162789,450677,9473,10379,-8.7,17922,22421,-4499,67534,0.41,0.59,1000000,9.6,549323,416910,Great! Shopping reduced by ₹4499. Goal reach in 9.6 months. Excellent budget discipline!
+494,152523,296765,3193,2797,14.1,5940,6971,-1031,41247,0.27,0.73,500000,4.0,203235,276142,Goal reach in 4.0 months. Excellent budget discipline!
+495,84979,346116,8562,10857,-21.1,22554,27730,-5176,48780,0.57,0.43,100000,0.9,0,321726,Great! Shopping reduced by ₹5176. Goal reach in 0.9 months. Excellent budget discipline!
+496,130520,286371,2773,2402,15.4,8398,8086,312,48174,0.37,0.63,500000,5.4,213629,262284,Goal reach in 5.4 months. Excellent budget discipline!
+497,106831,382513,14434,10299,40.2,7789,6046,1743,62303,0.58,0.42,50000,0.1,0,351362,Dining increased by 40%. Goal reach in 0.1 months. Excellent budget discipline!
+498,86475,263049,14188,10988,29.1,19984,16029,3955,71309,0.82,0.18,50000,0.1,0,227394,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+499,155279,86616,3811,4369,-12.8,9588,11268,-1680,23478,0.15,0.85,1000000,7.5,913384,74877,Goal reach in 7.5 months. Excellent budget discipline!
+500,45412,252381,10270,7954,29.1,22935,26685,-3750,65433,1.44,0.0,100000,-1.0,100000,219664,Great! Shopping reduced by ₹3750. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+501,187204,152965,13383,13852,-3.4,2534,1874,660,54682,0.29,0.71,100000,0.5,0,125624,Goal reach in 0.5 months. Excellent budget discipline!
+502,59466,350525,7264,6712,8.2,4857,6742,-1885,26531,0.45,0.55,50000,0.1,0,337260,Goal reach in 0.1 months. Excellent budget discipline!
+503,77228,36063,13901,8689,60.0,17995,21084,-3089,63032,0.82,0.18,500000,34.7,463937,4547,Dining increased by 60%. Great! Shopping reduced by ₹3089. Goal reach in 34.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+504,117120,229114,7649,9892,-22.7,23104,25203,-2099,52619,0.45,0.55,500000,7.0,270886,202804,Great! Shopping reduced by ₹2099. Goal reach in 7.0 months. Excellent budget discipline!
+505,121146,121434,9611,12061,-20.3,17546,10857,6689,67684,0.56,0.44,100000,1.4,0,87592,Goal reach in 1.4 months. Excellent budget discipline!
+506,118711,140436,3009,3869,-22.2,24318,29013,-4695,64116,0.54,0.46,1000000,17.8,859564,108378,Great! Shopping reduced by ₹4695. Goal reach in 17.8 months. Excellent budget discipline!
+507,66921,174343,9438,8962,5.3,1576,1917,-341,40745,0.61,0.39,100000,2.5,0,153970,Goal reach in 2.5 months. Excellent budget discipline!
+508,198011,73343,11128,15391,-27.7,3780,3297,483,30805,0.16,0.84,500000,2.9,426657,57940,Goal reach in 2.9 months. Excellent budget discipline!
+509,171546,75177,2364,2001,18.1,7149,6783,366,18468,0.11,0.89,500000,3.2,424823,65943,Goal reach in 3.2 months. Excellent budget discipline!
+510,44101,480959,14906,10922,36.5,7880,6108,1772,52588,1.19,0.0,500000,-1.0,500000,454665,Dining increased by 36%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+511,126311,177143,6884,4451,54.7,18969,12852,6117,64054,0.51,0.49,50000,0.2,0,145116,Dining increased by 55%. Goal reach in 0.2 months. Excellent budget discipline!
+512,139706,137031,10859,11601,-6.4,21010,29211,-8201,70077,0.5,0.5,100000,1.0,0,101992,Great! Shopping reduced by ₹8201. Goal reach in 1.0 months. Excellent budget discipline!
+513,113026,475212,6354,4517,40.7,20172,14878,5294,73325,0.65,0.35,500000,10.2,24788,438550,Dining increased by 41%. Goal reach in 10.2 months. Excellent budget discipline!
+514,70324,370127,4334,5162,-16.0,24588,20690,3898,71820,1.02,0.0,50000,-1.0,50000,334217,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+515,144890,455679,5433,5770,-5.8,21751,23078,-1327,67552,0.47,0.53,1000000,11.8,544321,421903,Goal reach in 11.8 months. Excellent budget discipline!
+516,172208,209719,14454,17643,-18.1,7048,6097,951,58704,0.34,0.66,100000,0.5,0,180367,Goal reach in 0.5 months. Excellent budget discipline!
+517,91547,210066,6570,5502,19.4,20324,16301,4023,65489,0.72,0.28,500000,17.6,289934,177322,Goal reach in 17.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+518,192184,67907,11707,10458,11.9,12357,12424,-67,49659,0.26,0.74,1000000,6.9,932093,43078,Goal reach in 6.9 months. Excellent budget discipline!
+519,53159,36074,13496,16857,-19.9,17029,18180,-1151,74077,1.39,0.0,1000000,-1.0,1000000,-964,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+520,199067,473833,11863,10826,9.6,6977,6330,647,42406,0.21,0.79,1000000,5.8,526167,452630,Goal reach in 5.8 months. Excellent budget discipline!
+521,74558,400257,14102,16900,-16.6,23529,32757,-9228,55532,0.74,0.26,1000000,48.4,599743,372491,Great! Shopping reduced by ₹9228. Goal reach in 48.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+522,141290,486270,9077,8160,11.2,2449,2547,-98,25157,0.18,0.82,100000,0.1,0,473692,Goal reach in 0.1 months. Excellent budget discipline!
+523,84995,454798,11807,8415,40.3,24848,21222,3626,59628,0.7,0.3,100000,0.4,0,424984,Dining increased by 40%. Goal reach in 0.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+524,131331,281874,8850,12199,-27.5,15436,9484,5952,67347,0.51,0.49,50000,0.1,0,248200,Goal reach in 0.1 months. Excellent budget discipline!
+525,120210,82044,4468,3538,26.3,20706,18570,2136,37638,0.31,0.69,100000,1.0,17956,63225,Goal reach in 1.0 months. Excellent budget discipline!
+526,196463,51497,14083,17258,-18.4,6994,5306,1688,37463,0.19,0.81,50000,0.2,0,32766,Goal reach in 0.2 months. Excellent budget discipline!
+527,72331,139342,11926,11773,1.3,2378,2860,-482,37833,0.52,0.48,50000,0.6,0,120426,Goal reach in 0.6 months. Excellent budget discipline!
+528,74311,365543,9783,13097,-25.3,18230,18125,105,66410,0.89,0.11,1000000,117.3,634457,332338,Goal reach in 117.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+529,156897,122694,13239,8368,58.2,14406,16509,-2103,40788,0.26,0.74,500000,4.1,377306,102300,Dining increased by 58%. Great! Shopping reduced by ₹2103. Goal reach in 4.1 months. Excellent budget discipline!
+530,85744,165271,3641,2199,65.6,10685,9761,924,29417,0.34,0.66,100000,1.2,0,150562,Dining increased by 66%. Goal reach in 1.2 months. Excellent budget discipline!
+531,177129,321202,2370,1982,19.6,15252,10950,4302,57348,0.32,0.68,100000,0.3,0,292528,Goal reach in 0.3 months. Excellent budget discipline!
+532,148616,279085,12581,9553,31.7,11833,13770,-1937,39468,0.27,0.73,100000,0.4,0,259351,Dining increased by 32%. Goal reach in 0.4 months. Excellent budget discipline!
+533,78804,110491,6153,5557,10.7,4485,4717,-232,20828,0.26,0.74,50000,0.5,0,100077,Goal reach in 0.5 months. Excellent budget discipline!
+534,128780,410689,7401,6889,7.4,3666,4519,-853,46824,0.36,0.64,500000,5.1,89311,387277,Goal reach in 5.1 months. Excellent budget discipline!
+535,149088,106219,7362,10047,-26.7,10847,14734,-3887,28649,0.19,0.81,1000000,8.1,893781,91894,Great! Shopping reduced by ₹3887. Goal reach in 8.1 months. Excellent budget discipline!
+536,191360,435321,13284,12637,5.1,16561,19852,-3291,72564,0.38,0.62,50000,0.1,0,399039,Great! Shopping reduced by ₹3291. Goal reach in 0.1 months. Excellent budget discipline!
+537,148882,386912,5565,3441,61.7,2841,2141,700,41092,0.28,0.72,50000,0.1,0,366366,Dining increased by 62%. Goal reach in 0.1 months. Excellent budget discipline!
+538,187094,457001,8987,6716,33.8,10037,11065,-1028,46507,0.25,0.75,100000,0.1,0,433748,Dining increased by 34%. Goal reach in 0.1 months. Excellent budget discipline!
+539,161254,425234,10890,10382,4.9,23038,28608,-5570,52773,0.33,0.67,50000,0.1,0,398848,Great! Shopping reduced by ₹5570. Goal reach in 0.1 months. Excellent budget discipline!
+540,66648,369637,3616,2696,34.1,21151,20855,296,70818,1.06,0.0,1000000,-1.0,1000000,334228,Dining increased by 34%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+541,31417,273998,11276,13377,-15.7,9270,11597,-2327,67312,2.14,0.0,50000,-1.0,50000,240342,Great! Shopping reduced by ₹2327. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+542,78605,375511,8101,8932,-9.3,15439,19180,-3741,38965,0.5,0.5,50000,0.1,0,356028,Great! Shopping reduced by ₹3741. Goal reach in 0.1 months. Excellent budget discipline!
+543,69029,214311,10672,14518,-26.5,13432,15473,-2041,33411,0.48,0.52,1000000,26.9,785689,197606,Great! Shopping reduced by ₹2041. Goal reach in 26.9 months. Excellent budget discipline!
+544,71735,229758,7174,8238,-12.9,7314,5813,1501,47766,0.67,0.33,100000,2.3,0,205875,Goal reach in 2.3 months. Excellent budget discipline!
+545,100307,349849,8842,5379,64.4,22169,23593,-1424,54386,0.54,0.46,1000000,20.3,650151,322656,Dining increased by 64%. Goal reach in 20.3 months. Excellent budget discipline!
+546,146621,52754,13977,16445,-15.0,23990,29559,-5569,63522,0.43,0.57,500000,5.9,447246,20993,Great! Shopping reduced by ₹5569. Goal reach in 5.9 months. Excellent budget discipline!
+547,93915,448243,3177,2339,35.8,22138,18697,3441,60136,0.64,0.36,50000,0.1,0,418175,Dining increased by 36%. Goal reach in 0.1 months. Excellent budget discipline!
+548,143673,17647,7314,5572,31.3,4437,3165,1272,47808,0.33,0.67,1000000,10.4,982353,-6257,Dining increased by 31%. Goal reach in 10.4 months. Excellent budget discipline!
+549,158761,174925,9766,13205,-26.0,10910,14516,-3606,58223,0.37,0.63,500000,4.6,325075,145814,Great! Shopping reduced by ₹3606. Goal reach in 4.6 months. Excellent budget discipline!
+550,161990,378879,13656,17272,-20.9,22206,29847,-7641,77112,0.48,0.52,100000,0.3,0,340323,Great! Shopping reduced by ₹7641. Goal reach in 0.3 months. Excellent budget discipline!
+551,74636,333780,3181,4312,-26.2,9897,9759,138,30537,0.41,0.59,500000,9.8,166220,318512,Goal reach in 9.8 months. Excellent budget discipline!
+552,177420,71973,5686,4207,35.2,13918,16399,-2481,59098,0.33,0.67,100000,0.7,0,42424,Dining increased by 35%. Great! Shopping reduced by ₹2481. Goal reach in 0.7 months. Excellent budget discipline!
+553,94049,466887,3613,3016,19.8,15835,12190,3645,49072,0.52,0.48,1000000,20.2,533113,442351,Goal reach in 20.2 months. Excellent budget discipline!
+554,117745,344108,8952,12174,-26.5,20454,21163,-709,59924,0.51,0.49,500000,7.5,155892,314146,Goal reach in 7.5 months. Excellent budget discipline!
+555,92894,165346,2834,2152,31.7,9678,7012,2666,41909,0.45,0.55,50000,0.3,0,144392,Dining increased by 32%. Goal reach in 0.3 months. Excellent budget discipline!
+556,102778,150122,6022,7100,-15.2,22398,20901,1497,61072,0.59,0.41,50000,0.5,0,119586,Goal reach in 0.5 months. Excellent budget discipline!
+557,41358,313600,8818,8423,4.7,23736,26594,-2858,61076,1.48,0.0,100000,-1.0,100000,283062,Great! Shopping reduced by ₹2858. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+558,93036,8224,12481,12235,2.0,2294,3012,-718,36038,0.39,0.61,50000,0.8,0,-9795,Goal reach in 0.8 months. Excellent budget discipline!
+559,89664,368045,13521,10894,24.1,2928,3249,-321,60515,0.67,0.33,500000,14.6,131955,337788,Goal reach in 14.6 months. Excellent budget discipline!
+560,132646,109793,9220,10124,-8.9,19888,15539,4349,57097,0.43,0.57,500000,6.3,390207,81244,Goal reach in 6.3 months. Excellent budget discipline!
+561,112367,396584,9131,7451,22.5,19116,12775,6341,67933,0.6,0.4,100000,0.5,0,362618,Goal reach in 0.5 months. Excellent budget discipline!
+562,148352,8121,3848,2646,45.4,24849,30072,-5223,50266,0.34,0.66,500000,5.1,491879,-17012,Dining increased by 45%. Great! Shopping reduced by ₹5223. Goal reach in 5.1 months. Excellent budget discipline!
+563,118342,56338,14200,9046,57.0,6159,5397,762,58102,0.49,0.51,500000,8.1,443662,27287,Dining increased by 57%. Goal reach in 8.1 months. Excellent budget discipline!
+564,110977,8297,5985,6257,-4.3,13564,16843,-3279,38574,0.35,0.65,50000,0.7,0,-10990,Great! Shopping reduced by ₹3279. Goal reach in 0.7 months. Excellent budget discipline!
+565,74645,211550,11318,13148,-13.9,6069,7672,-1603,53827,0.72,0.28,1000000,46.0,788450,184636,Goal reach in 46.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+566,119064,388547,7031,7392,-4.9,13457,8383,5074,57546,0.48,0.52,100000,0.4,0,359774,Goal reach in 0.4 months. Excellent budget discipline!
+567,90561,132483,6472,5106,26.8,21784,22251,-467,74444,0.82,0.18,50000,1.5,0,95261,Goal reach in 1.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+568,192087,221867,11733,8062,45.5,23119,28681,-5562,64111,0.33,0.67,50000,0.1,0,189812,Dining increased by 46%. Great! Shopping reduced by ₹5562. Goal reach in 0.1 months. Excellent budget discipline!
+569,149958,296768,14704,14296,2.9,17033,11794,5239,69405,0.46,0.54,50000,0.1,0,262066,Goal reach in 0.1 months. Excellent budget discipline!
+570,121945,173987,12074,14687,-17.8,22971,15650,7321,68880,0.56,0.44,50000,0.3,0,139547,Goal reach in 0.3 months. Excellent budget discipline!
+571,183392,400075,8090,7179,12.7,8338,6951,1387,31033,0.17,0.83,500000,2.8,99925,384558,Goal reach in 2.8 months. Excellent budget discipline!
+572,33281,174259,2764,3520,-21.5,18401,25308,-6907,54868,1.65,0.0,1000000,-1.0,1000000,146825,Great! Shopping reduced by ₹6907. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+573,164467,448611,5686,6282,-9.5,19466,22353,-2887,55888,0.34,0.66,100000,0.1,0,420667,Great! Shopping reduced by ₹2887. Goal reach in 0.1 months. Excellent budget discipline!
+574,80864,452984,13810,10903,26.7,6465,3947,2518,33820,0.42,0.58,50000,0.1,0,436074,Goal reach in 0.1 months. Excellent budget discipline!
+575,95937,205778,12884,8283,55.6,21361,22413,-1052,74614,0.78,0.22,500000,21.5,294222,168471,Dining increased by 56%. Goal reach in 21.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+576,65301,349403,9275,7702,20.4,15180,18387,-3207,57455,0.88,0.12,50000,0.1,0,320676,Great! Shopping reduced by ₹3207. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+577,70957,449725,2535,2727,-7.1,19608,26434,-6826,39806,0.56,0.44,100000,0.3,0,429822,Great! Shopping reduced by ₹6826. Goal reach in 0.3 months. Excellent budget discipline!
+578,152756,407388,13719,18975,-27.7,17548,22001,-4453,61766,0.4,0.6,50000,0.1,0,376505,Great! Shopping reduced by ₹4453. Goal reach in 0.1 months. Excellent budget discipline!
+579,36063,392452,10382,6716,54.6,21427,15947,5480,77100,2.14,0.0,100000,-1.0,100000,353902,Dining increased by 55%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+580,138602,263048,3311,3128,5.8,2745,2918,-173,50462,0.36,0.64,50000,0.1,0,237817,Goal reach in 0.1 months. Excellent budget discipline!
+581,189292,99511,2154,1711,25.9,6606,4493,2113,23788,0.13,0.87,500000,2.9,400489,87617,Goal reach in 2.9 months. Excellent budget discipline!
+582,91008,27457,9902,6562,50.9,21086,17993,3093,42845,0.47,0.53,500000,10.3,472543,6034,Dining increased by 51%. Goal reach in 10.3 months. Excellent budget discipline!
+583,118576,309952,12072,9311,29.7,5828,8024,-2196,51737,0.44,0.56,500000,6.6,190048,284084,Great! Shopping reduced by ₹2196. Goal reach in 6.6 months. Excellent budget discipline!
+584,42566,285968,5516,5064,8.9,13097,10112,2985,51352,1.21,0.0,50000,-1.0,50000,260292,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+585,80697,161410,3144,3463,-9.2,10041,9244,797,25586,0.32,0.68,500000,8.5,338590,148617,Goal reach in 8.5 months. Excellent budget discipline!
+586,118554,98398,3202,4432,-27.8,18637,24999,-6362,30957,0.26,0.74,1000000,11.2,901602,82920,Great! Shopping reduced by ₹6362. Goal reach in 11.2 months. Excellent budget discipline!
+587,143858,410320,2770,2472,12.0,24971,29392,-4421,55194,0.38,0.62,500000,4.7,89680,382723,Great! Shopping reduced by ₹4421. Goal reach in 4.7 months. Excellent budget discipline!
+588,64636,479220,10936,10181,7.4,18597,19326,-729,66882,1.03,0.0,100000,-1.0,100000,445779,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+589,175993,161758,10575,12724,-16.9,10934,11588,-654,36732,0.21,0.79,100000,0.5,0,143392,Goal reach in 0.5 months. Excellent budget discipline!
+590,175289,261897,2287,1629,40.4,11581,13993,-2412,39789,0.23,0.77,1000000,7.0,738103,242002,Dining increased by 40%. Great! Shopping reduced by ₹2412. Goal reach in 7.0 months. Excellent budget discipline!
+591,164445,218538,3942,4919,-19.9,12559,11945,614,59417,0.36,0.64,50000,0.1,0,188830,Goal reach in 0.1 months. Excellent budget discipline!
+592,141656,482859,5587,5492,1.7,17516,23838,-6322,53843,0.38,0.62,50000,0.1,0,455938,Great! Shopping reduced by ₹6322. Goal reach in 0.1 months. Excellent budget discipline!
+593,85025,446090,12051,11911,1.2,20282,27121,-6839,66145,0.78,0.22,50000,0.1,0,413018,Great! Shopping reduced by ₹6839. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+594,84654,117971,7923,6477,22.3,22846,14985,7861,71971,0.85,0.15,1000000,77.0,882029,81986,Goal reach in 77.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+595,86366,124552,10562,7474,41.3,1586,1716,-130,23689,0.27,0.73,100000,1.2,0,112708,Dining increased by 41%. Goal reach in 1.2 months. Excellent budget discipline!
+596,66186,329455,2547,2182,16.7,6724,4067,2657,31254,0.47,0.53,500000,12.4,170545,313828,Goal reach in 12.4 months. Excellent budget discipline!
+597,83915,226137,12523,9484,32.0,3884,5323,-1439,36258,0.43,0.57,50000,0.1,0,208008,Dining increased by 32%. Goal reach in 0.1 months. Excellent budget discipline!
+598,55526,273787,8760,6334,38.3,6845,9008,-2163,28565,0.51,0.49,500000,16.5,226213,259504,Dining increased by 38%. Great! Shopping reduced by ₹2163. Goal reach in 16.5 months. Excellent budget discipline!
+599,150453,283153,9935,7272,36.6,18545,19746,-1201,64917,0.43,0.57,50000,0.1,0,250694,Dining increased by 37%. Goal reach in 0.1 months. Excellent budget discipline!
+600,56443,89593,10175,13100,-22.3,7743,7705,38,36850,0.65,0.35,1000000,50.1,910407,71168,Goal reach in 50.1 months. Excellent budget discipline!
+601,171696,347629,4815,6406,-24.8,1833,1197,636,50940,0.3,0.7,50000,0.1,0,322159,Goal reach in 0.1 months. Excellent budget discipline!
+602,172615,146485,12290,17112,-28.2,17243,22441,-5198,56051,0.32,0.68,500000,4.0,353515,118460,Great! Shopping reduced by ₹5198. Goal reach in 4.0 months. Excellent budget discipline!
+603,175661,61550,13343,8458,57.7,17990,14047,3943,60940,0.35,0.65,500000,4.3,438450,31080,Dining increased by 58%. Goal reach in 4.3 months. Excellent budget discipline!
+604,39362,174671,8269,6211,33.1,14191,17968,-3777,55798,1.42,0.0,50000,-1.0,50000,146772,Dining increased by 33%. Great! Shopping reduced by ₹3777. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+605,180513,29988,7662,7858,-2.5,7214,9365,-2151,38551,0.21,0.79,1000000,7.0,970012,10712,Great! Shopping reduced by ₹2151. Goal reach in 7.0 months. Excellent budget discipline!
+606,191901,173124,13001,9309,39.7,21013,19292,1721,48321,0.25,0.75,500000,3.2,326876,148964,Dining increased by 40%. Goal reach in 3.2 months. Excellent budget discipline!
+607,174341,313832,11775,16212,-27.4,8476,7854,622,65688,0.38,0.62,1000000,8.6,686168,280988,Goal reach in 8.6 months. Excellent budget discipline!
+608,153316,210632,2554,1969,29.7,5815,5220,595,30544,0.2,0.8,1000000,7.8,789368,195360,Goal reach in 7.8 months. Excellent budget discipline!
+609,106683,454636,3725,4960,-24.9,25000,31259,-6259,44969,0.42,0.58,100000,0.1,0,432152,Great! Shopping reduced by ₹6259. Goal reach in 0.1 months. Excellent budget discipline!
+610,50924,142047,7237,8012,-9.7,4795,3692,1103,41932,0.82,0.18,1000000,108.1,857953,121081,Goal reach in 108.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+611,173488,122796,5280,5765,-8.4,16945,20840,-3895,43022,0.25,0.75,100000,0.6,0,101285,Great! Shopping reduced by ₹3895. Goal reach in 0.6 months. Excellent budget discipline!
+612,71869,398939,11223,15388,-27.1,13008,16081,-3073,59943,0.83,0.17,50000,0.1,0,368968,Great! Shopping reduced by ₹3073. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+613,189328,114275,9045,10645,-15.0,10293,10924,-631,40371,0.21,0.79,100000,0.5,0,94090,Goal reach in 0.5 months. Excellent budget discipline!
+614,197693,348531,7396,6568,12.6,12862,17336,-4474,46537,0.24,0.76,100000,0.2,0,325262,Great! Shopping reduced by ₹4474. Goal reach in 0.2 months. Excellent budget discipline!
+615,84901,92973,10871,13267,-18.1,15211,9926,5285,66375,0.78,0.22,100000,4.4,7027,59786,Goal reach in 4.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+616,155191,176351,5947,6069,-2.0,19962,16533,3429,35622,0.23,0.77,1000000,8.1,823649,158540,Goal reach in 8.1 months. Excellent budget discipline!
+617,103904,338723,2530,1818,39.1,7220,9705,-2485,17383,0.17,0.83,500000,5.0,161277,330032,Dining increased by 39%. Great! Shopping reduced by ₹2485. Goal reach in 5.0 months. Excellent budget discipline!
+618,83062,187505,4235,3835,10.4,6532,8998,-2466,42156,0.51,0.49,100000,1.5,0,166427,Great! Shopping reduced by ₹2466. Goal reach in 1.5 months. Excellent budget discipline!
+619,159069,493228,5256,6620,-20.6,9420,12331,-2911,27372,0.17,0.83,100000,0.1,0,479542,Great! Shopping reduced by ₹2911. Goal reach in 0.1 months. Excellent budget discipline!
+620,37352,351585,6162,6311,-2.4,4143,5229,-1086,47593,1.27,0.0,50000,-1.0,50000,327788,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+621,175174,216158,11642,13714,-15.1,8324,10933,-2609,34303,0.2,0.8,500000,3.2,283842,199006,Great! Shopping reduced by ₹2609. Goal reach in 3.2 months. Excellent budget discipline!
+622,52530,124359,13023,10799,20.6,4494,5449,-955,49803,0.95,0.05,100000,27.5,0,99458,Goal reach in 27.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+623,42619,106664,3116,2200,41.7,13272,15244,-1972,56577,1.33,0.0,50000,-1.0,50000,78376,Dining increased by 42%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+624,87980,175783,5171,6913,-25.2,17682,17218,464,61502,0.7,0.3,500000,17.6,324217,145032,Goal reach in 17.6 months. Excellent budget discipline!
+625,195701,297655,14941,18339,-18.5,2914,2435,479,33193,0.17,0.83,1000000,5.8,702345,281058,Goal reach in 5.8 months. Excellent budget discipline!
+626,172477,134229,13568,17611,-23.0,11054,14343,-3289,66249,0.38,0.62,100000,0.7,0,101104,Great! Shopping reduced by ₹3289. Goal reach in 0.7 months. Excellent budget discipline!
+627,196514,424011,4970,3637,36.7,4205,4495,-290,47798,0.24,0.76,1000000,6.2,575989,400112,Dining increased by 37%. Goal reach in 6.2 months. Excellent budget discipline!
+628,130090,395061,5436,6598,-17.6,23863,25361,-1498,40295,0.31,0.69,500000,4.7,104939,374914,Goal reach in 4.7 months. Excellent budget discipline!
+629,60527,387414,5023,4612,8.9,8871,8479,392,52095,0.86,0.14,50000,0.1,0,361366,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+630,67986,261475,13533,14481,-6.5,9424,10998,-1574,66669,0.98,0.02,1000000,719.6,738525,228140,Goal reach in 719.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+631,120759,277936,3865,4390,-12.0,24924,15084,9840,56692,0.47,0.53,100000,0.7,0,249590,Goal reach in 0.7 months. Excellent budget discipline!
+632,191591,21848,14247,14221,0.2,6756,7700,-944,38232,0.2,0.8,50000,0.3,0,2732,Goal reach in 0.3 months. Excellent budget discipline!
+633,132973,294778,13313,11557,15.2,6253,4025,2228,39948,0.3,0.7,100000,0.4,0,274804,Goal reach in 0.4 months. Excellent budget discipline!
+634,30649,490419,13808,15099,-8.5,20070,18888,1182,58701,1.92,0.0,1000000,-1.0,1000000,461068,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+635,194273,335816,10413,10534,-1.1,15951,19395,-3444,58189,0.3,0.7,50000,0.1,0,306722,Great! Shopping reduced by ₹3444. Goal reach in 0.1 months. Excellent budget discipline!
+636,46704,449026,2114,1735,21.9,16407,12115,4292,53875,1.15,0.0,50000,-1.0,50000,422088,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+637,46994,291151,10062,9632,4.5,7310,9980,-2670,42113,0.9,0.1,50000,0.1,0,270094,Great! Shopping reduced by ₹2670. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+638,90457,328158,10480,7856,33.4,7386,6331,1055,51036,0.56,0.44,500000,11.0,171842,302640,Dining increased by 33%. Goal reach in 11.0 months. Excellent budget discipline!
+639,177652,239864,12168,16510,-26.3,1430,1663,-233,33932,0.19,0.81,500000,3.1,260136,222898,Goal reach in 3.1 months. Excellent budget discipline!
+640,150168,49411,6136,4002,53.3,7914,10156,-2242,28197,0.19,0.81,500000,4.0,450589,35312,Dining increased by 53%. Great! Shopping reduced by ₹2242. Goal reach in 4.0 months. Excellent budget discipline!
+641,63220,400272,10685,10717,-0.3,2425,3035,-610,43732,0.69,0.31,50000,0.1,0,378406,Goal reach in 0.1 months. Excellent budget discipline!
+642,62264,161441,5747,5406,6.3,3086,3000,86,33874,0.54,0.46,500000,16.5,338559,144504,Goal reach in 16.5 months. Excellent budget discipline!
+643,152789,218036,14770,13470,9.6,10849,9221,1628,64226,0.42,0.58,50000,0.1,0,185923,Goal reach in 0.1 months. Excellent budget discipline!
+644,95608,247122,14384,15536,-7.4,20840,20846,-6,59010,0.62,0.38,1000000,26.0,752878,217617,Goal reach in 26.0 months. Excellent budget discipline!
+645,103366,322436,7205,9390,-23.3,21374,24922,-3548,43190,0.42,0.58,50000,0.1,0,300841,Great! Shopping reduced by ₹3548. Goal reach in 0.1 months. Excellent budget discipline!
+646,44893,468839,8170,5615,45.5,22172,26593,-4421,68820,1.53,0.0,50000,-1.0,50000,434429,Dining increased by 46%. Great! Shopping reduced by ₹4421. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+647,147665,134350,5108,6295,-18.9,5589,7704,-2115,49774,0.34,0.66,1000000,9.9,865650,109463,Great! Shopping reduced by ₹2115. Goal reach in 9.9 months. Excellent budget discipline!
+648,121464,287845,11538,7179,60.7,22446,21962,484,68101,0.56,0.44,1000000,17.7,712155,253794,Dining increased by 61%. Goal reach in 17.7 months. Excellent budget discipline!
+649,68420,163307,9725,9958,-2.3,15592,17597,-2005,37114,0.54,0.46,1000000,30.9,836693,144750,Great! Shopping reduced by ₹2005. Goal reach in 30.9 months. Excellent budget discipline!
+650,192219,26573,2971,2914,2.0,13133,11794,1339,44394,0.23,0.77,100000,0.6,0,4376,Goal reach in 0.6 months. Excellent budget discipline!
+651,47497,196593,5065,4711,7.5,8465,6680,1785,46620,0.98,0.02,500000,525.3,303407,173283,Goal reach in 525.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+652,87294,277543,7889,7831,0.7,24174,27915,-3741,45634,0.52,0.48,500000,10.7,222457,254726,Great! Shopping reduced by ₹3741. Goal reach in 10.7 months. Excellent budget discipline!
+653,30545,256239,4568,3752,21.8,4394,3517,877,48259,1.58,0.0,100000,-1.0,100000,232110,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+654,155712,157871,9454,6282,50.5,1677,1584,93,27917,0.18,0.82,500000,3.7,342129,143912,Dining increased by 50%. Goal reach in 3.7 months. Excellent budget discipline!
+655,141746,221112,11542,15427,-25.2,20183,23454,-3271,55035,0.39,0.61,500000,5.3,278888,193594,Great! Shopping reduced by ₹3271. Goal reach in 5.3 months. Excellent budget discipline!
+656,196151,162141,3612,4307,-16.1,15845,19886,-4041,48223,0.25,0.75,1000000,6.5,837859,138030,Great! Shopping reduced by ₹4041. Goal reach in 6.5 months. Excellent budget discipline!
+657,183438,471917,3236,3670,-11.8,21621,28891,-7270,35880,0.2,0.8,50000,0.1,0,453977,Great! Shopping reduced by ₹7270. Goal reach in 0.1 months. Excellent budget discipline!
+658,181975,459602,5450,4426,23.1,22393,14122,8271,48158,0.26,0.74,50000,0.1,0,435523,Goal reach in 0.1 months. Excellent budget discipline!
+659,148926,56499,11298,10051,12.4,4827,6439,-1612,30780,0.21,0.79,500000,4.1,443501,41109,Goal reach in 4.1 months. Excellent budget discipline!
+660,192658,52657,14377,12977,10.8,2398,2149,249,53020,0.28,0.72,1000000,7.1,947343,26147,Goal reach in 7.1 months. Excellent budget discipline!
+661,140145,163172,9952,12709,-21.7,20472,26183,-5711,57389,0.41,0.59,1000000,11.7,836828,134478,Great! Shopping reduced by ₹5711. Goal reach in 11.7 months. Excellent budget discipline!
+662,156031,245420,7859,7338,7.1,23329,23181,148,75661,0.48,0.52,500000,5.6,254580,207590,Goal reach in 5.6 months. Excellent budget discipline!
+663,61827,126719,11030,10362,6.4,21094,29227,-8133,71792,1.16,0.0,50000,-1.0,50000,90823,Great! Shopping reduced by ₹8133. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+664,39746,53933,9049,9048,0.0,12968,10940,2028,36851,0.93,0.07,1000000,341.7,946067,35508,Goal reach in 341.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+665,92763,269898,13187,10249,28.7,1993,1870,123,42265,0.46,0.54,500000,8.8,230102,248766,Goal reach in 8.8 months. Excellent budget discipline!
+666,106284,174654,14120,9506,48.5,18323,12240,6083,61504,0.58,0.42,50000,0.3,0,143902,Dining increased by 49%. Goal reach in 0.3 months. Excellent budget discipline!
+667,166560,463723,6569,4740,38.6,8507,6172,2335,45308,0.27,0.73,500000,3.4,36277,441069,Dining increased by 39%. Goal reach in 3.4 months. Excellent budget discipline!
+668,131782,134330,4327,5375,-19.5,23607,28039,-4432,68384,0.52,0.48,1000000,15.3,865670,100138,Great! Shopping reduced by ₹4432. Goal reach in 15.3 months. Excellent budget discipline!
+669,46132,161335,13043,10835,20.4,5236,4058,1178,47160,1.02,0.0,50000,-1.0,50000,137755,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+670,104776,466444,12085,7659,57.8,23888,28220,-4332,64679,0.62,0.38,500000,10.1,33556,434104,Dining increased by 58%. Great! Shopping reduced by ₹4332. Goal reach in 10.1 months. Excellent budget discipline!
+671,41199,374236,3953,2743,44.1,3673,5030,-1357,29187,0.71,0.29,100000,2.1,0,359642,Dining increased by 44%. Goal reach in 2.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+672,121296,26431,7890,7800,1.2,9693,6932,2761,47137,0.39,0.61,50000,0.6,0,2862,Goal reach in 0.6 months. Excellent budget discipline!
+673,68007,493893,12491,17107,-27.0,13042,15102,-2060,43963,0.65,0.35,50000,0.1,0,471912,Great! Shopping reduced by ₹2060. Goal reach in 0.1 months. Excellent budget discipline!
+674,103790,149129,7307,10051,-27.3,21855,29524,-7669,65731,0.63,0.37,500000,12.4,350871,116264,Great! Shopping reduced by ₹7669. Goal reach in 12.4 months. Excellent budget discipline!
+675,111288,196476,3256,2230,46.0,4362,5478,-1116,31538,0.28,0.72,1000000,12.0,803524,180707,Dining increased by 46%. Goal reach in 12.0 months. Excellent budget discipline!
+676,194190,375836,6240,8681,-28.1,1015,1291,-276,45819,0.24,0.76,1000000,6.2,624164,352926,Goal reach in 6.2 months. Excellent budget discipline!
+677,84582,23757,3892,2474,57.3,4161,3193,968,23990,0.28,0.72,500000,8.2,476243,11762,Dining increased by 57%. Goal reach in 8.2 months. Excellent budget discipline!
+678,116536,486475,4287,3068,39.7,19059,20504,-1445,33731,0.29,0.71,50000,0.1,0,469610,Dining increased by 40%. Goal reach in 0.1 months. Excellent budget discipline!
+679,84697,163598,6021,4945,21.8,13932,10314,3618,40734,0.48,0.52,50000,0.4,0,143231,Goal reach in 0.4 months. Excellent budget discipline!
+680,35533,208245,4146,5548,-25.3,20100,15472,4628,64800,1.82,0.0,50000,-1.0,50000,175845,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+681,179565,124891,6787,6953,-2.4,11209,7085,4124,52873,0.29,0.71,500000,3.7,375109,98454,Goal reach in 3.7 months. Excellent budget discipline!
+682,192215,386502,7318,5507,32.9,9318,9435,-117,34723,0.18,0.82,50000,0.1,0,369140,Dining increased by 33%. Goal reach in 0.1 months. Excellent budget discipline!
+683,170338,298667,6844,6780,0.9,8556,6088,2468,26479,0.16,0.84,500000,3.1,201333,285428,Goal reach in 3.1 months. Excellent budget discipline!
+684,70379,15284,3080,1930,59.6,12198,8329,3869,40973,0.58,0.42,100000,3.3,84716,-5202,Dining increased by 60%. Goal reach in 3.3 months. Excellent budget discipline!
+685,152932,390505,11765,7082,66.1,3839,5163,-1324,50659,0.33,0.67,100000,0.2,0,365176,Dining increased by 66%. Goal reach in 0.2 months. Excellent budget discipline!
+686,118688,184019,13601,11781,15.5,9930,12480,-2550,37378,0.31,0.69,500000,5.7,315981,165330,Great! Shopping reduced by ₹2550. Goal reach in 5.7 months. Excellent budget discipline!
+687,116851,498760,6469,8315,-22.2,5239,5173,66,36346,0.31,0.69,50000,0.1,0,480587,Goal reach in 0.1 months. Excellent budget discipline!
+688,158308,274042,6983,6068,15.1,11872,7364,4508,46870,0.3,0.7,500000,4.0,225958,250607,Goal reach in 4.0 months. Excellent budget discipline!
+689,38374,275161,8904,7852,13.4,20881,29062,-8181,44904,1.17,0.0,100000,-1.0,100000,252709,Great! Shopping reduced by ₹8181. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+690,93718,169884,13719,10710,28.1,18966,19981,-1015,57024,0.61,0.39,1000000,26.3,830116,141372,Goal reach in 26.3 months. Excellent budget discipline!
+691,46229,349651,6294,8600,-26.8,11678,16297,-4619,54653,1.18,0.0,100000,-1.0,100000,322324,Great! Shopping reduced by ₹4619. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+692,133890,116386,3805,3889,-2.2,18854,15691,3163,30649,0.23,0.77,500000,4.6,383614,101062,Goal reach in 4.6 months. Excellent budget discipline!
+693,149271,394228,7865,9092,-13.5,8292,11516,-3224,28134,0.19,0.81,1000000,7.6,605772,380161,Great! Shopping reduced by ₹3224. Goal reach in 7.6 months. Excellent budget discipline!
+694,63371,124968,10974,11022,-0.4,2910,2900,10,42679,0.67,0.33,100000,3.6,0,103628,Goal reach in 3.6 months. Excellent budget discipline!
+695,64387,276312,8893,12419,-28.4,22411,20809,1602,60738,0.94,0.06,500000,121.9,223688,245943,Goal reach in 121.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+696,66259,93111,13614,17014,-20.0,15906,10605,5301,72162,1.09,0.0,500000,-1.0,500000,57030,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+697,157432,415770,5076,6316,-19.6,22391,26606,-4215,68367,0.43,0.57,50000,0.1,0,381586,Great! Shopping reduced by ₹4215. Goal reach in 0.1 months. Excellent budget discipline!
+698,96676,180573,10371,14457,-28.3,16628,12604,4024,50666,0.52,0.48,50000,0.3,0,155240,Goal reach in 0.3 months. Excellent budget discipline!
+699,40593,337223,6301,8517,-26.0,23719,21701,2018,49035,1.21,0.0,50000,-1.0,50000,312706,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+700,175234,260852,9262,9428,-1.8,2719,2357,362,47505,0.27,0.73,50000,0.1,0,237100,Goal reach in 0.1 months. Excellent budget discipline!
+701,100926,268813,8689,9693,-10.4,23326,20265,3061,65089,0.64,0.36,1000000,26.4,731187,236268,Goal reach in 26.4 months. Excellent budget discipline!
+702,66134,451795,7540,7598,-0.8,11662,14493,-2831,32730,0.49,0.51,50000,0.1,0,435430,Great! Shopping reduced by ₹2831. Goal reach in 0.1 months. Excellent budget discipline!
+703,49782,488841,9387,9365,0.2,14491,9885,4606,64293,1.29,0.0,50000,-1.0,50000,456694,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+704,172255,228283,3952,2730,44.8,4796,4227,569,32338,0.19,0.81,500000,3.2,271717,212114,Dining increased by 45%. Goal reach in 3.2 months. Excellent budget discipline!
+705,125524,363731,2899,2432,19.2,11253,14692,-3439,41344,0.33,0.67,1000000,11.0,636269,343059,Great! Shopping reduced by ₹3439. Goal reach in 11.0 months. Excellent budget discipline!
+706,167032,284825,3385,2075,63.1,17371,17169,202,43968,0.26,0.74,1000000,7.7,715175,262841,Dining increased by 63%. Goal reach in 7.7 months. Excellent budget discipline!
+707,183124,24439,8053,8568,-6.0,13972,18797,-4825,39592,0.22,0.78,100000,0.7,0,4643,Great! Shopping reduced by ₹4825. Goal reach in 0.7 months. Excellent budget discipline!
+708,70502,372068,2670,2224,20.0,15877,21586,-5709,29883,0.42,0.58,100000,0.6,0,357126,Great! Shopping reduced by ₹5709. Goal reach in 0.6 months. Excellent budget discipline!
+709,70040,341199,9040,5682,59.1,3820,2467,1353,26254,0.37,0.63,1000000,21.3,658801,328072,Dining increased by 59%. Goal reach in 21.3 months. Excellent budget discipline!
+710,184975,149547,7472,5556,34.5,19679,18487,1192,62499,0.34,0.66,100000,0.6,0,118298,Dining increased by 34%. Goal reach in 0.6 months. Excellent budget discipline!
+711,101688,111121,3973,4659,-14.7,3130,3933,-803,21952,0.22,0.78,500000,6.0,388879,100145,Goal reach in 6.0 months. Excellent budget discipline!
+712,196286,352882,9765,13157,-25.8,24446,33106,-8660,63420,0.32,0.68,100000,0.2,0,321172,Great! Shopping reduced by ₹8660. Goal reach in 0.2 months. Excellent budget discipline!
+713,82952,278303,10004,11436,-12.5,8181,10577,-2396,44385,0.54,0.46,50000,0.1,0,256110,Great! Shopping reduced by ₹2396. Goal reach in 0.1 months. Excellent budget discipline!
+714,66477,200363,10105,13646,-25.9,20322,20938,-616,58785,0.88,0.12,500000,59.8,299637,170970,Goal reach in 59.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+715,80088,384155,14621,13333,9.7,14480,11544,2936,49513,0.62,0.38,1000000,30.2,615845,359398,Goal reach in 30.2 months. Excellent budget discipline!
+716,129729,57132,11385,9780,16.4,16799,13060,3739,48602,0.37,0.63,100000,1.1,42868,32831,Goal reach in 1.1 months. Excellent budget discipline!
+717,48421,142830,9571,10604,-9.7,1874,1626,248,38549,0.8,0.2,500000,47.8,357170,123556,Goal reach in 47.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+718,82214,244339,11228,15330,-26.8,9304,9060,244,49306,0.6,0.4,100000,1.6,0,219686,Goal reach in 1.6 months. Excellent budget discipline!
+719,146912,59183,11191,9329,20.0,22368,14068,8300,47553,0.32,0.68,500000,4.9,440817,35406,Goal reach in 4.9 months. Excellent budget discipline!
+720,57413,91606,9391,7855,19.5,1189,921,268,33931,0.59,0.41,100000,3.5,8394,74640,Goal reach in 3.5 months. Excellent budget discipline!
+721,185330,470357,6379,8677,-26.5,20515,13806,6709,57825,0.31,0.69,500000,3.2,29643,441444,Goal reach in 3.2 months. Excellent budget discipline!
+722,45052,321395,14286,19637,-27.2,10004,12554,-2550,57480,1.28,0.0,1000000,-1.0,1000000,292655,Great! Shopping reduced by ₹2550. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+723,48426,139509,4534,2971,52.6,9656,10763,-1107,57127,1.18,0.0,100000,-1.0,100000,110946,Dining increased by 53%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+724,47808,259892,11622,10628,9.3,4017,5066,-1049,27028,0.57,0.43,1000000,45.6,740108,246378,Goal reach in 45.6 months. Excellent budget discipline!
+725,102236,359041,12482,13654,-8.6,7797,10617,-2820,40231,0.39,0.61,50000,0.1,0,338926,Great! Shopping reduced by ₹2820. Goal reach in 0.1 months. Excellent budget discipline!
+726,104466,125684,12523,9286,34.9,20557,18530,2027,60114,0.58,0.42,500000,10.7,374316,95627,Dining increased by 35%. Goal reach in 10.7 months. Excellent budget discipline!
+727,142375,169569,7356,8516,-13.6,14384,16689,-2305,64599,0.45,0.55,1000000,12.4,830431,137270,Great! Shopping reduced by ₹2305. Goal reach in 12.4 months. Excellent budget discipline!
+728,165131,173263,11550,7186,60.7,19033,12305,6728,55267,0.33,0.67,1000000,8.8,826737,145630,Dining increased by 61%. Goal reach in 8.8 months. Excellent budget discipline!
+729,64978,331270,4211,5848,-28.0,2519,2293,226,37066,0.57,0.43,500000,15.5,168730,312737,Goal reach in 15.5 months. Excellent budget discipline!
+730,171754,210026,12128,8108,49.6,1660,1259,401,52316,0.3,0.7,50000,0.1,0,183868,Dining increased by 50%. Goal reach in 0.1 months. Excellent budget discipline!
+731,121195,243836,3522,3783,-6.9,15789,20669,-4880,58915,0.49,0.51,100000,0.8,0,214378,Great! Shopping reduced by ₹4880. Goal reach in 0.8 months. Excellent budget discipline!
+732,149883,196429,6414,4756,34.9,9412,7180,2232,50240,0.34,0.66,100000,0.6,0,171309,Dining increased by 35%. Goal reach in 0.6 months. Excellent budget discipline!
+733,160461,226273,13322,16721,-20.3,21389,20496,893,62062,0.39,0.61,1000000,9.7,773727,195242,Goal reach in 9.7 months. Excellent budget discipline!
+734,172153,438017,9907,11689,-15.2,18716,21428,-2712,68938,0.4,0.6,100000,0.1,0,403548,Great! Shopping reduced by ₹2712. Goal reach in 0.1 months. Excellent budget discipline!
+735,40097,364520,12289,13139,-6.5,10237,7706,2531,37062,0.92,0.08,500000,140.7,135480,345989,Goal reach in 140.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+736,50094,369347,10276,10046,2.3,19471,26046,-6575,52968,1.06,0.0,50000,-1.0,50000,342863,Great! Shopping reduced by ₹6575. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+737,42168,69731,8539,6477,31.8,18183,21619,-3436,68962,1.64,0.0,100000,-1.0,100000,35250,Dining increased by 32%. Great! Shopping reduced by ₹3436. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+738,120673,75407,11634,12643,-8.0,16021,15052,969,64130,0.53,0.47,50000,0.6,0,43342,Goal reach in 0.6 months. Excellent budget discipline!
+739,186652,353376,4972,6840,-27.3,23159,29891,-6732,49173,0.26,0.74,1000000,6.8,646624,328790,Great! Shopping reduced by ₹6732. Goal reach in 6.8 months. Excellent budget discipline!
+740,51381,127057,7001,6424,9.0,19079,23026,-3947,42560,0.83,0.17,1000000,110.5,872943,105777,Great! Shopping reduced by ₹3947. Goal reach in 110.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+741,46718,96735,11315,13392,-15.5,15665,13672,1993,64632,1.38,0.0,500000,-1.0,500000,64419,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+742,127701,254999,12675,8265,53.3,17100,14141,2959,65686,0.51,0.49,500000,7.2,245001,222156,Dining increased by 53%. Goal reach in 7.2 months. Excellent budget discipline!
+743,86141,458805,4252,5730,-25.8,12262,15238,-2976,25860,0.3,0.7,500000,6.8,41195,445875,Great! Shopping reduced by ₹2976. Goal reach in 6.8 months. Excellent budget discipline!
+744,67623,317239,7946,6435,23.5,7288,4444,2844,57306,0.85,0.15,100000,3.5,0,288586,Goal reach in 3.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+745,161380,341021,13318,13681,-2.7,15779,17085,-1306,62096,0.38,0.62,1000000,9.4,658979,309973,Goal reach in 9.4 months. Excellent budget discipline!
+746,43001,154934,11237,13207,-14.9,14826,17526,-2700,67177,1.56,0.0,500000,-1.0,500000,121346,Great! Shopping reduced by ₹2700. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+747,90004,339242,12418,12222,1.6,10043,12578,-2535,63566,0.71,0.29,100000,1.2,0,307459,Great! Shopping reduced by ₹2535. Goal reach in 1.2 months. High risk: Expense ratio at 70%+. Reduce wants.
+748,138445,183987,4443,2737,62.4,11919,8545,3374,29661,0.21,0.79,50000,0.1,0,169156,Dining increased by 62%. Goal reach in 0.1 months. Excellent budget discipline!
+749,100290,210760,7111,6370,11.6,17347,12468,4879,61165,0.61,0.39,1000000,24.5,789240,180178,Goal reach in 24.5 months. Excellent budget discipline!
+750,53550,199896,14751,17378,-15.1,12415,15644,-3229,44576,0.83,0.17,100000,6.7,0,177608,Great! Shopping reduced by ₹3229. Goal reach in 6.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+751,56026,367237,4362,5376,-18.9,1322,1660,-338,18311,0.33,0.67,1000000,24.6,632763,358082,Goal reach in 24.6 months. Excellent budget discipline!
+752,178654,155566,11940,7345,62.6,6762,4272,2490,55412,0.31,0.69,1000000,7.9,844434,127860,Dining increased by 63%. Goal reach in 7.9 months. Excellent budget discipline!
+753,35175,310331,8975,10347,-13.3,22452,28003,-5551,70730,2.01,0.0,1000000,-1.0,1000000,274966,Great! Shopping reduced by ₹5551. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+754,127641,289878,4466,4585,-2.6,15096,12484,2612,38545,0.3,0.7,500000,5.0,210122,270606,Goal reach in 5.0 months. Excellent budget discipline!
+755,59033,129170,12311,14869,-17.2,17897,18750,-853,58334,0.99,0.01,50000,34.6,0,100003,Goal reach in 34.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+756,188285,181273,11173,14085,-20.7,2394,2846,-452,30089,0.16,0.84,1000000,6.1,818727,166228,Goal reach in 6.1 months. Excellent budget discipline!
+757,195883,381526,10687,9214,16.0,9170,12226,-3056,51286,0.26,0.74,1000000,6.4,618474,355883,Great! Shopping reduced by ₹3056. Goal reach in 6.4 months. Excellent budget discipline!
+758,178704,239276,9474,9112,4.0,11726,7411,4315,44419,0.25,0.75,1000000,7.1,760724,217066,Goal reach in 7.1 months. Excellent budget discipline!
+759,122178,80598,5959,7310,-18.5,13988,14558,-570,31427,0.26,0.74,50000,0.4,0,64884,Goal reach in 0.4 months. Excellent budget discipline!
+760,192468,179375,14089,13734,2.6,20696,21264,-568,52196,0.27,0.73,500000,3.3,320625,153277,Goal reach in 3.3 months. Excellent budget discipline!
+761,47813,447062,2520,3350,-24.8,14984,13099,1885,33786,0.71,0.29,100000,0.8,0,430169,Goal reach in 0.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+762,60129,198637,9501,12454,-23.7,6271,7554,-1283,32704,0.54,0.46,500000,16.8,301363,182285,Goal reach in 16.8 months. Excellent budget discipline!
+763,35918,217858,4478,5180,-13.6,21649,14650,6999,63922,1.78,0.0,50000,-1.0,50000,185897,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+764,169663,116313,2872,2621,9.6,4221,3709,512,21712,0.13,0.87,100000,0.5,0,105457,Goal reach in 0.5 months. Excellent budget discipline!
+765,117615,201513,4599,5187,-11.3,19359,23066,-3707,58809,0.5,0.5,50000,0.2,0,172108,Great! Shopping reduced by ₹3707. Goal reach in 0.2 months. Excellent budget discipline!
+766,51050,92062,5523,5957,-7.3,23507,31065,-7558,42841,0.84,0.16,1000000,119.6,907938,70642,Great! Shopping reduced by ₹7558. Goal reach in 119.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+767,198836,182376,9514,6271,51.7,3147,3488,-341,39230,0.2,0.8,100000,0.4,0,162761,Dining increased by 52%. Goal reach in 0.4 months. Excellent budget discipline!
+768,134143,231882,6683,6873,-2.8,7282,5042,2240,50210,0.37,0.63,100000,0.6,0,206777,Goal reach in 0.6 months. Excellent budget discipline!
+769,173479,30692,11055,10465,5.6,19677,12224,7453,68851,0.4,0.6,100000,0.9,0,-3734,Goal reach in 0.9 months. Excellent budget discipline!
+770,49031,420170,13229,10060,31.5,14865,14749,116,57916,1.18,0.0,100000,-1.0,100000,391212,Dining increased by 31%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+771,108774,290620,3346,4594,-27.2,2014,1342,672,35782,0.33,0.67,500000,6.1,209380,272729,Goal reach in 6.1 months. Excellent budget discipline!
+772,110228,444473,5674,7603,-25.4,6032,5824,208,28682,0.26,0.74,1000000,11.2,555527,430132,Goal reach in 11.2 months. Excellent budget discipline!
+773,53585,169770,5466,7551,-27.6,9818,12116,-2298,35846,0.67,0.33,1000000,54.5,830230,151847,Great! Shopping reduced by ₹2298. Goal reach in 54.5 months. Excellent budget discipline!
+774,80842,41423,12515,10584,18.2,10988,7879,3109,42243,0.52,0.48,100000,2.4,58577,20302,Goal reach in 2.4 months. Excellent budget discipline!
+775,72323,278650,8384,9938,-15.6,15175,20168,-4993,35407,0.49,0.51,50000,0.1,0,260946,Great! Shopping reduced by ₹4993. Goal reach in 0.1 months. Excellent budget discipline!
+776,33665,173451,14397,17221,-16.4,10937,11806,-869,42130,1.25,0.0,50000,-1.0,50000,152386,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+777,181180,282728,12353,7985,54.7,9218,10457,-1239,60168,0.33,0.67,1000000,7.8,717272,252644,Dining increased by 55%. Goal reach in 7.8 months. Excellent budget discipline!
+778,50564,481827,14577,15928,-8.5,21293,13054,8239,42909,0.85,0.15,50000,0.1,0,460372,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+779,163636,436536,13471,13471,0.0,13050,17422,-4372,64352,0.39,0.61,1000000,9.2,563464,404360,Great! Shopping reduced by ₹4372. Goal reach in 9.2 months. Excellent budget discipline!
+780,83704,76182,3109,2933,6.0,13500,8835,4665,31800,0.38,0.62,50000,0.7,0,60282,Goal reach in 0.7 months. Excellent budget discipline!
+781,176163,474367,2762,2216,24.6,11314,13806,-2492,31827,0.18,0.82,100000,0.1,0,458454,Great! Shopping reduced by ₹2492. Goal reach in 0.1 months. Excellent budget discipline!
+782,129338,442499,5360,4583,16.9,9851,9053,798,26735,0.21,0.79,50000,0.1,0,429132,Goal reach in 0.1 months. Excellent budget discipline!
+783,134208,272983,2831,3325,-14.8,12837,11059,1778,47978,0.36,0.64,50000,0.1,0,248994,Goal reach in 0.1 months. Excellent budget discipline!
+784,161772,454349,13072,17609,-25.8,11892,14530,-2638,67735,0.42,0.58,500000,4.4,45651,420482,Great! Shopping reduced by ₹2638. Goal reach in 4.4 months. Excellent budget discipline!
+785,180298,62246,5222,4542,15.0,13024,17573,-4549,39478,0.22,0.78,50000,0.3,0,42507,Great! Shopping reduced by ₹4549. Goal reach in 0.3 months. Excellent budget discipline!
+786,122427,435422,6467,6077,6.4,9289,9642,-353,41242,0.34,0.66,100000,0.2,0,414801,Goal reach in 0.2 months. Excellent budget discipline!
+787,191799,30734,3339,4604,-27.5,21511,13739,7772,50458,0.26,0.74,50000,0.3,0,5505,Goal reach in 0.3 months. Excellent budget discipline!
+788,40473,356405,7380,6591,12.0,10063,7169,2894,33031,0.82,0.18,1000000,124.8,643595,339890,Goal reach in 124.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+789,94973,383714,6699,7440,-10.0,2308,1450,858,39847,0.42,0.58,100000,0.4,0,363790,Goal reach in 0.4 months. Excellent budget discipline!
+790,117754,197049,5813,3965,46.6,9596,11551,-1955,40675,0.35,0.65,1000000,12.5,802951,176712,Dining increased by 47%. Goal reach in 12.5 months. Excellent budget discipline!
+791,56490,287606,11794,8270,42.6,8215,9206,-991,47001,0.83,0.17,500000,46.6,212394,264106,Dining increased by 43%. Goal reach in 46.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+792,182296,172225,5816,8090,-28.1,13471,9085,4386,64321,0.35,0.65,50000,0.1,0,140064,Goal reach in 0.1 months. Excellent budget discipline!
+793,87769,331685,13522,16681,-18.9,22500,25817,-3317,68057,0.78,0.22,500000,22.0,168315,297656,Great! Shopping reduced by ₹3317. Goal reach in 22.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+794,101613,16719,12077,9205,31.2,3910,3010,900,60662,0.6,0.4,500000,12.1,483281,-13612,Dining increased by 31%. Goal reach in 12.1 months. Excellent budget discipline!
+795,157399,478175,3125,2699,15.8,22510,17305,5205,46161,0.29,0.71,50000,0.1,0,455094,Goal reach in 0.1 months. Excellent budget discipline!
+796,132876,216710,11565,11071,4.5,13074,8336,4738,65357,0.49,0.51,1000000,14.2,783290,184032,Goal reach in 14.2 months. Excellent budget discipline!
+797,177685,412555,12284,16326,-24.8,16860,18355,-1495,42382,0.24,0.76,100000,0.1,0,391364,Goal reach in 0.1 months. Excellent budget discipline!
+798,84512,183820,4780,4578,4.4,24088,32832,-8744,56654,0.67,0.33,500000,16.6,316180,155493,Great! Shopping reduced by ₹8744. Goal reach in 16.6 months. Excellent budget discipline!
+799,139534,108146,11734,11944,-1.8,19096,23929,-4833,50790,0.36,0.64,1000000,11.0,891854,82751,Great! Shopping reduced by ₹4833. Goal reach in 11.0 months. Excellent budget discipline!
+800,166922,263833,5785,7828,-26.1,4909,4517,392,52155,0.31,0.69,500000,3.9,236167,237756,Goal reach in 3.9 months. Excellent budget discipline!
+801,67296,360879,7323,7957,-8.0,23929,32705,-8776,51554,0.77,0.23,50000,0.1,0,335102,Great! Shopping reduced by ₹8776. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+802,83055,39642,11886,13393,-11.3,13048,14916,-1868,56783,0.68,0.32,50000,1.6,10358,11250,Goal reach in 1.6 months. Excellent budget discipline!
+803,94198,365584,3942,4872,-19.1,3589,3440,149,27780,0.29,0.71,50000,0.1,0,351694,Goal reach in 0.1 months. Excellent budget discipline!
+804,50139,433770,9942,10464,-5.0,16631,11215,5416,59913,1.19,0.0,50000,-1.0,50000,403814,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+805,118752,50629,14536,13330,9.0,19974,22475,-2501,60673,0.51,0.49,500000,8.4,449371,20292,Great! Shopping reduced by ₹2501. Goal reach in 8.4 months. Excellent budget discipline!
+806,96407,329549,8739,10640,-17.9,4844,3264,1580,26880,0.28,0.72,100000,0.5,0,316109,Goal reach in 0.5 months. Excellent budget discipline!
+807,71917,79845,14903,18899,-21.1,6980,8641,-1661,33764,0.47,0.53,100000,2.2,20155,62963,Goal reach in 2.2 months. Excellent budget discipline!
+808,168527,355622,10874,6579,65.3,20041,13058,6983,52846,0.31,0.69,50000,0.1,0,329199,Dining increased by 65%. Goal reach in 0.1 months. Excellent budget discipline!
+809,92555,482074,9481,11531,-17.8,23844,31024,-7180,79552,0.86,0.14,50000,0.1,0,442298,Great! Shopping reduced by ₹7180. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+810,171040,362011,5905,8116,-27.2,10249,10807,-558,36498,0.21,0.79,500000,3.2,137989,343762,Goal reach in 3.2 months. Excellent budget discipline!
+811,172947,31034,6650,5675,17.2,4291,3342,949,35832,0.21,0.79,500000,3.6,468966,13118,Goal reach in 3.6 months. Excellent budget discipline!
+812,31002,439274,3555,3482,2.1,5544,7367,-1823,30872,1.0,0.0,100000,93.4,0,423838,Goal reach in 93.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+813,122165,461313,6308,8463,-25.5,6340,5842,498,22974,0.19,0.81,1000000,9.2,538687,449826,Goal reach in 9.2 months. Excellent budget discipline!
+814,125942,352072,6577,5449,20.7,10521,10178,343,33304,0.26,0.74,100000,0.3,0,335420,Goal reach in 0.3 months. Excellent budget discipline!
+815,67696,399461,12480,10505,18.8,9986,13814,-3828,46026,0.68,0.32,1000000,42.5,600539,376448,Great! Shopping reduced by ₹3828. Goal reach in 42.5 months. Excellent budget discipline!
+816,41628,229452,12907,8395,53.7,5621,5622,-1,31713,0.76,0.24,50000,0.4,0,213596,Dining increased by 54%. Goal reach in 0.4 months. High risk: Expense ratio at 70%+. Reduce wants.
+817,125206,457756,8575,10897,-21.3,11731,15388,-3657,48011,0.38,0.62,100000,0.1,0,433750,Great! Shopping reduced by ₹3657. Goal reach in 0.1 months. Excellent budget discipline!
+818,133061,442860,4010,4920,-18.5,8783,8893,-110,39665,0.3,0.7,100000,0.1,0,423028,Goal reach in 0.1 months. Excellent budget discipline!
+819,99716,336688,12397,12476,-0.6,21793,21493,300,53205,0.53,0.47,50000,0.1,0,310086,Goal reach in 0.1 months. Excellent budget discipline!
+820,131636,260329,7288,5511,32.2,5358,6949,-1591,35642,0.27,0.73,50000,0.1,0,242508,Dining increased by 32%. Goal reach in 0.1 months. Excellent budget discipline!
+821,188976,27399,8673,10713,-19.0,8746,7942,804,51418,0.27,0.73,1000000,7.2,972601,1690,Goal reach in 7.2 months. Excellent budget discipline!
+822,148048,337969,8774,12205,-28.1,17439,13004,4435,42221,0.29,0.71,1000000,8.8,662031,316858,Goal reach in 8.8 months. Excellent budget discipline!
+823,176373,319504,9139,6918,32.1,12298,14203,-1905,39926,0.23,0.77,1000000,6.9,680496,299541,Dining increased by 32%. Goal reach in 6.9 months. Excellent budget discipline!
+824,51291,20378,4542,4735,-4.1,15573,13182,2391,54101,1.05,0.0,50000,-1.0,50000,-6672,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+825,111982,431935,2916,3893,-25.1,24840,25948,-1108,43406,0.39,0.61,100000,0.2,0,410232,Goal reach in 0.2 months. Excellent budget discipline!
+826,41459,89923,11911,11718,1.6,22501,19682,2819,45833,1.11,0.0,100000,-1.0,100000,67006,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+827,120043,42165,12935,17549,-26.3,19746,21514,-1768,52948,0.44,0.56,100000,1.4,57835,15691,Goal reach in 1.4 months. Excellent budget discipline!
+828,77156,27202,4471,3751,19.2,2565,2492,73,24401,0.32,0.68,100000,1.8,72798,15002,Goal reach in 1.8 months. Excellent budget discipline!
+829,83109,188542,13464,8700,54.8,3330,2500,830,55888,0.67,0.33,100000,2.3,0,160598,Dining increased by 55%. Goal reach in 2.3 months. Excellent budget discipline!
+830,119546,211803,8031,6450,24.5,1181,994,187,44684,0.37,0.63,100000,0.8,0,189461,Goal reach in 0.8 months. Excellent budget discipline!
+831,115968,171537,3204,4208,-23.9,19861,17814,2047,60138,0.52,0.48,100000,1.2,0,141468,Goal reach in 1.2 months. Excellent budget discipline!
+832,165255,245349,7044,6800,3.6,14119,15397,-1278,62001,0.38,0.62,500000,4.4,254651,214348,Goal reach in 4.4 months. Excellent budget discipline!
+833,39114,142866,11735,15056,-22.1,12372,9261,3111,42289,1.08,0.0,1000000,-1.0,1000000,121722,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+834,105983,393629,3612,2748,31.4,8222,8733,-511,42206,0.4,0.6,500000,6.6,106371,372526,Dining increased by 31%. Goal reach in 6.6 months. Excellent budget discipline!
+835,120473,135832,8822,11078,-20.4,15825,12728,3097,64348,0.53,0.47,1000000,17.3,864168,103658,Goal reach in 17.3 months. Excellent budget discipline!
+836,71079,80086,5740,5465,5.0,5466,7124,-1658,31303,0.44,0.56,1000000,24.7,919914,64434,Goal reach in 24.7 months. Excellent budget discipline!
+837,174207,414012,3898,3285,18.6,14748,14257,491,49236,0.28,0.72,100000,0.1,0,389394,Goal reach in 0.1 months. Excellent budget discipline!
+838,114552,190336,4385,5977,-26.6,1836,2341,-505,28555,0.25,0.75,1000000,11.2,809664,176058,Goal reach in 11.2 months. Excellent budget discipline!
+839,132900,392147,10280,8904,15.5,1453,954,499,41989,0.32,0.68,100000,0.2,0,371152,Goal reach in 0.2 months. Excellent budget discipline!
+840,183413,277563,5408,4666,15.9,18693,15071,3622,65710,0.36,0.64,1000000,8.0,722437,244708,Goal reach in 8.0 months. Excellent budget discipline!
+841,132730,476381,7097,6395,11.0,20616,20445,171,56158,0.42,0.58,50000,0.1,0,448302,Goal reach in 0.1 months. Excellent budget discipline!
+842,183691,268353,14561,14505,0.4,7537,4633,2904,44870,0.24,0.76,500000,3.2,231647,245918,Goal reach in 3.2 months. Excellent budget discipline!
+843,188414,97629,11073,12303,-10.0,18964,14138,4826,64771,0.34,0.66,1000000,7.9,902371,65244,Goal reach in 7.9 months. Excellent budget discipline!
+844,95195,244247,6876,4187,64.2,8123,8932,-809,31083,0.33,0.67,500000,7.0,255753,228706,Dining increased by 64%. Goal reach in 7.0 months. Excellent budget discipline!
+845,108344,150133,5234,6748,-22.4,10142,13705,-3563,57808,0.53,0.47,1000000,19.2,849867,121229,Great! Shopping reduced by ₹3563. Goal reach in 19.2 months. Excellent budget discipline!
+846,93642,124278,5133,4010,28.0,14959,9118,5841,47886,0.51,0.49,100000,1.6,0,100335,Goal reach in 1.6 months. Excellent budget discipline!
+847,34981,150297,3427,3167,8.2,7427,7592,-165,51052,1.46,0.0,500000,-1.0,500000,124771,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+848,164362,194566,9083,6534,39.0,11030,8066,2964,51852,0.32,0.68,100000,0.5,0,168640,Dining increased by 39%. Goal reach in 0.5 months. Excellent budget discipline!
+849,94540,286750,8159,7909,3.2,8934,10046,-1112,50766,0.54,0.46,500000,10.1,213250,261367,Goal reach in 10.1 months. Excellent budget discipline!
+850,106732,378787,8874,10448,-15.1,4864,3871,993,45471,0.43,0.57,50000,0.1,0,356052,Goal reach in 0.1 months. Excellent budget discipline!
+851,52334,319983,3539,4907,-27.9,1131,892,239,37002,0.71,0.29,100000,2.3,0,301482,Goal reach in 2.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+852,195362,239537,5223,4721,10.6,20375,13396,6979,62183,0.32,0.68,1000000,7.1,760463,208446,Goal reach in 7.1 months. Excellent budget discipline!
+853,100901,70490,5353,3312,61.6,18511,21668,-3157,44613,0.44,0.56,500000,8.6,429510,48184,Dining increased by 62%. Great! Shopping reduced by ₹3157. Goal reach in 8.6 months. Excellent budget discipline!
+854,114860,483255,4603,2927,57.3,16597,19836,-3239,42694,0.37,0.63,50000,0.1,0,461908,Dining increased by 57%. Great! Shopping reduced by ₹3239. Goal reach in 0.1 months. Excellent budget discipline!
+855,159790,247871,2508,3222,-22.2,3452,2932,520,51109,0.32,0.68,50000,0.1,0,222316,Goal reach in 0.1 months. Excellent budget discipline!
+856,62178,307672,5754,7684,-25.1,12658,9123,3535,44355,0.71,0.29,50000,0.1,0,285494,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+857,69512,258830,7925,10738,-26.2,6021,7350,-1329,36298,0.52,0.48,50000,0.1,0,240681,Goal reach in 0.1 months. Excellent budget discipline!
+858,146020,426371,9749,7877,23.8,5944,7578,-1634,51506,0.35,0.65,100000,0.2,0,400618,Goal reach in 0.2 months. Excellent budget discipline!
+859,157868,193018,11938,16439,-27.4,10124,10687,-563,38345,0.24,0.76,50000,0.1,0,173846,Goal reach in 0.1 months. Excellent budget discipline!
+860,148498,175820,4872,4145,17.5,1025,660,365,35561,0.24,0.76,100000,0.6,0,158040,Goal reach in 0.6 months. Excellent budget discipline!
+861,75891,486733,3466,4002,-13.4,12268,9178,3090,61944,0.82,0.18,1000000,64.7,513267,455761,Goal reach in 64.7 months. High risk: Expense ratio at 70%+. Reduce wants.
+862,105790,461422,14547,10987,32.4,2617,2246,371,30281,0.29,0.71,500000,5.4,38578,446282,Dining increased by 32%. Goal reach in 5.4 months. Excellent budget discipline!
+863,84154,161928,3100,4103,-24.4,5858,5809,49,28414,0.34,0.66,50000,0.3,0,147721,Goal reach in 0.3 months. Excellent budget discipline!
+864,83534,125821,3283,4327,-24.1,19603,20368,-765,44322,0.53,0.47,1000000,24.9,874179,103660,Goal reach in 24.9 months. Excellent budget discipline!
+865,156377,334839,12158,8398,44.8,20849,26254,-5405,64796,0.41,0.59,50000,0.1,0,302441,Dining increased by 45%. Great! Shopping reduced by ₹5405. Goal reach in 0.1 months. Excellent budget discipline!
+866,134809,19291,6426,5320,20.8,15307,16559,-1252,57327,0.43,0.57,100000,1.2,80709,-9372,Goal reach in 1.2 months. Excellent budget discipline!
+867,78857,497906,7853,10639,-26.2,8357,5927,2430,38149,0.48,0.52,1000000,22.1,502094,478832,Goal reach in 22.1 months. Excellent budget discipline!
+868,119342,308590,5333,4194,27.2,20262,15910,4352,62256,0.52,0.48,500000,7.7,191410,277462,Goal reach in 7.7 months. Excellent budget discipline!
+869,36967,243562,12738,8613,47.9,22431,14158,8273,75245,2.04,0.0,500000,-1.0,500000,205940,Dining increased by 48%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+870,186776,290269,2882,3627,-20.5,1937,2043,-106,45291,0.24,0.76,50000,0.1,0,267624,Goal reach in 0.1 months. Excellent budget discipline!
+871,121640,54278,3344,2378,40.6,21374,26149,-4775,41866,0.34,0.66,50000,0.5,0,33345,Dining increased by 41%. Great! Shopping reduced by ₹4775. Goal reach in 0.5 months. Excellent budget discipline!
+872,52137,49358,5595,4027,38.9,11754,9191,2563,30948,0.59,0.41,50000,1.9,642,33884,Dining increased by 39%. Goal reach in 1.9 months. Excellent budget discipline!
+873,114064,331203,11764,14663,-19.8,5270,6128,-858,52494,0.46,0.54,100000,0.5,0,304956,Goal reach in 0.5 months. Excellent budget discipline!
+874,80039,247301,4886,4254,14.9,20574,27732,-7158,49417,0.62,0.38,1000000,31.0,752699,222592,Great! Shopping reduced by ₹7158. Goal reach in 31.0 months. Excellent budget discipline!
+875,112628,493793,6400,5854,9.3,11325,10006,1319,57897,0.51,0.49,100000,0.1,0,464844,Goal reach in 0.1 months. Excellent budget discipline!
+876,164355,40038,13267,14438,-8.1,4328,5228,-900,47094,0.29,0.71,500000,4.2,459962,16491,Goal reach in 4.2 months. Excellent budget discipline!
+877,72149,275029,7981,5301,50.6,17701,21891,-4190,54794,0.76,0.24,100000,2.6,0,247632,Dining increased by 51%. Great! Shopping reduced by ₹4190. Goal reach in 2.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+878,199194,495605,9127,7736,18.0,17552,21684,-4132,47128,0.24,0.76,1000000,5.9,504395,472041,Great! Shopping reduced by ₹4132. Goal reach in 5.9 months. Excellent budget discipline!
+879,72586,157162,6887,9278,-25.8,17310,10505,6805,61309,0.84,0.16,1000000,85.9,842838,126508,Goal reach in 85.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+880,181914,22933,14738,16023,-8.0,12249,13123,-874,67686,0.37,0.63,1000000,8.7,977067,-10910,Goal reach in 8.7 months. Excellent budget discipline!
+881,105514,43247,14503,9141,58.7,22809,25463,-2654,46649,0.44,0.56,50000,0.7,0,19922,Dining increased by 59%. Great! Shopping reduced by ₹2654. Goal reach in 0.7 months. Excellent budget discipline!
+882,172053,356525,10242,13257,-22.7,10634,10424,210,33555,0.2,0.8,100000,0.2,0,339748,Goal reach in 0.2 months. Excellent budget discipline!
+883,108400,294214,7426,6527,13.8,21311,27728,-6417,68488,0.63,0.37,100000,1.0,0,259970,Great! Shopping reduced by ₹6417. Goal reach in 1.0 months. Excellent budget discipline!
+884,58900,388152,8422,8409,0.2,1061,846,215,42590,0.72,0.28,1000000,56.6,611848,366857,Goal reach in 56.6 months. High risk: Expense ratio at 70%+. Reduce wants.
+885,194367,475813,7932,7676,3.3,17012,19541,-2529,57192,0.29,0.71,50000,0.1,0,447217,Great! Shopping reduced by ₹2529. Goal reach in 0.1 months. Excellent budget discipline!
+886,97320,78817,7292,5022,45.2,8779,7650,1129,55780,0.57,0.43,1000000,23.7,921183,50927,Dining increased by 45%. Goal reach in 23.7 months. Excellent budget discipline!
+887,33078,325412,4318,5289,-18.4,8600,10860,-2260,31970,0.97,0.03,100000,31.5,0,309427,Great! Shopping reduced by ₹2260. Goal reach in 31.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+888,152994,152065,2784,3460,-19.5,2435,1780,655,24091,0.16,0.84,50000,0.2,0,140020,Goal reach in 0.2 months. Excellent budget discipline!
+889,157078,286582,9520,11159,-14.7,9445,10129,-684,46847,0.3,0.7,1000000,8.6,713418,263158,Goal reach in 8.6 months. Excellent budget discipline!
+890,158211,206405,9021,8673,4.0,9122,11647,-2525,48801,0.31,0.69,100000,0.5,0,182004,Great! Shopping reduced by ₹2525. Goal reach in 0.5 months. Excellent budget discipline!
+891,71982,84164,13261,16133,-17.8,3985,5095,-1110,45528,0.63,0.37,50000,1.3,0,61400,Goal reach in 1.3 months. Excellent budget discipline!
+892,191642,242035,12016,7515,59.9,22800,18092,4708,71168,0.37,0.63,1000000,7.9,757965,206451,Dining increased by 60%. Goal reach in 7.9 months. Excellent budget discipline!
+893,95270,281184,11374,10497,8.4,7778,9029,-1251,47136,0.49,0.51,50000,0.1,0,257616,Goal reach in 0.1 months. Excellent budget discipline!
+894,163232,368446,3499,2514,39.2,24803,22662,2141,65028,0.4,0.6,1000000,9.4,631554,335932,Dining increased by 39%. Goal reach in 9.4 months. Excellent budget discipline!
+895,131915,232812,3308,3852,-14.1,4529,3052,1477,40514,0.31,0.69,100000,0.6,0,212555,Goal reach in 0.6 months. Excellent budget discipline!
+896,37840,367070,14473,14299,1.2,3630,2953,677,32958,0.87,0.13,1000000,189.8,632930,350591,Goal reach in 189.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+897,172184,105733,10025,7874,27.3,9119,11208,-2089,34929,0.2,0.8,50000,0.2,0,88268,Great! Shopping reduced by ₹2089. Goal reach in 0.2 months. Excellent budget discipline!
+898,121758,350715,3417,3658,-6.6,11992,8865,3127,38410,0.32,0.68,50000,0.1,0,331510,Goal reach in 0.1 months. Excellent budget discipline!
+899,37648,210592,14864,11832,25.6,7456,8765,-1309,40691,1.08,0.0,500000,-1.0,500000,190246,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+900,84191,327226,4134,3319,24.5,4507,6266,-1759,19215,0.23,0.77,100000,0.5,0,317618,Goal reach in 0.5 months. Excellent budget discipline!
+901,48779,309096,7047,9188,-23.3,2261,1657,604,32186,0.66,0.34,1000000,56.5,690904,293003,Goal reach in 56.5 months. Excellent budget discipline!
+902,45697,333739,4929,5556,-11.3,10078,10100,-22,31014,0.68,0.32,50000,0.1,0,318232,Goal reach in 0.1 months. Excellent budget discipline!
+903,88316,335000,14409,9481,52.0,4423,4696,-273,42539,0.48,0.52,100000,0.7,0,313730,Dining increased by 52%. Goal reach in 0.7 months. Excellent budget discipline!
+904,182825,153603,6766,8602,-21.3,15710,15425,285,50885,0.28,0.72,100000,0.5,0,128160,Goal reach in 0.5 months. Excellent budget discipline!
+905,33653,430008,10373,13066,-20.6,13521,16266,-2745,65993,1.96,0.0,500000,-1.0,500000,397012,Great! Shopping reduced by ₹2745. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+906,168918,465175,4762,6498,-26.7,19804,27359,-7555,35191,0.21,0.79,1000000,6.8,534825,447580,Great! Shopping reduced by ₹7555. Goal reach in 6.8 months. Excellent budget discipline!
+907,169665,416444,9843,12858,-23.4,19390,18212,1178,62702,0.37,0.63,1000000,8.6,583556,385093,Goal reach in 8.6 months. Excellent budget discipline!
+908,112408,31089,12766,14413,-11.4,6580,4289,2291,39758,0.35,0.65,500000,6.8,468911,11210,Goal reach in 6.8 months. Excellent budget discipline!
+909,188642,487703,14975,18985,-21.1,2281,2087,194,45364,0.24,0.76,100000,0.1,0,465021,Goal reach in 0.1 months. Excellent budget discipline!
+910,149233,253853,14800,9753,51.7,16156,12613,3543,60149,0.4,0.6,100000,0.6,0,223778,Dining increased by 52%. Goal reach in 0.6 months. Excellent budget discipline!
+911,59395,497073,9384,10780,-12.9,13963,18914,-4951,55247,0.93,0.07,100000,0.1,0,469450,Great! Shopping reduced by ₹4951. Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+912,127929,481877,12653,16074,-21.3,6771,4067,2704,64107,0.5,0.5,100000,0.1,0,449824,Goal reach in 0.1 months. Excellent budget discipline!
+913,67395,325696,7842,5206,50.6,17255,14599,2656,67210,1.0,0.0,1000000,5053.3,674304,292091,Dining increased by 51%. Goal reach in 5053.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+914,44743,215859,11640,8597,35.4,17915,14754,3161,48481,1.08,0.0,1000000,-1.0,1000000,191618,Dining increased by 35%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+915,146881,124848,5983,6363,-6.0,10040,7647,2393,53129,0.36,0.64,100000,0.8,0,98284,Goal reach in 0.8 months. Excellent budget discipline!
+916,122992,335720,9530,5724,66.5,3591,3169,422,36266,0.29,0.71,100000,0.4,0,317587,Dining increased by 66%. Goal reach in 0.4 months. Excellent budget discipline!
+917,169992,214973,7471,5427,37.7,14685,10211,4474,48349,0.28,0.72,100000,0.5,0,190798,Dining increased by 38%. Goal reach in 0.5 months. Excellent budget discipline!
+918,30440,122302,13583,12091,12.3,7527,6963,564,63848,2.1,0.0,500000,-1.0,500000,90378,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+919,180653,410795,12480,9079,37.5,24950,31323,-6373,58231,0.32,0.68,1000000,7.5,589205,381680,Dining increased by 37%. Great! Shopping reduced by ₹6373. Goal reach in 7.5 months. Excellent budget discipline!
+920,65555,406835,10567,14555,-27.4,16381,12242,4139,43271,0.66,0.34,100000,0.8,0,385200,Goal reach in 0.8 months. Excellent budget discipline!
+921,135131,181137,12957,17987,-28.0,22766,18923,3843,53053,0.39,0.61,500000,5.7,318863,154610,Goal reach in 5.7 months. Excellent budget discipline!
+922,146029,479097,3722,3209,16.0,6128,6806,-678,44522,0.3,0.7,1000000,8.9,520903,456836,Goal reach in 8.9 months. Excellent budget discipline!
+923,36256,459704,4012,3978,0.9,7700,7106,594,34270,0.95,0.05,500000,205.5,40296,442569,Goal reach in 205.5 months. High risk: Expense ratio at 70%+. Reduce wants.
+924,168662,211898,8498,9446,-10.0,4936,4208,728,56154,0.33,0.67,50000,0.1,0,183821,Goal reach in 0.1 months. Excellent budget discipline!
+925,140806,255128,11719,7317,60.2,16156,15085,1071,53169,0.38,0.62,1000000,10.8,744872,228544,Dining increased by 60%. Goal reach in 10.8 months. Excellent budget discipline!
+926,119546,489954,2938,3240,-9.3,10075,11664,-1589,24544,0.21,0.79,100000,0.1,0,477682,Goal reach in 0.1 months. Excellent budget discipline!
+927,150385,54826,2505,3006,-16.7,2588,1958,630,20938,0.14,0.86,100000,0.7,0,44357,Goal reach in 0.7 months. Excellent budget discipline!
+928,173978,130706,11698,8394,39.4,12161,8086,4075,58454,0.34,0.66,1000000,8.4,869294,101479,Dining increased by 39%. Goal reach in 8.4 months. Excellent budget discipline!
+929,183814,488372,3755,3254,15.4,11128,14027,-2899,26752,0.15,0.85,500000,2.6,11628,474996,Great! Shopping reduced by ₹2899. Goal reach in 2.6 months. Excellent budget discipline!
+930,133524,283249,12361,15852,-22.0,8947,6322,2625,64928,0.49,0.51,100000,0.6,0,250785,Goal reach in 0.6 months. Excellent budget discipline!
+931,77057,113892,4464,5592,-20.2,18804,21320,-2516,62661,0.81,0.19,1000000,67.9,886108,82562,Great! Shopping reduced by ₹2516. Goal reach in 67.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+932,90540,14596,13060,14299,-8.7,6681,4698,1983,52737,0.58,0.42,50000,1.2,35404,-11772,Goal reach in 1.2 months. Excellent budget discipline!
+933,92421,476359,8461,10213,-17.2,15014,16235,-1221,35442,0.38,0.62,100000,0.1,0,458638,Goal reach in 0.1 months. Excellent budget discipline!
+934,56579,385649,14034,13377,4.9,12273,8717,3556,44054,0.78,0.22,500000,33.8,114351,363622,Goal reach in 33.8 months. High risk: Expense ratio at 70%+. Reduce wants.
+935,57503,360375,3678,3068,19.9,14441,20104,-5663,35640,0.62,0.38,50000,0.1,0,342555,Great! Shopping reduced by ₹5663. Goal reach in 0.1 months. Excellent budget discipline!
+936,61187,268419,8256,8983,-8.1,4090,3158,932,55813,0.91,0.09,1000000,176.1,731581,240512,Goal reach in 176.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+937,143824,192447,9664,7032,37.4,13338,15023,-1685,47010,0.33,0.67,100000,0.6,0,168942,Dining increased by 37%. Goal reach in 0.6 months. Excellent budget discipline!
+938,123644,168418,6406,4816,33.0,15622,18958,-3336,64243,0.52,0.48,50000,0.3,0,136296,Dining increased by 33%. Great! Shopping reduced by ₹3336. Goal reach in 0.3 months. Excellent budget discipline!
+939,124366,323460,3794,4089,-7.2,23773,15772,8001,55745,0.45,0.55,1000000,13.6,676540,295588,Goal reach in 13.6 months. Excellent budget discipline!
+940,137047,180607,5812,7995,-27.3,6721,9374,-2653,27850,0.2,0.8,1000000,8.8,819393,166682,Great! Shopping reduced by ₹2653. Goal reach in 8.8 months. Excellent budget discipline!
+941,186742,66566,10912,7768,40.5,5535,7566,-2031,51410,0.28,0.72,500000,3.6,433434,40861,Dining increased by 40%. Great! Shopping reduced by ₹2031. Goal reach in 3.6 months. Excellent budget discipline!
+942,63703,238961,8876,9957,-10.9,14448,14428,20,43189,0.68,0.32,100000,2.5,0,217366,Goal reach in 2.5 months. Excellent budget discipline!
+943,64163,472257,6969,8081,-13.8,17654,22225,-4571,64302,1.0,0.0,100000,-1.0,100000,440106,Great! Shopping reduced by ₹4571. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+944,160781,425082,11726,10093,16.2,24555,24757,-202,59172,0.37,0.63,500000,4.1,74918,395496,Goal reach in 4.1 months. Excellent budget discipline!
+945,99160,415101,14915,20752,-28.1,20137,24856,-4719,77155,0.78,0.22,500000,18.9,84899,376524,Great! Shopping reduced by ₹4719. Goal reach in 18.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+946,170833,442993,12397,9897,25.3,24345,17487,6858,77110,0.45,0.55,100000,0.1,0,404438,Goal reach in 0.1 months. Excellent budget discipline!
+947,60640,482470,9739,6493,50.0,10225,11114,-889,65782,1.08,0.0,50000,-1.0,50000,449579,Dining increased by 50%. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+948,170129,7390,11022,14825,-25.7,2739,1996,743,48566,0.29,0.71,500000,4.1,492610,-16893,Goal reach in 4.1 months. Excellent budget discipline!
+949,101248,163715,4144,5090,-18.6,24729,18392,6337,40628,0.4,0.6,500000,7.7,336285,143401,Goal reach in 7.7 months. Excellent budget discipline!
+950,70825,359186,6660,8763,-24.0,18785,12574,6211,37835,0.53,0.47,50000,0.1,0,340268,Goal reach in 0.1 months. Excellent budget discipline!
+951,128726,421818,11090,7064,57.0,17404,24000,-6596,56171,0.44,0.56,50000,0.1,0,393732,Dining increased by 57%. Great! Shopping reduced by ₹6596. Goal reach in 0.1 months. Excellent budget discipline!
+952,81622,314820,3101,2262,37.1,8153,9687,-1534,39798,0.49,0.51,100000,0.9,0,294921,Dining increased by 37%. Goal reach in 0.9 months. Excellent budget discipline!
+953,68755,250899,3242,4336,-25.2,1361,1274,87,43438,0.63,0.37,50000,0.1,0,229180,Goal reach in 0.1 months. Excellent budget discipline!
+954,121277,361347,13949,12717,9.7,4437,5655,-1218,59732,0.49,0.51,100000,0.5,0,331481,Goal reach in 0.5 months. Excellent budget discipline!
+955,156657,272907,3864,2819,37.1,6167,5005,1162,26720,0.17,0.83,50000,0.1,0,259547,Dining increased by 37%. Goal reach in 0.1 months. Excellent budget discipline!
+956,92833,257989,4372,5017,-12.9,21056,23400,-2344,49680,0.54,0.46,100000,1.1,0,233149,Great! Shopping reduced by ₹2344. Goal reach in 1.1 months. Excellent budget discipline!
+957,138855,136047,12413,13870,-10.5,21036,13243,7793,60383,0.43,0.57,1000000,12.4,863953,105856,Goal reach in 12.4 months. Excellent budget discipline!
+958,69533,219185,14197,13810,2.8,1075,1316,-241,42111,0.61,0.39,50000,0.2,0,198130,Goal reach in 0.2 months. Excellent budget discipline!
+959,50541,450544,2166,1710,26.7,6520,4715,1805,49887,0.99,0.01,1000000,1391.3,549456,425600,Goal reach in 1391.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+960,114905,346079,10043,8560,17.3,15207,9645,5562,51273,0.45,0.55,100000,0.5,0,320442,Goal reach in 0.5 months. Excellent budget discipline!
+961,52499,480053,6384,8034,-20.5,4324,2765,1559,41015,0.78,0.22,100000,0.3,0,459546,Goal reach in 0.3 months. High risk: Expense ratio at 70%+. Reduce wants.
+962,40189,464212,7891,9510,-17.0,13153,16399,-3246,44686,1.11,0.0,1000000,-1.0,1000000,441869,Great! Shopping reduced by ₹3246. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+963,117147,368378,7808,7058,10.6,22282,15507,6775,63303,0.54,0.46,50000,0.1,0,336726,Goal reach in 0.1 months. Excellent budget discipline!
+964,52334,329606,2663,2795,-4.7,7775,9897,-2122,44285,0.85,0.15,1000000,116.0,670394,307464,Great! Shopping reduced by ₹2122. Goal reach in 116.0 months. High risk: Expense ratio at 70%+. Reduce wants.
+965,162646,157786,2818,3484,-19.1,19439,25389,-5950,48846,0.3,0.7,500000,4.1,342214,133363,Great! Shopping reduced by ₹5950. Goal reach in 4.1 months. Excellent budget discipline!
+966,151589,244429,5718,5241,9.1,15864,20449,-4585,64001,0.42,0.58,100000,0.6,0,212428,Great! Shopping reduced by ₹4585. Goal reach in 0.6 months. Excellent budget discipline!
+967,42331,473020,14863,10630,39.8,21495,28995,-7500,63775,1.51,0.0,1000000,-1.0,1000000,441132,Dining increased by 40%. Great! Shopping reduced by ₹7500. Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+968,146554,149511,5740,7795,-26.4,1193,1375,-182,30352,0.21,0.79,500000,4.0,350489,134335,Goal reach in 4.0 months. Excellent budget discipline!
+969,128988,30543,8977,8920,0.6,21754,17939,3815,49033,0.38,0.62,50000,0.5,0,6026,Goal reach in 0.5 months. Excellent budget discipline!
+970,162546,376338,4218,2775,52.0,17428,22016,-4588,51861,0.32,0.68,50000,0.1,0,350408,Dining increased by 52%. Great! Shopping reduced by ₹4588. Goal reach in 0.1 months. Excellent budget discipline!
+971,116315,259573,11794,13676,-13.8,19735,27135,-7400,67889,0.58,0.42,1000000,19.6,740427,225628,Great! Shopping reduced by ₹7400. Goal reach in 19.6 months. Excellent budget discipline!
+972,97277,164236,6055,7634,-20.7,14307,15062,-755,41704,0.43,0.57,100000,1.2,0,143384,Goal reach in 1.2 months. Excellent budget discipline!
+973,199764,94026,5365,3242,65.5,11861,7777,4084,55586,0.28,0.72,100000,0.6,0,66233,Dining increased by 65%. Goal reach in 0.6 months. Excellent budget discipline!
+974,179684,476264,9030,7277,24.1,10788,12400,-1612,34094,0.19,0.81,100000,0.1,0,459217,Goal reach in 0.1 months. Excellent budget discipline!
+975,109868,210684,14760,12759,15.7,18987,19898,-911,74092,0.67,0.33,500000,12.8,289316,173638,Goal reach in 12.8 months. Excellent budget discipline!
+976,101715,120681,2354,2651,-11.2,5463,4292,1171,49905,0.49,0.51,500000,9.2,379319,95728,Goal reach in 9.2 months. Excellent budget discipline!
+977,31771,105301,2911,3584,-18.8,21188,17644,3544,70202,2.21,0.0,500000,-1.0,500000,70200,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+978,33769,197793,8060,8371,-3.7,22789,14406,8383,54127,1.6,0.0,50000,-1.0,50000,170730,Falling short of goal due to overspending. High risk: Expense ratio at 70%+. Reduce wants.
+979,75837,357361,5537,6245,-11.3,9989,8787,1202,36912,0.49,0.51,500000,11.0,142639,338905,Goal reach in 11.0 months. Excellent budget discipline!
+980,78415,462211,7731,10316,-25.1,13850,16428,-2578,34726,0.44,0.56,100000,0.2,0,444848,Great! Shopping reduced by ₹2578. Goal reach in 0.2 months. Excellent budget discipline!
+981,198288,204400,7080,9127,-22.4,2849,1823,1026,28947,0.15,0.85,50000,0.1,0,189926,Goal reach in 0.1 months. Excellent budget discipline!
+982,86000,172375,8041,10240,-21.5,3016,3458,-442,50741,0.59,0.41,100000,1.9,0,147004,Goal reach in 1.9 months. Excellent budget discipline!
+983,154443,133409,11292,6821,65.6,7529,10424,-2895,42918,0.28,0.72,1000000,8.7,866591,111950,Dining increased by 66%. Great! Shopping reduced by ₹2895. Goal reach in 8.7 months. Excellent budget discipline!
+984,170398,22230,13152,14799,-11.1,4282,3387,895,57755,0.34,0.66,500000,4.4,477770,-6648,Goal reach in 4.4 months. Excellent budget discipline!
+985,157183,115022,13041,15707,-17.0,11476,11737,-261,47753,0.3,0.7,50000,0.2,0,91146,Goal reach in 0.2 months. Excellent budget discipline!
+986,189338,91690,10385,12794,-18.8,15870,10142,5728,45708,0.24,0.76,100000,0.6,0,68836,Goal reach in 0.6 months. Excellent budget discipline!
+987,90584,76118,4931,4912,0.4,11890,9528,2362,45694,0.5,0.5,100000,1.9,23882,53271,Goal reach in 1.9 months. Excellent budget discipline!
+988,162505,32947,6424,6491,-1.0,3879,3512,367,22450,0.14,0.86,100000,0.7,0,21722,Goal reach in 0.7 months. Excellent budget discipline!
+989,64543,106332,2176,1914,13.7,4946,3825,1121,16999,0.26,0.74,1000000,20.6,893668,97832,Goal reach in 20.6 months. Excellent budget discipline!
+990,50884,313946,3066,3599,-14.8,2951,3370,-419,16604,0.33,0.67,1000000,27.3,686054,305644,Goal reach in 27.3 months. Excellent budget discipline!
+991,131868,427392,2927,3250,-9.9,24836,30848,-6012,41633,0.32,0.68,500000,4.6,72608,406576,Great! Shopping reduced by ₹6012. Goal reach in 4.6 months. Excellent budget discipline!
+992,70555,356779,2686,3196,-15.9,18757,13170,5587,56272,0.8,0.2,50000,0.1,0,328643,Goal reach in 0.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+993,160578,148315,10034,10061,-0.3,12257,17029,-4772,57813,0.36,0.64,1000000,9.4,851685,119408,Great! Shopping reduced by ₹4772. Goal reach in 9.4 months. Excellent budget discipline!
+994,173995,182225,7177,5248,36.8,7744,8567,-823,41439,0.24,0.76,50000,0.1,0,161506,Dining increased by 37%. Goal reach in 0.1 months. Excellent budget discipline!
+995,113793,367811,10643,10992,-3.2,16051,22285,-6234,53626,0.47,0.53,1000000,15.4,632189,340998,Great! Shopping reduced by ₹6234. Goal reach in 15.4 months. Excellent budget discipline!
+996,64150,54796,9463,11037,-14.3,21239,20224,1015,62473,0.97,0.03,100000,53.1,45204,23560,Goal reach in 53.1 months. High risk: Expense ratio at 70%+. Reduce wants.
+997,81459,310309,14733,13377,10.1,12550,14815,-2265,64539,0.79,0.21,500000,25.9,189691,278040,Great! Shopping reduced by ₹2265. Goal reach in 25.9 months. High risk: Expense ratio at 70%+. Reduce wants.
+998,110643,383252,2019,2327,-13.2,15150,10405,4745,58463,0.53,0.47,100000,0.4,0,354020,Goal reach in 0.4 months. Excellent budget discipline!
+999,94888,19437,9187,6411,43.3,21915,26964,-5049,54023,0.57,0.43,100000,2.4,80563,-7574,Dining increased by 43%. Great! Shopping reduced by ₹5049. Goal reach in 2.4 months. Excellent budget discipline!
+1000,155360,54954,13906,15706,-11.5,9581,9173,408,40998,0.26,0.74,500000,4.3,445046,34455,Goal reach in 4.3 months. Excellent budget discipline!

@@ -1,0 +1,14 @@
+﻿============================================================
+           AI MODEL VERIFICATION REPORT
+============================================================
+Feature Name         | Filename                       | Status     | Prediction
+------------------------------------------------------------------------------------------
+Balance Forecast     | balance_forecast_model (1).pkl | LOADED     | Success (Value: 57909.740641795885)
+Insights Encoder     | insights_label_encoder.pkl     | LOADED     | N/A
+Insights Model       | insights_model.pkl             | MISSING    | None
+Budget Columns       | budget_feature_columns.pkl     | MISSING    | None
+Budget Models        | budget_recommendation_models.pkl | MISSING    | None
+============================================================
+OVERALL STATUS: INCOMPLETE
+WARNING: Missing or broken models will cause the API to crash on startup.
+============================================================

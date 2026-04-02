@@ -1,0 +1,33 @@
+Start
+{
+  "analysis": {
+    "summary": {
+      "income": 740000.0,
+      "expense": 107436.0,
+      "savings": 632564.0
+    },
+    "subscriptions": [
+      "Amazon",
+      "Netflix",
+      "Petrol",
+      "Spotify",
+      "Swiggy"
+    ],
+    "planned_payments": [
+      1,
+      3,
+      10,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "ai_advice": "\ud83d\udcca Financial Summary: Income \u20b9740,000 | Expense \u20b9107,436 | Savings \u20b9632,564. \u26a0\ufe0f Recurring subscriptions detected: Amazon, Netflix, Petrol, Spotify, Swiggy. Cancel unused ones. \ud83d\udca1 Tips: (1) Set a monthly budget. (2) Track daily expenses. (3) Save first, spend later."
+}
+
+SUCCESS

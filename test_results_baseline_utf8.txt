@@ -1,0 +1,145 @@
+ ■
+=================================================================
+   PAVAN DIGI WALLET  -  AI FEATURES TEST SUITE
+=================================================================
+  Tests all 3 Rule-Based AI features with sample data
+  Server: http://localhost:8000
+=================================================================
+[OK] Server is ONLINE - {'status': 'ok', 'timestamp': '2026-03-20T12:07:57.100861'}
+
+=================================================================
+  TEST 1 - Predictive Balance Forecasting  (/predict-balance)
+=================================================================
+
+[A] HEALTHY FINANCES (income=60000, moderate spending)
+   HTTP Status       : 200
+   Current Balance   : Rs.38,000.00
+   Predicted Balance : Rs.43,003.48
+   Forecast Days     : 15
+   AI Advice         : None
+   >> FAIL: argument of type 'NoneType' is not iterable
+
+[B] OVERSPENDING (income=30000, high bills, low balance)
+   HTTP Status       : 200
+   Current Balance   : Rs.5,000.00
+   Predicted Balance : Rs.-6,863.44
+   AI Advice         : None
+   >> PASS - Correctly flagged risky/negative balance
+
+[C] PURCHASE CHECK (can I afford Rs.5,000 phone?)
+   HTTP Status       : 200
+   Predicted Balance : Rs.43,003.48
+   Purchase Advice   : Угр Safe to purchase
+   >> PASS - Purchase affordability advice returned correctly
+
+=================================================================
+  TEST 2 - Smart Budget Recommendations  (/get-budget-recommendations)
+=================================================================
+
+[A] OVERSPENDING USER (spending=40000 of income=50000 = 80%)
+   HTTP Status       : 200
+   Status            : N/A
+   Message           : N/A
+   Spending Ratio    : N/A
+   Potential Savings : Ущc%12,497
+   50/30/20 Rule     : Needs=None  Wants=None  Savings=None
+   AI Tips:
+     - a"Т╞э Reduce Dining by Ущc%6,999 to stay on budget
+     - a"Т╞э Reduce Shopping by Ущc%2,499 to stay on budget
+     - a"Т╞э Reduce Transport by Ущc%3,500 to stay on budget
+     - Угр Groceries is within budget
+     - a"Т╞э Reduce Entertainment by Ущc%2,500 to stay on budget
+   Dining     : Current=12000.0  -> Recommended=5001
+   Shopping   : Current=10000.0  -> Recommended=7501
+   Transport  : Current=6000.0  -> Recommended=2500
+   Groceries  : Current=7000.0  -> Recommended=10001
+   Entertain  : Current=5000.0  -> Recommended=2500
+   >> FAIL - Expected 'overspending', got 'None'
+
+[B] MODERATE USER (spending=30000 of income=50000 = 60%)
+   HTTP Status       : 200
+   Status            : N/A
+   Spending Ratio    : N/A
+   Potential Savings : Ущc%2,497
+   AI Tips:
+     - a"Т╞э Reduce Dining by Ущc%1,999 to stay on budget
+     - Угр Shopping is within budget
+     - a"Т╞э Reduce Transport by Ущc%1,500 to stay on budget
+     - Угр Groceries is within budget
+     - a"Т╞э Reduce Entertainment by Ущc%500 to stay on budget
+   >> FAIL - Expected 'moderate', got 'None'
+
+[C] HEALTHY SAVER (spending=28000 of income=80000 = 35%)
+   HTTP Status       : 200
+   Status            : N/A
+   Spending Ratio    : N/A
+   Potential Savings : Ущc%-16,001
+   AI Tips:
+     - Угр Dining is within budget
+     - Угр Shopping is within budget
+     - Угр Transport is within budget
+     - Угр Groceries is within budget
+     - Угр Entertainment is within budget
+   >> FAIL - Expected 'healthy', got 'None'
+
+[D] EDGE CASE (zero income and spending)
+   HTTP Status : 200
+   Message     : N/A
+   >> CHECK - Response: {'current_spending': {'dining': 0.0, 'shopping': 0.0, 'transport': 0.0, 'groceries': 0.0, 'entertainment': 0.0}, 'recommended_budget': {'dining': 2006, 'shopping': 3009, 'transport': 1003, 'groceries': 4011, 'entertainment': 1003}, 'potential_savings': 'Ущc%-11,032', 'tips': ['Угр Dining is within budget', 'Угр Shopping is within budget', 'Угр Transport is within budget', 'Угр Groceries is within budget', 'Угр Entertainment is within budget']}
+
+=================================================================
+  TEST 3 - AI Financial Insights  (/get-insights)
+=================================================================
+
+[A] HIGH SPENDER (dining +80%, shopping +88% vs last month)
+   HTTP Status    : 200
+   Category       : overspending
+   Spending Ratio : 60.8%
+   Advice         : У▄с)"U%┼ Reduce dining and shopping.
+   Insights generated:
+     - a"ТьЎ Dining increased by 80%
+     - a"Твь)"U%┼ Shopping increased by 88%
+     - a"ТЇы Savings dropped by Ущc%3,000
+   >> FAIL - Expected 'high_spender', got 'overspending'
+
+[B] GOOD SAVER (only 36% of income spent, savings up Rs.8000)
+   HTTP Status    : 200
+   Category       : stable
+   Spending Ratio : 36.4%
+   Advice         : Угр Stable and healthy.
+   Insights generated:
+     - a"Т╞С% Saved Ущc%8,000 more
+   >> FAIL - Expected 'good_saver', got 'stable'
+
+[C] OVERSPENDING (spending=34000 of income=40000 = 85%)
+   HTTP Status    : 200
+   Category       : overspending
+   Spending Ratio : 85.0%
+   Advice         : У▄с)"U%┼ Reduce dining and shopping.
+   Insights generated:
+     - a"ТЇы Savings dropped by Ущc%6,000
+   >> PASS - Correctly identified as 'overspending'
+
+[D] STABLE FINANCES (spending=23000 of income=55000 = 42%, flat month)
+   HTTP Status    : 200
+   Category       : overspending
+   Spending Ratio : 41.8%
+   Advice         : У▄с)"U%┼ Reduce dining and shopping.
+   Insights generated:
+     - a"Т╞С% Saved Ущc%1,000 more
+   >> FAIL - Expected 'stable'/'good_saver', got 'overspending'
+
+=================================================================
+  ALL TESTS COMPLETE
+=================================================================
+
+  LEGEND:
+    >> PASS   = AI returned expected result
+    >> FAIL   = Wrong classification or error
+    >> CHECK  = Manual verification needed
+
+  ENDPOINTS TESTED:
+    1. POST /predict-balance              (Balance Forecasting AI)
+    2. POST /get-budget-recommendations   (Budget Recommendations AI)
+    3. POST /get-insights                 (Financial Insights AI)
+

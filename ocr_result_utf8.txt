@@ -1,0 +1,14 @@
+﻿
+--- Testing raw OCR output for uploads/temp_statement.jpg ---
+ee
+DATE ACCOUNT DEBIT(S) CREDIT(s)
+
+O1 OL 2024 Loan Payable $1,000 $5.000
+
+O1 02 2024 Sales Revenue $2,000 $2,000
+
+O1 03 2024 Owner's Equity $3,000 $3,000
+Nees...
+
+
+--- Testing extracted transactions dict ---

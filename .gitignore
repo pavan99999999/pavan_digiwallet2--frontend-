@@ -21,3 +21,8 @@ test_app_endpoints.py
 
 # Build errors log
 build_err.txt
+*.pkl 
+budget_recommendation_models.pkl 
+firebase-admin.json 
+.env 
+groq_section.txt 

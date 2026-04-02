@@ -1,0 +1,104 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/AddPlannedBillActivity.kt:23:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/AddTransactionActivity.kt:26:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/AiAssistantActivity.kt:49:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/AmountInputActivity.kt:27:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/BudgetPlanningActivity.kt:18:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:18:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:24:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:35:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:49:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:50:15 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ChooseAccountTypeActivity.kt:51:9 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/CreateGoalActivity.kt:37:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:20:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:26:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:36:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:41:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:46:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:57:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:58:15 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GetPremiumActivity.kt:59:9 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GooglePlayPaymentActivity.kt:16:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GooglePlayPaymentActivity.kt:22:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GooglePlayPaymentActivity.kt:26:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GooglePlayPaymentActivity.kt:27:15 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/GooglePlayPaymentActivity.kt:28:9 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/HistoryActivity.kt:48:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:18:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:24:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:30:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:39:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:40:15 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/InvestmentPremiumActivity.kt:41:9 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MainActivity.kt:33:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MainActivity.kt:56:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MainActivity.kt:76:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MainActivity.kt:212:9 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MenuActivity.kt:17:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/MenuActivity.kt:22:13 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/NetWorthActivity.kt:15:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/OnboardingActivity.kt:34:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/PlannedBudgetActivity.kt:30:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/SmartPurchasePlannerActivity.kt:27:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/StatisticsActivity.kt:15:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/SubscriptionsActivity.kt:15:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Pavan%20Kandula/Desktop/pavan_digi_wallet2/app/src/main/java/com/simats/pavan_digi_wallet/ZeroBasedBudgetActivity.kt:16:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 12s
+33 actionable tasks: 5 executed, 28 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html

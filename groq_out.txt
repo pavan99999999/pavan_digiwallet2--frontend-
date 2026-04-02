@@ -1,0 +1,58 @@
+﻿
+≡ƒÜÇ GROQ AGENTIC AI - FULL TEST WITH SAMPLE DATA
+Testing: Tool Selection ΓåÆ Execution ΓåÆ Synthesis
+
+
+=======================================================
+Γ¥ô User Question: What is my spending this month?
+=======================================================
+≡ƒöº Step 1 - Tool Selected: [summary]
+≡ƒôª Step 2 - Raw DB Data:
+≡ƒôè FINANCIAL SUMMARY:
+ΓÇó Income:  Γé╣50,000
+ΓÇó Expense: Γé╣40,500
+ΓÇó Savings: Γé╣9,500
+ΓÇó Savings Rate: 19.0%
+ΓÇó Top Spending: Shopping: Γé╣12000, Housing: Γé╣10000, Food: Γé╣8000
+
+≡ƒñû Step 3 - Groq AI Final Reply:
+Your spending for this month is Γé╣40,500. 
+Key expenses include:
+* Shopping: Γé╣12,000
+* Housing: Γé╣10,000
+* Food: Γé╣8,000
+
+=======================================================
+Γ¥ô User Question: How much will I have in 15 days?
+=======================================================
+≡ƒöº Step 1 - Tool Selected: [forecast]
+≡ƒôª Step 2 - Raw DB Data:
+≡ƒôê FORECAST:
+ΓÇó Daily Burn: Γé╣1350/day
+ΓÇó Balance in 15 days: Γé╣-10,750
+ΓÇó Balance in 30 days: Γé╣-31,000
+
+≡ƒñû Step 3 - Groq AI Final Reply:
+Based on the forecast, here's your financial outlook:
+* Your daily burn is Γé╣1350/day.
+* In 15 days, your expected balance is Γé╣-10,750.
+* Please adjust your expenses to avoid overspending.
+
+=======================================================
+Γ¥ô User Question: When can I reach my Laptop goal?
+=======================================================
+≡ƒöº Step 1 - Tool Selected: [goals]
+≡ƒôª Step 2 - Raw DB Data:
+≡ƒÄ» GOALS:
+ΓÇó New Laptop: Γé╣20,000/Γé╣80,000 saved ΓåÆ 6.3 months to reach
+ΓÇó Vacation: Γé╣5,000/Γé╣30,000 saved ΓåÆ 2.6 months to reach
+
+≡ƒñû Step 3 - Groq AI Final Reply:
+To reach your New Laptop goal, you need Γé╣60,000 more. 
+Here's a brief update:
+* Current savings: Γé╣20,000
+* Remaining amount: Γé╣60,000
+You can reach your goal in approximately 6.3 months.
+
+
+Γ£à ALL TESTS COMPLETE ΓÇö Groq Agentic AI is working perfectly!

@@ -1,0 +1,17 @@
+JPG: [
+  {
+    "type": "EXPENSE",
+    "amount": 1000.0,
+    "description": "Loan Payable 1,000 5,000"
+  },
+  {
+    "type": "EXPENSE",
+    "amount": 2000.0,
+    "description": "Sales Revenue 2,000 2,000"
+  },
+  {
+    "type": "EXPENSE",
+    "amount": 3000.0,
+    "description": "Owner's Equity 3,000 3,000"
+  }
+]

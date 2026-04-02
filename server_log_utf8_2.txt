@@ -1,0 +1,50 @@
+﻿At line:1 char:1
++ python main.py > 
+server_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (INFO:    
+     Started server proces   
+ s [1172]:String) [], Rem    
+oteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+INFO:     Waiting for 
+application startup.
+INFO:     Application 
+startup complete.
+INFO:     Uvicorn running on 
+http://0.0.0.0:8000 (Press 
+CTRL+C to quit)
+INFO:     127.0.0.1:52606 - "GET /health HTTP/1.1" 200 OK
+ERROR:__main__:422 
+Validation Error: [{'type': 
+'json_invalid', 'loc': 
+('body', 1), 'msg': 'JSON 
+decode error', 'input': {}, 
+'ctx': {'error': 'Expecting 
+property name enclosed in 
+double quotes'}}]
+ERROR:__main__:Could not 
+read request body
+INFO:     127.0.0.1:52623 - "POST /ai-chat HTTP/1.1" 422 Unprocessable Entity
+INFO:     10.137.61.149:43074 - "POST /upload-statement HTTP/1.1" 200 OK
+INFO:     10.137.61.149:47550 - "DELETE /delete-ai-transactions/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:38538 - "GET /expense-category-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:38542 - "GET /expense-category-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:38542 - "GET /unverified-transactions/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:38542 - "POST /upload-statement HTTP/1.1" 200 OK
+INFO:     10.137.61.149:38542 - "DELETE /delete-ai-transactions/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:48998 - "POST /upload-statement HTTP/1.1" 200 OK
+INFO:     10.137.61.149:48998 - "DELETE /delete-ai-transactions/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "POST /upload-statement HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /expense-category-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:42850 - "GET /expense-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /expense-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /income-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /expense-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /expense-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:43302 - "GET /expense-category-summary/1 HTTP/1.1" 200 OK
+INFO:     10.137.61.149:42850 - "GET /expense-category-summary/1 HTTP/1.1" 200 OK

@@ -1,0 +1,36 @@
+============================================================
+  OCR FIX VALIDATION TEST
+============================================================
+
+[1] Testing fixed amount regex...
+  PASS  Input: '$1,000'                   Expected: [1000.0]  Got: [1000.0]  (Old got: [1000.0])
+  PASS  Input: '$1,500.50'                Expected: [1500.5]  Got: [1500.5]  (Old got: [1500.5])
+  PASS  Input: '15,000'                   Expected: [15000.0]  Got: [15000.0]  (Old got: [15000.0])
+  PASS  Input: '1,00,000'                 Expected: [100000.0]  Got: [100000.0]  (Old got: [1.0, 0.0])
+  PASS  Input: '10,00,000.00'             Expected: [1000000.0]  Got: [1000000.0]  (Old got: [10.0, 0.0])
+  PASS  Input: '500'                      Expected: [500.0]  Got: [500.0]  (Old got: [500.0])
+  PASS  Input: '1000'                     Expected: [1000.0]  Got: [1000.0]  (Old got: [1000.0])
+  PASS  Input: '$2,000 $2,000'            Expected: [2000.0, 2000.0]  Got: [2000.0, 2000.0]  (Old got: [2000.0, 2000.0])
+  PASS  Input: 'Debit 4 500.00'           Expected: [4500.0]  Got: [4500.0]  (Old got: [4500.0])
+
+  Regex test result: ALL PASS
+
+[2] Testing image preprocessing...
+  Synthetic test image created: uploads/test_ocr_fix.png
+  preprocess_image() works. Output shape: (400, 1600), dtype: uint8
+  Adaptive threshold active (not simple Otsu)
+
+[3] End-to-end extraction test on synthetic image...
+  Extracted 3 transaction(s):
+     {'type': 'INCOME', 'amount': 15000.0, 'description': 'Salary Credit 15,00000 45,00000', 'date': '01/01/2024'}
+     {'type': 'EXPENSE', 'amount': 350.0, 'description': 'UPI/DSwiggy 35000 44,65000', 'date': '05/01/2024'}
+     {'type': 'EXPENSE', 'amount': 2000.0, 'description': 'ATM Withdrawal 2,00000 42,65000', 'date': '10/01/2024'}
+  All amounts look correct (no single-digit false positives)
+
+[4] Testing with existing uploaded statement (if present)...
+  uploads/temp_statement.jpg: 0 transactions found
+  All amounts >= 10 (looks correct)
+
+============================================================
+  TEST COMPLETE
+============================================================

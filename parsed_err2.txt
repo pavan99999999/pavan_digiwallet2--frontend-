@@ -1,0 +1,423 @@
+﻿python : INFO:     Will watch for changes 
+in these directories: ['C:\\Users\\Pavan 
+Kandula\\Desktop\\pavan_digi_wallet2']
+At line:1 char:37
++ ... on" -Force; python -m uvicorn 
+main:app --host 0.0.0.0 --port 8000 --r ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified 
+   : (INFO:     Will ..._digi_wallet2']:S  
+  tring) [], RemoteException
+    + FullyQualifiedErrorId : NativeComman 
+   dError
+ 
+INFO:     Uvicorn running on 
+http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [36776] 
+using WatchFiles
+C:\Users\Pavan Kandula\AppData\Local\Progra
+ms\Python\Python39\lib\site-packages\google
+\auth\__init__.py:54: FutureWarning: You 
+are using a Python version 3.9 past its 
+end of life. Google will update 
+google-auth with critical bug fixes on a 
+best-effort basis, but not with any other 
+fixes or features. Please upgrade your 
+Python version, and then update 
+google-auth.
+  warnings.warn(eol_message.format("3.9"), 
+FutureWarning)
+C:\Users\Pavan Kandula\AppData\Local\Progra
+ms\Python\Python39\lib\site-packages\google
+\oauth2\__init__.py:40: FutureWarning: You 
+are using a Python version 3.9 past its 
+end of life. Google will update 
+google-auth with critical bug fixes on a 
+best-effort basis, but not with any other 
+fixes or features. Please upgrade your 
+Python version, and then update 
+google-auth.
+  warnings.warn(eol_message.format("3.9"), 
+FutureWarning)
+C:\Users\Pavan Kandula\AppData\Local\Progra
+ms\Python\Python39\lib\site-packages\sklear
+n\base.py:376: InconsistentVersionWarning: 
+Trying to unpickle estimator 
+DecisionTreeRegressor from version 1.6.1 
+when using version 1.4.0. This might lead 
+to breaking code or invalid results. Use 
+at your own risk. For more info please 
+refer to:
+https://scikit-learn.org/stable/model_persi
+stence.html#security-maintainability-limita
+tions
+  warnings.warn(
+C:\Users\Pavan Kandula\AppData\Local\Progra
+ms\Python\Python39\lib\site-packages\sklear
+n\base.py:376: InconsistentVersionWarning: 
+Trying to unpickle estimator 
+RandomForestRegressor from version 1.6.1 
+when using version 1.4.0. This might lead 
+to breaking code or invalid results. Use 
+at your own risk. For more info please 
+refer to:
+https://scikit-learn.org/stable/model_persi
+stence.html#security-maintainability-limita
+tions
+  warnings.warn(
+INFO:main:\u2705 All models loaded 
+successfully
+INFO:     Started server process [35568]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:main:\U0001f4e5 /insights/1 ù found 
+75 transactions in DB
+INFO:google_genai.models:AFC is enabled 
+with max remote calls: 10.
+INFO:httpx:HTTP Request: POST https://gener
+ativelanguage.googleapis.com/v1beta/models/
+gemini-2.0-flash:generateContent "HTTP/1.1 
+429 Too Many Requests"
+ERROR:main:\u274c Gemini AI Error: 
+ClientError: 429 RESOURCE_EXHAUSTED. 
+{'error': {'code': 429, 'message': 'You 
+exceeded your current quota, please check 
+your plan and billing details. For more 
+information on this error, head to: https:/
+/ai.google.dev/gemini-api/docs/rate-limits.
+ To monitor your current usage, head to: 
+https://ai.dev/rate-limit. \n* Quota 
+exceeded for metric: generativelanguage.goo
+gleapis.com/generate_content_free_tier_requ
+ests, limit: 0, model: gemini-2.0-flash\n* 
+Quota exceeded for metric: generativelangua
+ge.googleapis.com/generate_content_free_tie
+r_requests, limit: 0, model: 
+gemini-2.0-flash\n* Quota exceeded for 
+metric: generativelanguage.googleapis.com/g
+enerate_content_free_tier_input_token_count
+, limit: 0, model: 
+gemini-2.0-flash\nPlease retry in 
+59.562120023s.', 'status': 
+'RESOURCE_EXHAUSTED', 'details': 
+[{'@type': 
+'type.googleapis.com/google.rpc.Help', 
+'links': [{'description': 'Learn more 
+about Gemini API quotas', 'url': 'https://a
+i.google.dev/gemini-api/docs/rate-limits'}]
+}, {'@type': 'type.googleapis.com/google.rp
+c.QuotaFailure', 'violations': 
+[{'quotaMetric': 'generativelanguage.google
+apis.com/generate_content_free_tier_request
+s', 'quotaId': 'GenerateRequestsPerDayPerPr
+ojectPerModel-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}, 
+{'quotaMetric': 'generativelanguage.googlea
+pis.com/generate_content_free_tier_requests
+', 'quotaId': 'GenerateRequestsPerMinutePer
+ProjectPerModel-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}, 
+{'quotaMetric': 'generativelanguage.googlea
+pis.com/generate_content_free_tier_input_to
+ken_count', 'quotaId': 'GenerateContentInpu
+tTokensPerModelPerMinute-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}]}, {'@type': 
+'type.googleapis.com/google.rpc.RetryInfo',
+ 'retryDelay': '59s'}]}}
+INFO:     127.0.0.1:51131 - "GET /insights/1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Pavan Kandula\Desktop\pava
+n_digi_wallet2\main.py", line 1155, in 
+ai_explain_insights
+    result = future.result(timeout=10)   # 
+hard 10-second cap
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\concurrent\f
+utures\_base.py", line 446, in result
+    return self.__get_result()
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\concurrent\f
+utures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\concurrent\f
+utures\thread.py", line 58, in run
+    result = self.fn(*self.args, 
+**self.kwargs)
+  File "C:\Users\Pavan Kandula\Desktop\pava
+n_digi_wallet2\main.py", line 1148, in 
+call_gemini
+    resp = c.models.generate_content(model=
+"gemini-2.0-flash", contents=prompt)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\models.py", line 5020, in 
+generate_content
+    response = self._generate_content(
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\models.py", line 3832, in 
+_generate_content
+    response = self._api_client.request(
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\_api_client.py", line 1331, 
+in request
+    response = self._request(http_request, 
+http_options, stream=False)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\_api_client.py", line 1167, 
+in _request
+    return self._retry(self._request_once, 
+http_request, stream)  # type: 
+ignore[no-any-return]
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\tenacity\__init__.py", line 475, in 
+__call__
+    do = self.iter(retry_state=retry_state)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\tenacity\__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\tenacity\__init__.py", line 418, in 
+exc_check
+    raise retry_exc.reraise()
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\tenacity\__init__.py", line 185, in 
+reraise
+    raise self.last_attempt.result()
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\concurrent\f
+utures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\concurrent\f
+utures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\tenacity\__init__.py", line 478, in 
+__call__
+    result = fn(*args, **kwargs)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\_api_client.py", line 1144, 
+in _request_once
+    errors.APIError.raise_for_response(resp
+onse)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\google\genai\errors.py", line 108, in 
+raise_for_response
+    raise ClientError(status_code, 
+response_json, response)
+google.genai.errors.ClientError: 429 
+RESOURCE_EXHAUSTED. {'error': {'code': 
+429, 'message': 'You exceeded your current 
+quota, please check your plan and billing 
+details. For more information on this 
+error, head to: https://ai.google.dev/gemin
+i-api/docs/rate-limits. To monitor your 
+current usage, head to: 
+https://ai.dev/rate-limit. \n* Quota 
+exceeded for metric: generativelanguage.goo
+gleapis.com/generate_content_free_tier_requ
+ests, limit: 0, model: gemini-2.0-flash\n* 
+Quota exceeded for metric: generativelangua
+ge.googleapis.com/generate_content_free_tie
+r_requests, limit: 0, model: 
+gemini-2.0-flash\n* Quota exceeded for 
+metric: generativelanguage.googleapis.com/g
+enerate_content_free_tier_input_token_count
+, limit: 0, model: 
+gemini-2.0-flash\nPlease retry in 
+59.562120023s.', 'status': 
+'RESOURCE_EXHAUSTED', 'details': 
+[{'@type': 
+'type.googleapis.com/google.rpc.Help', 
+'links': [{'description': 'Learn more 
+about Gemini API quotas', 'url': 'https://a
+i.google.dev/gemini-api/docs/rate-limits'}]
+}, {'@type': 'type.googleapis.com/google.rp
+c.QuotaFailure', 'violations': 
+[{'quotaMetric': 'generativelanguage.google
+apis.com/generate_content_free_tier_request
+s', 'quotaId': 'GenerateRequestsPerDayPerPr
+ojectPerModel-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}, 
+{'quotaMetric': 'generativelanguage.googlea
+pis.com/generate_content_free_tier_requests
+', 'quotaId': 'GenerateRequestsPerMinutePer
+ProjectPerModel-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}, 
+{'quotaMetric': 'generativelanguage.googlea
+pis.com/generate_content_free_tier_input_to
+ken_count', 'quotaId': 'GenerateContentInpu
+tTokensPerModelPerMinute-FreeTier', 
+'quotaDimensions': {'location': 'global', 
+'model': 'gemini-2.0-flash'}}]}, {'@type': 
+'type.googleapis.com/google.rpc.RetryInfo',
+ 'retryDelay': '59s'}]}}
+
+During handling of the above exception, 
+another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\uvicorn\protocols\http\httptools_impl.py"
+, line 419, in run_asgi
+    result = await app(  # type: 
+ignore[func-returns-value]
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\uvicorn\middleware\proxy_headers.py", 
+line 84, in __call__
+    return await self.app(scope, receive, 
+send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\fastapi\applications.py", line 1054, in 
+__call__
+    await super().__call__(scope, receive, 
+send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\applications.py", line 123, in 
+__call__
+    await self.middleware_stack(scope, 
+receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\middleware\errors.py", line 
+186, in __call__
+    raise exc
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\middleware\errors.py", line 
+164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\middleware\cors.py", line 83, 
+in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\middleware\exceptions.py", 
+line 62, in __call__
+    await 
+wrap_app_handling_exceptions(self.app, 
+conn)(scope, receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\_exception_handler.py", line 
+64, in wrapped_app
+    raise exc
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\_exception_handler.py", line 
+53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\routing.py", line 762, in 
+__call__
+    await self.middleware_stack(scope, 
+receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\routing.py", line 782, in app
+    await route.handle(scope, receive, 
+send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\routing.py", line 297, in 
+handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\routing.py", line 77, in app
+    await 
+wrap_app_handling_exceptions(app, 
+request)(scope, receive, send)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\_exception_handler.py", line 
+64, in wrapped_app
+    raise exc
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\_exception_handler.py", line 
+53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\routing.py", line 72, in app
+    response = await func(request)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\fastapi\routing.py", line 299, in app
+    raise e
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\fastapi\routing.py", line 294, in app
+    raw_response = await 
+run_endpoint_function(
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\fastapi\routing.py", line 193, in 
+run_endpoint_function
+    return await 
+run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\starlette\concurrency.py", line 40, in 
+run_in_threadpool
+    return await 
+anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sy
+nc_in_worker_thread(
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\anyio\_backends\_asyncio.py", line 2502, 
+in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\site-package
+s\anyio\_backends\_asyncio.py", line 986, 
+in run
+    result = context.run(func, *args)
+  File "C:\Users\Pavan Kandula\Desktop\pava
+n_digi_wallet2\main.py", line 1236, in 
+get_user_insights
+    ai_advice = 
+ai_explain_insights(analysis_results)
+  File "C:\Users\Pavan Kandula\Desktop\pava
+n_digi_wallet2\main.py", line 1163, in 
+ai_explain_insights
+    print(f"\u274c Gemini AI Error: 
+{type(e).__name__}: {e}")
+  File "C:\Users\Pavan Kandula\AppData\Loca
+l\Programs\Python\Python39\lib\encodings\cp
+1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self
+.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't 
+encode character '\u274c' in position 0: 
+character maps to <undefined>

@@ -1,0 +1,20 @@
+2113|def generate_pdf_rl(data, filename='report.pdf'):
+2114|    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+2115|    from reportlab.lib.styles import getSampleStyleSheet
+2116|    import os
+2117|from dotenv import load_dotenv
+2118|load_dotenv()
+2119|    os.makedirs('reports_rl', exist_ok=True)
+2120|    full_path = os.path.join('reports_rl', filename)
+2121|    doc = SimpleDocTemplate(full_path)
+2122|    styles = getSampleStyleSheet()
+2123|    content = [Paragraph('<b>Financial Report</b>', styles['Title']), Spacer(1, 12)]
+2124|    for key, value in data.items():
+2125|        content.append(Paragraph(f'<b>{key}</b>: {str(value)}', styles['Normal']))
+2126|        content.append(Spacer(1, 6))
+2127|    doc.build(content)
+2128|    return full_path
+2129|
+2130|@app.post('/chat-new')
+2131|def chat_new(req: schemas.ChatRequest):
+2132|    import os
